@@ -94,7 +94,9 @@ void printDays(int x){ // 2 10
     }
 }
 
-string reverseListNums
+string reverseListNums(int x){
+
+}
 
 int main(){
 	setlocale(LC_ALL, "rus");
