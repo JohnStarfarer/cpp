@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+#include <ctime>
 
 using namespace std;
 
@@ -94,8 +96,73 @@ void printDays(int x){ // 2 10
     }
 }
 
-string reverseListNums(int x){
+string reverseListNums(int x){ // 3 2
+    string res = "";
+    if (x >= 0){
+        for (int i = x; i >= 0; i--){
+            res.append(to_string(i));
+            if (i > 0) res.append(" ");
+            // res += i;
+        };
+    }
+    else{
+        for (int i = x; i <= 0; i++){
+            res.append(to_string(i));
+            if (i < 0) res.append(" ");
+        };
+    }
+    return res;
+}
 
+int pow(int x, int y){ // 3 4
+    for (; y > 1; y--){
+        x *= x;
+    }
+    return x;
+}
+
+bool equalNum(int x){ // 3 6
+    bool equal = true;
+    int prevx = x % 10;
+    if (x < 0)
+        equal = false;
+    while (x > 0 && equal){
+        //equal = (x % 10 != prevx)? false: true;
+        if (x % 10 != prevx) equal = false;
+        prevx = x % 10;
+        x /= 10;
+    }
+    return equal;
+}
+
+void leftTriangle(int x){ // 3 8
+    for (int i = 1; i <= x; i++){
+        for (int j = i; j > 0; j--){
+            cout << '*';
+        }
+        cout << endl;
+    }
+}
+
+void guessGame(){ // 3 10
+    srand(time(0));
+    int luckyNum = rand() % 10;
+    cout << "[DEBUG luckyNum = " << luckyNum << "]\n";
+    int totalGuesses = 1;
+    int userNum;
+
+    cout << "Введите число от 0 до 9:\n";
+    cin >> userNum;
+    while (userNum != luckyNum){
+        cout << "Вы не угадали, введите число от 0 до 9:\n";
+        cin >> userNum;
+        totalGuesses += 1;
+    }
+    cout << "Вы угадали!\n" << "Вы отгадали число за " << totalGuesses << " попыт(ку|ки|ок)\n";
+}
+
+int findLast (int arr[], int x){
+    
 }
 
 int main(){
@@ -206,7 +273,34 @@ int main(){
                 cout << "> Введите целое число: ";
                 int x;
                 cin >> x;
-                cout << "> Результат: " << age(x) << endl;
+                cout << "> Результат: " << reverseListNums(x) << endl;
+            }; break;
+
+            case 4:{
+                cout << "> Введите два целых числа: ";
+                int x, y;
+                cin >> x >> y;
+                cout << "> Результат: " << pow(x, y) << endl;
+            }; break;
+
+            case 6:{
+                cout << "> Введите число: ";
+                int x;
+                cin >> x;
+                cout << boolalpha;
+                cout << "> Результат: " << equalNum(x) << endl;
+            }; break;
+
+            case 8:{
+                cout << "> Введите число: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: " << endl;
+                leftTriangle(x);
+            }; break;
+
+            case 10:{
+                guessGame();
             }; break;
 
             default: cout << "\nВыход из программы\n"; break;
