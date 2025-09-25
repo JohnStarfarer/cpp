@@ -11,7 +11,7 @@ int sumLastNums(int x){ // 1 2
 }
 
 bool isPositive(int x){ // 1 4
-    return (x > 0)? true : false;
+    return (x >= 0)? true : false;
 }
 
 bool isUpperCase(char x){ // 1 6
