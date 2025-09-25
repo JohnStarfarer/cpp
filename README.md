@@ -22,6 +22,203 @@
 можно получить 10 баллов (8 баллов за решение задач + 2 балла за оформление
 отчета).
 
+```
+int main(){
+	setlocale(LC_ALL, "rus");
+    int majorTaskChoice, minorTaskChoice;
+
+    cout << "Доступные задания:\n  | 1.2 | 1.4 | 1.6 | 1.8 | 1.10 |\n  | 2.2 | 2.4 | 2.6 | 2.8 | 2.10 |\n  | 3.2 | 3.4 | 3.6 | 3.8 | 3.10 |\n  | 4.X | 4.X | 4.X | 4.X | 4.XX |\n"
+         << "Введите номер задания (первая цифра)(для отмены введите 0): ";
+    cin >> majorTaskChoice;
+    cout << "Введите номер подзадания (вторая цифра): ";
+    cin >> minorTaskChoice;
+
+    switch (majorTaskChoice){
+        /* 
+        Задание 1. МЕТОДЫ
+        */
+        case 1: switch (minorTaskChoice){
+            case 2:{
+                cout << "# Сумма знаков.\n";
+                cout << "> Введите целое число, содержащие не менее двух знаков: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: " << sumLastNums(x) << endl;
+
+            }; break;
+        
+            case 4:{
+                cout << "# Есть ли позитив.\n";
+                cout << "> Введите число: ";
+                float x;
+                cin >> x;
+                cout << boolalpha;
+                cout << "> Результат: " << isPositive(x) << endl;
+
+            }; break;
+
+            case 6:{
+                cout << "# Большая буква.\n";
+                cout << "> Введите символ: ";
+                char x;
+                cin >> x;
+                cout << boolalpha;
+                cout << "> Результат: " << isUpperCase(x) << endl;
+
+            }; break;
+
+            case 8:{
+                cout << "# Делитель.\n";
+                cout << "> Введите два целых числа (через пробел): ";
+                int x, y;
+                cin >> x >> y;
+                cout << boolalpha;
+                cout << "> Результат: " << isDivisior(x, y) << endl;
+
+            }; break;
+
+            case 10:{
+                cout << "# Многократный вызов.\n";
+                for (int i = 1; i <= 5; i++){
+                    cout << "> Введите " << i << "-ю пару двух целых чисел (через пробел): ";
+                    int x, y;
+                    cin >> x >> y;
+                    cout << "> Результат: " << lastNumSum(x, y) << endl;
+                }
+
+            }; break;
+
+            default: cout << "\nВыход из программы\n"; break;
+    
+        }; break;
+
+        /*
+        Задание 2. УСЛОВИЯ
+        */
+        case 2: switch (minorTaskChoice){
+            case 2:{
+                cout << "# Безопасное деление.\n";
+                cout << "> Введите два числа (через пробел): ";
+                int x, y;
+                cin >> x >> y;
+                cout << "> Результат: " << safeDiv(x, y) << endl;
+            }; break;
+
+            case 4:{
+                cout << "# Строка сравнения.\n";
+                cout << "> Введите два числа (через пробел): ";
+                float x, y;
+                cin >> x >> y;
+                cout << "> Результат: " << makeDecision(x, y) << endl;
+            }; break;
+
+            case 6:{
+                cout << "# Тройная сумма.\n";
+                cout << "> Введите три целых числа (через пробел): ";
+                int x, y, z;
+                cin >> x >> y >> z;
+                cout << boolalpha;
+                cout << "> Результат: " << sum3(x, y, z) << endl;
+            }; break;
+        
+            case 8:{
+                cout << "# Возраст.\n";
+                cout << "> Введите целое число: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: " << age(x) << endl;
+            }; break;
+
+            case 10:{
+                cout << "# Вывод дней недели.\n";
+                cout << "> Введите целое число: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: "; printDays(x);
+                cout << endl;
+            }; break;
+
+            default: cout << "\nВыход из программы\n"; break;
+
+        }; break;
+
+        /*
+        Задание 3. ЦИКЛЫ
+        */
+        case 3: switch (minorTaskChoice){
+            case 2:{
+                cout << "# Числа наоборот.\n";
+                cout << "> Введите целое число: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: " << reverseListNums(x) << endl;
+            }; break;
+
+            case 4:{
+                cout << "# Степень числа.\n";
+                cout << "> Введите два целых числа: ";
+                int x, y;
+                cin >> x >> y;
+                cout << "> Результат: " << pow(x, y) << endl;
+            }; break;
+
+            case 6:{
+                cout << "# Одинаковость.\n";
+                cout << "> Введите число: ";
+                int x;
+                cin >> x;
+                cout << boolalpha;
+                cout << "> Результат: " << equalNum(x) << endl;
+            }; break;
+
+            case 8:{
+                cout << "# Левый треугольник.\n";
+                cout << "> Введите число: ";
+                int x;
+                cin >> x;
+                cout << "> Результат: " << endl;
+                leftTriangle(x);
+            }; break;
+
+            case 10:{
+                cout << "# Угадайка.\n";
+                guessGame();
+            }; break;
+
+            default: cout << "\nВыход из программы\n"; break;
+
+        }; break;
+
+        /*
+        Задание 4. МАССИВЫ
+        */
+        case 4: switch (minorTaskChoice){
+            case 2:{
+                cout << "# Поиск последнего значения.\n";
+                cout << "> Элементы массива: ";
+                array ar {1, 2, 3, 2, 3, 4, 4};
+                for (auto a : ar){
+                    cout << a << " ";
+                }
+                cout << "\n> Введите число: ";
+                int x;
+                cin >> x;
+                //cout << "> Результат: " << findLast(ar, x) << endl;
+            }; break;
+
+            default: cout << "\nВыход из программы\n"; break;
+
+        }; break;
+
+        //case 0: cout << "major"; break;
+
+        default: cout << "\nВыход из программы\n"; break;
+    }
+    // cout << "\nТакого задания нет!" << endl;
+    return 0;
+}
+```
+
 ## Задание 1. Методы
 
 ### 2. Сумма знаков.
@@ -44,14 +241,6 @@ int sumLastNums(int x){ // 1 2
     return (x % 10) + (x % 100 / 10);
 }
 ```
-
-intsumLastNums(intx){ // 1 2
-
-if (x < 0) x = -x;
-
-return (x % 10) + (x % 100 / 10);
-
-}
 
 #### Тестирование:
 
@@ -95,7 +284,9 @@ bool isPositive(int x){ // 1 4
 
 Дана сигнатура функции: bool isUpperCase (char x);
 Необходимо реализовать функцию таким образом, чтобы она принимала
-символ x и возвращала true, если это большая буква в диапазоне от ‘A’ до ‘Z’.Алгоритм решения:
+символ x и возвращала true, если это большая буква в диапазоне от ‘A’ до ‘Z’.
+
+#### Алгоритм решения:
 
 Если символ **x** больше символа **A**, но меньше символа **B**, то возращаем ``true``.
 
@@ -675,4 +866,3 @@ void guessGame(){ // 3 10
 #### Код:
 
 #### Тестирование:
-
