@@ -29,8 +29,11 @@ int lastNumSum(int a, int b){ // 1 10
 }
 
 double safeDiv(int x, int y){ // 2 2
-    if (y == 0) return 0;
-    else return (x / y);
+    if (y == 0){
+        return 0;
+    } else {
+        return (x / y);
+    }
 }
 
 string makeDecision(int x, int y){ // 2 4
