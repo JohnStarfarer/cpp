@@ -82,7 +82,8 @@ int main() {
                 break;
             }
             case 7: {
-                std::cout << "Приведение к double (неявному виду) дискриминант уравнения: " << double(quadeq);
+                double doubleQE = quadeq;
+                std::cout << "Приведение к double (неявному виду) дискриминант уравнения: " << doubleQE;
                 std::cout << std::endl;
                 break;
             }

@@ -8,8 +8,6 @@
 #include <cmath>
 
 class QuadraticEquation {
-private:
-    double a_, b_, c_;
 public:
     QuadraticEquation();
     QuadraticEquation(const QuadraticEquation& quadeq);
@@ -30,6 +28,10 @@ public:
 
     operator double() const;
     explicit operator bool() const;
+private:
+    double a_;
+    double b_;
+    double c_;
 };
 bool operator== (const QuadraticEquation& quadL, const QuadraticEquation& quadR);
 bool operator!= (const QuadraticEquation& quadL, const QuadraticEquation& quadR);
