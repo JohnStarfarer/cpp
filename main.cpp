@@ -37,14 +37,14 @@ int main() {
                      std::cout << "\n=== Фильтрация кратных k ===\n\n";
                     Files::genBin();
                     Files::multiplesK();
-                    Files::printBin("1.6.bin");
+                    Files::printBin("output.bin");
                     break;
                 }
                 case 2: {
                      std::cout << "\n=== Работа с матрицей из int ===\n\n";
                     Files::genBin();
                     Files::binMatrix();
-                    Files::printBin("2.6.bin");
+                    Files::printBin("output.bin");
                     break;
                 }
                 case 3: {

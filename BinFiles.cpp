@@ -297,9 +297,7 @@ void Files::findMostExpensiveConstructor() {
     std::cout << "Поиск самого дорогого конструктора:\n";
 
     while (toyFile.read(reinterpret_cast<char*>(&toy), sizeof(Toy))) {
-        std::string nameLower = toLowerString(toy.name);
-        
-        if (nameLower.find("конструктор") != std::string::npos) {
+        if (std::string(toy.name).find("Конструктор") != std::string::npos) {
             constructorCount++;
             
             std::cout << "Найден конструктор:\n";
