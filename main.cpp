@@ -11,12 +11,17 @@
 #include <iomanip>
 #include <locale>
 
-// меломаны и их любимые произведения
+/**
+ * @brief Структура меломана и его музыкальные предпочтения
+ */
 struct Meloman {
     std::string name;
     UnorderedList<std::string> likedMusic;
 };
 
+/**
+ * @brief Функция для выполнения задания 1 (HashSet)
+ */
 void task1() {
     try {
         // все музыкальные произведения
@@ -107,6 +112,9 @@ void task1() {
     }
 }
 
+/**
+ * @brief Функция для выполнения задания 2 (Dictionary)
+ */
 void task2() {
     try {
         std::string filename = "students.txt";
@@ -201,6 +209,9 @@ void task2() {
     }
 }
 
+/**
+ * @brief Функция для выполнения задания 3 (Наследование)
+ */
 void task3() {
     std::cout << "\nКЛАСС PISTOL ==================\\n";
     
@@ -265,6 +276,11 @@ void task3() {
     }
 }
 
+/**
+ * @brief Меню выбора задания и вызов функций.
+ * 
+ * @return int Код завершения программы (0 - успешно)
+ */
 int main() {
     setlocale(LC_ALL, "RU");
 

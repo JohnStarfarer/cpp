@@ -1,3 +1,5 @@
+// Dictionary.hpp, ЧЕИ
+// Description: lab6, var6
 #ifndef DICTIONARY_HPP
 #define DICTIONARY_HPP
 
@@ -7,6 +9,16 @@
 #include <string>
 #include <fstream>
 
+/**
+ * @class Dictionary
+ * @brief Шаблонный класс для реализации словаря (хэш-таблицы)
+ * 
+ * @tparam KeyType Тип ключей словаря
+ * @tparam ValueType Тип значений словаря
+ * 
+ * Класс реализует словарь с уникальными ключами на основе хэш-таблицы.
+ * Поддерживает основные операции: добавление, удаление, поиск.
+ */
 template<typename KeyType, typename ValueType>
 class Dictionary {
 public:

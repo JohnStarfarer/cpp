@@ -1,9 +1,18 @@
+// Guns.hpp, ЧЕИ
+// Description: lab6, var6
 #ifndef GUNS_HPP
 #define GUNS_HPP
 
 #include <iostream>
 #include <string>
 
+/**
+ * @class Pistol
+ * @brief Базовый класс, представляющий пистолет
+ * 
+ * Класс реализует базовый функционал пистолета: стрельбу, перезарядку,
+ * получение информации о состоянии.
+ */
 class Pistol {
 protected:
     int magazineCapacity;
@@ -28,7 +37,7 @@ public:
     
     // деструктор
     virtual ~Pistol() {
-        std::cout << "Пистолет уничтожен" << std::endl;
+        std::cout << "Пистолет " << model << " разобран" << std::endl;
     }
     
     // один выстрел
@@ -66,7 +75,13 @@ public:
     void setModel(const std::string& newModel) { model = newModel; }
 };
 
-// производный класс Автомат
+/**
+ * @class AutomaticPistol
+ * @brief Производный класс, представляющий автомат
+ * 
+ * Наследуется от класса Pistol. Добавляет функционал скорострельности
+ * и возможность стрельбы в течение нескольких секунд.
+ */
 class AutomaticPistol : public Pistol {
 public:
     // a) конструктор без параметров

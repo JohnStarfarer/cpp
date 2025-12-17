@@ -1,13 +1,22 @@
 // UnorderedList.hpp, ЧЕИ
 // Description: lab6, var6
-#ifndef UNORDEREDLIST
-#define UNORDEREDLIST
+#ifndef UNORDEREDLIST_HPP
+#define UNORDEREDLIST_HPP
 
 #include <iostream>
 #include <stdexcept>
 #include <algorithm>
 #include <string>
 
+/**
+ * @class UnorderedList
+ * @brief Шаблонный класс для реализации неупорядоченного списка с уникальными элементами
+ * 
+ * @tparam T Тип элементов списка
+ * 
+ * Класс реализует функционал неупорядоченного списка, который может содержать
+ * только уникальные элементы. Обращение к элементам по индексу не предусмотрено.
+ */
 template<typename T>
 class UnorderedList {
 public:
