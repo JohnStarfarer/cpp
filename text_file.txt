@@ -1,0 +1,20 @@
+Hello world!
+Привет мир!
+This is a sample text.
+Это пример текста на русском.
+12345 67890
+Смешанный mixed текст text
+Only English here.
+Только русский текст здесь.
+Text with цифрами 123 and символами !@#
+Another English line without Russian.
+Еще одна строка по-русски.
+No Russian letters in this line.
+В этой строке есть русские буквы.
+Programming is fun!
+Программирование - это интересно!
+123 + 456 = 579
+Line with special characters: @#$%
+Строка с пунктуацией: запятые, точки.
+Simple line
+Последняя строка файла.

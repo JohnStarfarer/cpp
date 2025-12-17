@@ -1,0 +1,10 @@
+Hello world!
+This is a sample text.
+12345 67890
+Only English here.
+Another English line without Russian.
+No Russian letters in this line.
+Programming is fun!
+123 + 456 = 579
+Line with special characters: @#$%
+Simple line

@@ -399,23 +399,17 @@ void Files::sumEqualIndex() {
     
     while (std::getline(inFile, line)) {
         if (!line.empty()) {
-            try {
-                int value = std::stoi(line);
+            int value = std::stoi(line);
+            
+            if (value == index) {
+                sum += value;
+                matchingIndices.push_back(index);
+                matchingValues.push_back(value);
                 
-                if (value == index) {
-                    sum += value;
-                    matchingIndices.push_back(index);
-                    matchingValues.push_back(value);
-                    
-                    std::cout << "Совпадение! Индекс " << index << " = значение " << value << "\n";
-                }
-                
-                index++;
-            } catch (const std::invalid_argument& e) {
-                std::cerr << "Ошибка: неверный формат числа в строке " << index << ": " << line << "\n";
-            } catch (const std::out_of_range& e) {
-                std::cerr << "Ошибка: число вне диапазона в строке " << index << ": " << line << "\n";
+                std::cout << "Совпадение! Индекс " << index << " = значение " << value << "\n";
             }
+            
+            index++;
         }
     }
     
@@ -503,12 +497,9 @@ void Files::printMultiTxtFile() {
     std::cout << "Номер строки | Содержимое\n";
     std::cout << "---------------------------\n";
     
-    while (std::getline(readFile, line)) {
-        if (!line.empty()) {
-            std::cout << lineNumber << "           | " << line << "\n";
-            lineNumber++;
+    while (readFile >> line) {
+        std::cout << lineNumber << "           | " << line << "\n";
         }
-    }
     
     readFile.close();
     std::cout << "\n";
@@ -597,16 +588,9 @@ void Files::genTextFile() {
         "Только русский текст здесь.",
         "Text with цифрами 123 and символами !@#",
         "Another English line without Russian.",
-        "Еще одна строка по-русски.",
-        "No Russian letters in this line.",
-        "В этой строке есть русские буквы.",
-        "Programming is fun!",
-        "Программирование - это интересно!",
         "123 + 456 = 579",
         "Line with special characters: @#$%",
         "Строка с пунктуацией: запятые, точки.",
-        "Simple line",
-        "Последняя строка файла."
     };
     
     const int lineCount = sizeof(lines) / sizeof(lines[0]);
@@ -702,11 +686,9 @@ void Files::filterNoRussianLines() {
     std::ifstream resultFile(textOutputFileName);
     if (resultFile) {
         lineNumber = 1;
-        while (std::getline(resultFile, line)) {
-            if (!line.empty()) {
-                std::cout << "Строка " << lineNumber << ": " << line << "\n";
-                lineNumber++;
-            }
+        while (resultFile >> line) {
+            std::cout << "Строка " << lineNumber << ": " << line << "\n";
+            lineNumber++;
         }
         resultFile.close();
     }
