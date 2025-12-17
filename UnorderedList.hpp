@@ -10,12 +10,6 @@
 
 template<typename T>
 class UnorderedList {
-private:
-    T* items_;
-    int count_;
-    int capacity_;
-
-    void AddCapacity();
 public:
     UnorderedList();
     UnorderedList(int capacity);
@@ -36,6 +30,13 @@ public:
     int capacity() const { return capacity_; };
 
     void Print() const;
+private:
+    T* items_;
+    int count_;
+    int capacity_;
+
+    void AddCapacity();
+
 };
 
 template<typename T>
