@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Репозиторий лабороторных работ по дисциплине &quot;Язык программирования C++&quot;</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md_README_1autotoc_md0"/></para>
+<sect1 id="md_README_1autotoc_md1">
+<title>Лаб. №6 КОЛЛЕКЦИИ И НАСЛЕДОВАНИЕ</title></sect1>
+<sect1 id="md_README_1autotoc_md2">
+<title>Вариант: 6К</title></sect1>
+<sect1 id="md_README_1autotoc_md3">
+<title>Группа: ИТ-5-2024</title></sect1>
+<sect1 id="md_README_1autotoc_md4">
+<title>ФИО: Чугаев Евгений Игоревич</title></sect1>
+<sect1 id="md_README_1autotoc_md5">
+<title>Описание лабораторной работы:</title><para>Выполнить все задания в одном проекте. В классе могут присутствовать методы со спецификатором доступа private вспомогательного характера. В задании 1 необходимо описать класс, который реализует функционал неупорядоченного списка (обратиться к элементу по индексу нельзя), который может содержать только уникальные элементы (в случае добавления повторяющихся значений ошибки нет, такой элемент просто не добавляется). Полем класса является массив. В классе должны присутствовать методы добавления и удаления элементов, а также методы: • Union() — объединяет две коллекции; • Except() — позволяет удалить из первой коллекции элементы второй; • Intersect() — получает коллекцию, состоящую из элементов, общих для двух коллекций; • Contains() — проверяет на наличие элемента, возвращает bool. С помощью данного класса необходимо решить задачу своего варианта. В задании 2 необходимо описать класс, который реализует функционал словаря (запрещается использовать готовые решения) и решить задачу своего варианта. В классе должны присутствовать методы добавления и удаления элементов, учесть, что ключи должны быть уникальными. Исходные данные содержаться в текстовом файле. Классы из заданий 1 и2 должны работать при любом типе данных. Задание 3 необходимо решить задачу с использованием наследования. К каждому классу и методу написать xml-документацию. Необходимо решить по 1 задаче из каждого задания согласно вашему варианту. Задание 1, 2, 3 оцениваются по 2 балла, xml-документация оценивается в 2 балла. Максимально за лабораторную работу можно получить 10 баллов (8 баллов за решение задач + 2 балла за оформление отчета).</para>
+<sect2 id="md_README_1autotoc_md6">
+<title>Задание 1. HashSet</title><sect3 id="md_README_1autotoc_md7">
+<title>Вариант задания: 6</title><sect4 id="md_README_1autotoc_md8">
+<title>Описание:</title><para>Есть перечень музыкальных произведений. Определить для каждого произведения, какие из них нравятся всем n меломанам, какие — некоторым из меломанов, и какие — никому из меломанов.</para>
+</sect4>
+<sect4 id="md_README_1autotoc_md9">
+<title>Алгоритм решения:</title><sect5 id="md_README_1autotoc_md10">
+<title>Шаг 1: Подготовка исходных данных</title><para><orderedlist>
+<listitem><para>Создается полный перечень всех музыкальных произведений, которые будут анализироваться.</para>
+</listitem><listitem><para>Определяется количество меломанов (в данном случае 4 человека: Анна, Борис, Виктор, Галина).</para>
+</listitem><listitem><para>Для каждого меломана формируется список его любимых музыкальных произведений.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md11">
+<title>Шаг 2: Определение произведений, которые нравятся хотя бы одному меломане</title><para><orderedlist>
+<listitem><para>Начинаем с пустого списка произведений.</para>
+</listitem><listitem><para>Последовательно для каждого меломана объединяем его предпочтения с текущим общим списком.</para>
+</listitem><listitem><para>При объединении автоматически сохраняются только уникальные произведения (дубликаты игнорируются).</para>
+</listitem><listitem><para>В результате получаем полный список всех произведений, которые нравятся хотя бы одному из меломанов.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md12">
+<title>Шаг 3: Определение произведений, которые нравятся всем меломанам</title><para><orderedlist>
+<listitem><para>Берем список предпочтений первого меломана в качестве начального значения.</para>
+</listitem><listitem><para>Последовательно для каждого следующего меломана находим пересечение его списка предпочтений с текущим общим списком.</para>
+</listitem><listitem><para>Пересечение - это операция, которая оставляет только те произведения, которые присутствуют в обоих списках.</para>
+</listitem><listitem><para>После обработки всех меломанов получаем список произведений, которые есть у каждого меломана (то есть нравятся всем).</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md13">
+<title>Шаг 4: Определение произведений, которые не нравятся никому</title><para><orderedlist>
+<listitem><para>Из полного перечня всех музыкальных произведений вычитаем список произведений, которые нравятся хотя бы одному меломану.</para>
+</listitem><listitem><para>Вычитание - это операция, которая оставляет только те произведения из полного списка, которых нет в списке предпочтений.</para>
+</listitem><listitem><para>Результат - произведения, которые никто из меломанов не отметил как любимые.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md14">
+<title>Шаг 5: Определение произведений, которые нравятся некоторым меломанам</title><para><orderedlist>
+<listitem><para>Из списка произведений, которые нравятся хотя бы одному меломану, вычитаем список произведений, которые нравятся всем.</para>
+</listitem><listitem><para>Эта операция оставляет произведения, которые есть у некоторых, но не у всех меломанов.</para>
+</listitem><listitem><para>Такие произведения нравятся как минимум одному меломану, но не всем одновременно.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md15">
+<title>Шаг 6: Вывод результатов</title><para><orderedlist>
+<listitem><para>Формируется три категории результатов:<itemizedlist>
+<listitem><para>Произведения, которые нравятся всем меломанам</para>
+</listitem><listitem><para>Произведения, которые нравятся некоторым меломанам</para>
+</listitem><listitem><para>Произведения, которые не нравятся никому из меломанов</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Для каждой категории выводится список произведений или сообщение об отсутствии таковых.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+</sect4>
+<sect4 id="md_README_1autotoc_md16">
+<title>Тестирование:</title><para><image type="html" name="image/README/1766013857255.png" alt="1766013857255" inline="yes"></image>
+</para>
+<para><image type="html" name="image/README/1766013791113.png" alt="1766013791113" inline="yes"></image>
+</para>
+<para><image type="html" name="image/README/1766013820445.png" alt="1766013820445" inline="yes"></image>
+</para>
+</sect4>
+</sect3>
+</sect2>
+<sect2 id="md_README_1autotoc_md17">
+<title>Задание 2. Dictionary</title><sect3 id="md_README_1autotoc_md18">
+<title>Вариант задания: 6</title><sect4 id="md_README_1autotoc_md19">
+<title>Описание:</title><para>Имеется список учеников разных школ, сдававших экзамен по информатике, с указанием их фамилии, имени, школы и набранного балла. Напишите программу, которая будет определять номера школ, в которых средний балл выше, чем средний по району. Если такая школа одна, нужно вывести и средний балл (в следующей строчке). Известно, что информатику сдавали не менее 5 учеников. Кроме того, школ с некоторыми номерами не существует. На вход программе в первой строке подается количество учеников списке N. В каждой из последующих N строк находится информация в следующем формате: &lt;Фамилия&gt;&lt;Имя&gt;&lt;Школа&gt;&lt;Балл&gt; где &lt;Фамилия&gt; – строка, состоящая не более, чем из 20 символов без пробелов, &lt;Имя&gt;– строка, состоящая не более, чем из 20 символов без пробелов, &lt;Школа&gt; – целое число от 1 до 99, &lt;Балл&gt; – целое число от 1 до 100. Пример входной строки: Иванов Сергей 50 87 Пример выходных данных, когда найдено три школы: 50 87 23 Пример вывода в том случае, когда найдена одна школа: 18 Средний балл = 85</para>
+</sect4>
+<sect4 id="md_README_1autotoc_md20">
+<title>Алгоритм решения:</title></sect4>
+<sect4 id="md_README_1autotoc_md21">
+<title>Тестирование:</title><sect5 id="md_README_1autotoc_md22">
+<title><bold>Шаг 1: Открытие файла и чтение первой строки</bold></title><para><orderedlist>
+<listitem><para>Открыть файл <computeroutput>students.txt</computeroutput> для чтения.</para>
+</listitem><listitem><para><bold>Считать первое число <computeroutput>N</computeroutput></bold> из файла — это количество записей об учениках.</para>
+</listitem><listitem><para>Проверить, что <computeroutput>N &gt; 0</computeroutput> (по условию, не менее 5 учеников).</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md23">
+<title><bold>Шаг 2: Чтение данных учеников (ровно N записей)</bold></title><para><orderedlist>
+<listitem><para>Организовать цикл, который выполнится ровно <bold><computeroutput>N</computeroutput></bold> раз.</para>
+</listitem><listitem><para>На каждой итерации цикла:<itemizedlist>
+<listitem><para>Считать данные в формате: <computeroutput>&lt;Фамилия&gt; &lt;Имя&gt; &lt;Школа&gt; &lt;Балл&gt;</computeroutput>.</para>
+</listitem><listitem><para>Создать объект <computeroutput><ref refid="structStudent" kindref="compound">Student</ref></computeroutput> и сохранить его в общий список.</para>
+</listitem><listitem><para><bold>Обновить статистику по школе</bold> в словаре <computeroutput>schoolData</computeroutput>:<itemizedlist>
+<listitem><para>Если школа с таким номером уже есть в словаре, добавить балл к ее общей сумме и увеличить счетчик учеников.</para>
+</listitem><listitem><para>Если школы нет — создать новую запись <computeroutput><ref refid="structSchoolStats" kindref="compound">SchoolStats</ref></computeroutput>, инициализировать ее с первым баллом и счетчиком <computeroutput>1</computeroutput>, и добавить в словарь.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md24">
+<title><bold>Шаг 3: Вычисление среднего балла по району</bold></title><para><orderedlist>
+<listitem><para>Просуммировать баллы <bold>всех</bold> учеников из общего списка.</para>
+</listitem><listitem><para>Разделить на общее количество учеников (<computeroutput>N</computeroutput>).</para>
+</listitem><listitem><para>Получить <computeroutput>districtAverage</computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md25">
+<title><bold>Шаг 4: Анализ и вывод результатов</bold></title><para><orderedlist>
+<listitem><para>Для каждого номера школы от 1 до 99:<itemizedlist>
+<listitem><para>Если школа есть в словаре, вычислить ее средний балл.</para>
+</listitem><listitem><para>Если ее средний балл <bold>строго больше</bold> <computeroutput>districtAverage</computeroutput>, добавить номер школы и ее балл в списки <computeroutput>schoolsAboveAverage</computeroutput> и <computeroutput>schoolAverages</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>В зависимости от количества найденных школ:<itemizedlist>
+<listitem><para><bold>0 школ:</bold> Вывести сообщение.</para>
+</listitem><listitem><para><bold>1 школа:</bold> Вывести номер школы на одной строке, а на следующей — <computeroutput>Средний балл = X</computeroutput>.</para>
+</listitem><listitem><para><bold>&gt;1 школ:</bold> Вывести номера школ в одну строку через пробел.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="image/README/1766031642247.png" alt="1766031642247" inline="yes"></image>
+<image type="html" name="image/README/1766031624912.png" alt="1766031624912" inline="yes"></image>
+</para>
+</sect5>
+</sect4>
+</sect3>
+</sect2>
+<sect2 id="md_README_1autotoc_md26">
+<title>Задание 3. Наследование</title><sect3 id="md_README_1autotoc_md27">
+<title>Вариант задания: 1</title><sect4 id="md_README_1autotoc_md28">
+<title>Описание:</title><para>Автомат. Создайте такой подвид сущности Пистолет из задачи 3.5.1, которая будет совпадать с ней во всех отношениях, кроме следующего: • Имеет скорострельность (целое число) которое обозначает количество выстрелов в секунду, поддерживаемое данным автоматом. Скорострельность всегда положительное число. • При вызове Стрелять количество выстрелов соответствует скорострельности (например, при скорострельности 3 выводится три строки с текстом выстрела). • Умеет Стрелять N секунд, что приводит к количеству выстрелов равному N умноженное на скорострельность. • Инициализация может быть выполнены следующими способами: a) Без параметров. Скорострельность 30, вместимость 30. b) С указанием максимального числа патронов. Скорострельность будет равна половине обоймы c) С указанием максимального количества патронов в обойме и скорострельности.</para>
+</sect4>
+<sect4 id="md_README_1autotoc_md29">
+<title>Алгоритм решения:</title><sect5 id="md_README_1autotoc_md30">
+<title>Шаг 1: Создание базового класса Pistol</title><para><orderedlist>
+<listitem><para>Определяется класс <computeroutput><ref refid="classPistol" kindref="compound">Pistol</ref></computeroutput>, представляющий базовое стрелковое оружие.</para>
+</listitem><listitem><para>Класс содержит основные атрибуты:<itemizedlist>
+<listitem><para><computeroutput>magazineCapacity</computeroutput> - вместимость магазина (максимальное количество патронов)</para>
+</listitem><listitem><para><computeroutput>bullets</computeroutput> - текущее количество патронов</para>
+</listitem><listitem><para><computeroutput>model</computeroutput> - модель пистолета</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Реализуются основные методы:<itemizedlist>
+<listitem><para><computeroutput>Shoot()</computeroutput> - совершает один выстрел (если есть патроны)</para>
+</listitem><listitem><para><computeroutput>ShootMultiple(times)</computeroutput> - совершает указанное количество выстрелов</para>
+</listitem><listitem><para><computeroutput>Reload()</computeroutput> - перезаряжает оружие (восполняет количество патронов)</para>
+</listitem><listitem><para><computeroutput>GetInfo()</computeroutput> - выводит информацию о состоянии оружия</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Определяются конструкторы:<itemizedlist>
+<listitem><para>Конструктор по умолчанию (без параметров)</para>
+</listitem><listitem><para>Конструктор с указанием вместимости магазина</para>
+</listitem><listitem><para>Конструктор с вместимостью и названием модели</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md31">
+<title>Шаг 2: Создание производного класса AutomaticPistol</title><para><orderedlist>
+<listitem><para>Создается класс <computeroutput><ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref></computeroutput>, который наследуется от класса <computeroutput><ref refid="classPistol" kindref="compound">Pistol</ref></computeroutput>.</para>
+</listitem><listitem><para>Добавляется новый атрибут:<itemizedlist>
+<listitem><para><computeroutput>fireRate</computeroutput> - скорострельность (количество выстрелов в секунду)</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Переопределяются методы базового класса:<itemizedlist>
+<listitem><para><computeroutput>Shoot()</computeroutput> - теперь совершает количество выстрелов, равное скорострельности</para>
+</listitem><listitem><para><computeroutput>GetInfo()</computeroutput> - добавляет информацию о скорострельности</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Добавляются новые методы:<itemizedlist>
+<listitem><para><computeroutput>ShootSeconds(seconds)</computeroutput> - стреляет в течение указанного количества секунд</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Реализуются конструкторы в соответствии с условиями задания:<itemizedlist>
+<listitem><para>Без параметров (скорострельность 30, вместимость 30)</para>
+</listitem><listitem><para>С указанием максимального числа патронов (скорострельность = половина обоймы)</para>
+</listitem><listitem><para>С указанием вместимости и скорострельности</para>
+</listitem><listitem><para>С указанием вместимости, скорострельности и названия модели</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md32">
+<title>Шаг 3: Демонстрация работы класса Pistol</title><para><orderedlist>
+<listitem><para>Создается объект пистолета с помощью конструктора по умолчанию.</para>
+</listitem><listitem><para>Устанавливается название модели пистолета.</para>
+</listitem><listitem><para>Выводится информация о пистолете.</para>
+</listitem><listitem><para>Производится один выстрел.</para>
+</listitem><listitem><para>Снова выводится информация о пистолете (для демонстрации уменьшения патронов).</para>
+</listitem><listitem><para>Производится несколько выстрелов подряд.</para>
+</listitem><listitem><para>Выполняется перезарядка пистолета.</para>
+</listitem><listitem><para>Снова выводится информация о пистолете (для демонстрации восстановления патронов).</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md33">
+<title>Шаг 4: Демонстрация работы класса AutomaticPistol</title></sect5>
+<sect5 id="md_README_1autotoc_md34">
+<title>Подшаг 4.1: Конструктор без параметров</title><para><orderedlist>
+<listitem><para>Создается автомат с помощью конструктора без параметров.</para>
+</listitem><listitem><para>Выводится информация об автомате.</para>
+</listitem><listitem><para>Производится выстрел (демонстрация скорострельности).</para>
+</listitem><listitem><para>Выводится обновленная информация об автомате.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md35">
+<title>Подшаг 4.2: Конструктор с вместимостью</title><para><orderedlist>
+<listitem><para>Создается автомат с указанием вместимости 60 патронов.</para>
+</listitem><listitem><para>Устанавливается название модели.</para>
+</listitem><listitem><para>Выводится информация об автомате.</para>
+</listitem><listitem><para>Производится выстрел.</para>
+</listitem><listitem><para>Выводится обновленная информация об автомате.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md36">
+<title>Подшаг 4.3: Конструктор с вместимостью и скорострельностью</title><para><orderedlist>
+<listitem><para>Создается автомат с вместимостью 30 патронов и скорострельностью 10 выстрелов в секунду.</para>
+</listitem><listitem><para>Устанавливается название модели.</para>
+</listitem><listitem><para>Выводится информация об автомате.</para>
+</listitem><listitem><para>Выполняется перезарядка.</para>
+</listitem><listitem><para>Производится стрельба в течение 2 секунд.</para>
+</listitem><listitem><para>Выводится информация об автомате после стрельбы.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md37">
+<title>Подшаг 4.4: Дополнительный конструктор</title><para><orderedlist>
+<listitem><para>Создается автомат с вместимостью 100 патронов, скорострельностью 25 выстрелов в секунду и названием модели.</para>
+</listitem><listitem><para>Выводится информация об автомате.</para>
+</listitem><listitem><para>Производится стрельба в течение 1 секунды.</para>
+</listitem><listitem><para>Выводится обновленная информация об автомате.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+<sect5 id="md_README_1autotoc_md38">
+<title>Шаг 5: Полиморфизм</title><para><orderedlist>
+<listitem><para>Создается массив указателей на базовый класс <computeroutput><ref refid="classPistol" kindref="compound">Pistol</ref></computeroutput>.</para>
+</listitem><listitem><para>В массив помещаются объекты разных типов:<itemizedlist>
+<listitem><para>Указатель на объект класса <computeroutput><ref refid="classPistol" kindref="compound">Pistol</ref></computeroutput></para>
+</listitem><listitem><para>Указатель на объект класса <computeroutput><ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref></computeroutput> (два разных объекта)</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Для каждого объекта в массиве:<itemizedlist>
+<listitem><para>Выводится информация о типе оружия</para>
+</listitem><listitem><para>Вызывается метод <computeroutput>GetInfo()</computeroutput> (полиморфно, в зависимости от типа объекта)</para>
+</listitem><listitem><para>Вызывается метод <computeroutput>Shoot()</computeroutput> (полиморфно)</para>
+</listitem><listitem><para>Снова вызывается метод <computeroutput>GetInfo()</computeroutput> для демонстрации изменений</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Освобождается память, выделенная для объектов.</para>
+</listitem></orderedlist>
+</para>
+</sect5>
+</sect4>
+<sect4 id="md_README_1autotoc_md39">
+<title>Тестирование:</title><para><image type="html" name="image/README/1766014026641.png" alt="1766014026641" inline="yes"></image>
+<image type="html" name="image/README/1766014050540.png" alt="1766014050540" inline="yes"></image>
+<image type="html" name="image/README/1766014075636.png" alt="1766014075636" inline="yes"></image>
+<image type="html" name="image/README/1766014260545.png" alt="1766014260545" inline="yes"></image>
+ </para>
+</sect4>
+</sect3>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structDictionary_1_1KeyValuePair" kind="struct" language="C++" prot="private">
+    <compoundname>Dictionary::KeyValuePair</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDictionary_1_1KeyValuePair_1a9139c126fdf4a1b3bb773ebd10f0b1f6" prot="public" static="no" mutable="no">
+        <type>KeyType</type>
+        <definition>KeyType Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>Dictionary::KeyValuePair::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="113" column="17" bodyfile="Dictionary.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDictionary_1_1KeyValuePair_1a691e2f7d281c6baf02809f7de13c7195" prot="public" static="no" mutable="no">
+        <type>ValueType</type>
+        <definition>ValueType Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>Dictionary::KeyValuePair::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="114" column="19" bodyfile="Dictionary.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDictionary_1_1KeyValuePair_1adb242fb0fd7d0b312bd65d5250357b3f" prot="public" static="no" mutable="no">
+        <type>KeyValuePair *</type>
+        <definition>KeyValuePair* Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>Dictionary::KeyValuePair::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="115" column="22" bodyfile="Dictionary.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structDictionary_1_1KeyValuePair_1ae6a1bf659a026e9200abed38dbc35309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair::KeyValuePair</definition>
+        <argsstring>(const KeyType &amp;k, const ValueType &amp;v)</argsstring>
+        <name>KeyValuePair</name>
+        <qualifiedname>Dictionary::KeyValuePair::KeyValuePair</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const ValueType &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр структуры KeyValuePair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="122" column="9" bodyfile="Dictionary.hpp" bodystart="206" bodyend="207"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Структура для хранения пары ключ-значение. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Dictionary.hpp" line="112" column="5" bodyfile="Dictionary.hpp" bodystart="112" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structDictionary_1_1KeyValuePair_1a9139c126fdf4a1b3bb773ebd10f0b1f6" prot="public" virt="non-virtual"><scope>Dictionary::KeyValuePair</scope><name>key</name></member>
+      <member refid="structDictionary_1_1KeyValuePair_1ae6a1bf659a026e9200abed38dbc35309" prot="public" virt="non-virtual"><scope>Dictionary::KeyValuePair</scope><name>KeyValuePair</name></member>
+      <member refid="structDictionary_1_1KeyValuePair_1adb242fb0fd7d0b312bd65d5250357b3f" prot="public" virt="non-virtual"><scope>Dictionary::KeyValuePair</scope><name>next</name></member>
+      <member refid="structDictionary_1_1KeyValuePair_1a691e2f7d281c6baf02809f7de13c7195" prot="public" virt="non-virtual"><scope>Dictionary::KeyValuePair</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

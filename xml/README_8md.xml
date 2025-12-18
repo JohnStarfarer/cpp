@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Репозиторий<sp/>лабороторных<sp/>работ<sp/>по<sp/>дисциплине<sp/>&quot;Язык<sp/>программирования<sp/>C++&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Лаб.<sp/>№6<sp/>КОЛЛЕКЦИИ<sp/>И<sp/>НАСЛЕДОВАНИЕ</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Вариант:<sp/>6К</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Группа:<sp/>ИТ-5-2024</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>ФИО:<sp/>Чугаев<sp/>Евгений<sp/>Игоревич</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Описание<sp/>лабораторной<sp/>работы:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Выполнить<sp/>все<sp/>задания<sp/>в<sp/>одном<sp/>проекте.<sp/>В<sp/>классе<sp/>могут<sp/>присутствовать<sp/>методы<sp/>со<sp/>спецификатором</highlight></codeline>
+<codeline><highlight class="normal">доступа<sp/>private<sp/>вспомогательного<sp/>характера.</highlight></codeline>
+<codeline><highlight class="normal">В<sp/>задании<sp/>1<sp/>необходимо<sp/>описать<sp/>класс,<sp/>который<sp/>реализует<sp/>функционал<sp/>неупорядоченного<sp/>списка</highlight></codeline>
+<codeline><highlight class="normal">(обратиться<sp/>к<sp/>элементу<sp/>по<sp/>индексу<sp/>нельзя),<sp/>который<sp/>может<sp/>содержать<sp/>только<sp/>уникальные<sp/>элементы</highlight></codeline>
+<codeline><highlight class="normal">(в<sp/>случае<sp/>добавления<sp/>повторяющихся<sp/>значений<sp/>ошибки<sp/>нет,<sp/>такой<sp/>элемент<sp/>просто<sp/>не<sp/>добавляется).</highlight></codeline>
+<codeline><highlight class="normal">Полем<sp/>класса<sp/>является<sp/>массив.<sp/>В<sp/>классе<sp/>должны<sp/>присутствовать<sp/>методы<sp/>добавления<sp/>и<sp/>удаления</highlight></codeline>
+<codeline><highlight class="normal">элементов,<sp/>а<sp/>также<sp/>методы:</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Union()<sp/>—<sp/>объединяет<sp/>две<sp/>коллекции;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Except()<sp/>—<sp/>позволяет<sp/>удалить<sp/>из<sp/>первой<sp/>коллекции<sp/>элементы<sp/>второй;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Intersect()<sp/>—<sp/>получает<sp/>коллекцию,<sp/>состоящую<sp/>из<sp/>элементов,<sp/>общих<sp/>для<sp/>двух<sp/>коллекций;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Contains()<sp/>—<sp/>проверяет<sp/>на<sp/>наличие<sp/>элемента,<sp/>возвращает<sp/>bool.</highlight></codeline>
+<codeline><highlight class="normal">С<sp/>помощью<sp/>данного<sp/>класса<sp/>необходимо<sp/>решить<sp/>задачу<sp/>своего<sp/>варианта.</highlight></codeline>
+<codeline><highlight class="normal">В<sp/>задании<sp/>2<sp/>необходимо<sp/>описать<sp/>класс,<sp/>который<sp/>реализует<sp/>функционал<sp/>словаря<sp/>(запрещается</highlight></codeline>
+<codeline><highlight class="normal">использовать<sp/>готовые<sp/>решения)<sp/>и<sp/>решить<sp/>задачу<sp/>своего<sp/>варианта.<sp/>В<sp/>классе<sp/>должны<sp/>присутствовать</highlight></codeline>
+<codeline><highlight class="normal">методы<sp/>добавления<sp/>и<sp/>удаления<sp/>элементов,<sp/>учесть,<sp/>что<sp/>ключи<sp/>должны<sp/>быть<sp/>уникальными.<sp/>Исходные</highlight></codeline>
+<codeline><highlight class="normal">данные<sp/>содержаться<sp/>в<sp/>текстовом<sp/>файле.</highlight></codeline>
+<codeline><highlight class="normal">Классы<sp/>из<sp/>заданий<sp/>1<sp/>и2<sp/>должны<sp/>работать<sp/>при<sp/>любом<sp/>типе<sp/>данных.</highlight></codeline>
+<codeline><highlight class="normal">Задание<sp/>3<sp/>необходимо<sp/>решить<sp/>задачу<sp/>с<sp/>использованием<sp/>наследования.</highlight></codeline>
+<codeline><highlight class="normal">К<sp/>каждому<sp/>классу<sp/>и<sp/>методу<sp/>написать<sp/>xml-документацию.</highlight></codeline>
+<codeline><highlight class="normal">Необходимо<sp/>решить<sp/>по<sp/>1<sp/>задаче<sp/>из<sp/>каждого<sp/>задания<sp/>согласно<sp/>вашему<sp/>варианту.<sp/>Задание<sp/>1,<sp/>2,<sp/>3</highlight></codeline>
+<codeline><highlight class="normal">оцениваются<sp/>по<sp/>2<sp/>балла,<sp/>xml-документация<sp/>оценивается<sp/>в<sp/>2<sp/>балла.<sp/>Максимально<sp/>за<sp/>лабораторную</highlight></codeline>
+<codeline><highlight class="normal">работу<sp/>можно<sp/>получить<sp/>10<sp/>баллов<sp/>(8<sp/>баллов<sp/>за<sp/>решение<sp/>задач<sp/>+<sp/>2<sp/>балла<sp/>за<sp/>оформление<sp/>отчета).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Задание<sp/>1.<sp/>HashSet</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Вариант<sp/>задания:<sp/>6</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Описание:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Есть<sp/>перечень<sp/>музыкальных<sp/>произведений.<sp/>Определить<sp/>для<sp/>каждого<sp/>произведения,<sp/>какие<sp/>из<sp/>них</highlight></codeline>
+<codeline><highlight class="normal">нравятся<sp/>всем<sp/>n<sp/>меломанам,<sp/>какие<sp/>—<sp/>некоторым<sp/>из<sp/>меломанов,<sp/>и<sp/>какие<sp/>—<sp/>никому<sp/>из<sp/>меломанов.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Алгоритм<sp/>решения:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>1:<sp/>Подготовка<sp/>исходных<sp/>данных</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>полный<sp/>перечень<sp/>всех<sp/>музыкальных<sp/>произведений,<sp/>которые<sp/>будут<sp/>анализироваться.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Определяется<sp/>количество<sp/>меломанов<sp/>(в<sp/>данном<sp/>случае<sp/>4<sp/>человека:<sp/>Анна,<sp/>Борис,<sp/>Виктор,<sp/>Галина).</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Для<sp/>каждого<sp/>меломана<sp/>формируется<sp/>список<sp/>его<sp/>любимых<sp/>музыкальных<sp/>произведений.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>2:<sp/>Определение<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>хотя<sp/>бы<sp/>одному<sp/>меломане</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Начинаем<sp/>с<sp/>пустого<sp/>списка<sp/>произведений.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Последовательно<sp/>для<sp/>каждого<sp/>меломана<sp/>объединяем<sp/>его<sp/>предпочтения<sp/>с<sp/>текущим<sp/>общим<sp/>списком.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>При<sp/>объединении<sp/>автоматически<sp/>сохраняются<sp/>только<sp/>уникальные<sp/>произведения<sp/>(дубликаты<sp/>игнорируются).</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>В<sp/>результате<sp/>получаем<sp/>полный<sp/>список<sp/>всех<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>хотя<sp/>бы<sp/>одному<sp/>из<sp/>меломанов.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>3:<sp/>Определение<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>всем<sp/>меломанам</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Берем<sp/>список<sp/>предпочтений<sp/>первого<sp/>меломана<sp/>в<sp/>качестве<sp/>начального<sp/>значения.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Последовательно<sp/>для<sp/>каждого<sp/>следующего<sp/>меломана<sp/>находим<sp/>пересечение<sp/>его<sp/>списка<sp/>предпочтений<sp/>с<sp/>текущим<sp/>общим<sp/>списком.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Пересечение<sp/>-<sp/>это<sp/>операция,<sp/>которая<sp/>оставляет<sp/>только<sp/>те<sp/>произведения,<sp/>которые<sp/>присутствуют<sp/>в<sp/>обоих<sp/>списках.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>После<sp/>обработки<sp/>всех<sp/>меломанов<sp/>получаем<sp/>список<sp/>произведений,<sp/>которые<sp/>есть<sp/>у<sp/>каждого<sp/>меломана<sp/>(то<sp/>есть<sp/>нравятся<sp/>всем).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>4:<sp/>Определение<sp/>произведений,<sp/>которые<sp/>не<sp/>нравятся<sp/>никому</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Из<sp/>полного<sp/>перечня<sp/>всех<sp/>музыкальных<sp/>произведений<sp/>вычитаем<sp/>список<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>хотя<sp/>бы<sp/>одному<sp/>меломану.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Вычитание<sp/>-<sp/>это<sp/>операция,<sp/>которая<sp/>оставляет<sp/>только<sp/>те<sp/>произведения<sp/>из<sp/>полного<sp/>списка,<sp/>которых<sp/>нет<sp/>в<sp/>списке<sp/>предпочтений.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Результат<sp/>-<sp/>произведения,<sp/>которые<sp/>никто<sp/>из<sp/>меломанов<sp/>не<sp/>отметил<sp/>как<sp/>любимые.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>5:<sp/>Определение<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>некоторым<sp/>меломанам</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Из<sp/>списка<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>хотя<sp/>бы<sp/>одному<sp/>меломану,<sp/>вычитаем<sp/>список<sp/>произведений,<sp/>которые<sp/>нравятся<sp/>всем.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Эта<sp/>операция<sp/>оставляет<sp/>произведения,<sp/>которые<sp/>есть<sp/>у<sp/>некоторых,<sp/>но<sp/>не<sp/>у<sp/>всех<sp/>меломанов.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Такие<sp/>произведения<sp/>нравятся<sp/>как<sp/>минимум<sp/>одному<sp/>меломану,<sp/>но<sp/>не<sp/>всем<sp/>одновременно.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>6:<sp/>Вывод<sp/>результатов</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Формируется<sp/>три<sp/>категории<sp/>результатов:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Произведения,<sp/>которые<sp/>нравятся<sp/>всем<sp/>меломанам</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Произведения,<sp/>которые<sp/>нравятся<sp/>некоторым<sp/>меломанам</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Произведения,<sp/>которые<sp/>не<sp/>нравятся<sp/>никому<sp/>из<sp/>меломанов</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Для<sp/>каждой<sp/>категории<sp/>выводится<sp/>список<sp/>произведений<sp/>или<sp/>сообщение<sp/>об<sp/>отсутствии<sp/>таковых.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Тестирование:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1766013857255](image/README/1766013857255.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1766013791113](image/README/1766013791113.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1766013820445](image/README/1766013820445.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Задание<sp/>2.<sp/>Dictionary</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Вариант<sp/>задания:<sp/>6</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Описание:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Имеется<sp/>список<sp/>учеников<sp/>разных<sp/>школ,<sp/>сдававших<sp/>экзамен<sp/>по<sp/>информатике,<sp/>с<sp/>указанием<sp/>их</highlight></codeline>
+<codeline><highlight class="normal">фамилии,<sp/>имени,<sp/>школы<sp/>и<sp/>набранного<sp/>балла.<sp/>Напишите<sp/>программу,<sp/>которая<sp/>будет<sp/>определять</highlight></codeline>
+<codeline><highlight class="normal">номера<sp/>школ,<sp/>в<sp/>которых<sp/>средний<sp/>балл<sp/>выше,<sp/>чем<sp/>средний<sp/>по<sp/>району.<sp/>Если<sp/>такая<sp/>школа<sp/>одна,</highlight></codeline>
+<codeline><highlight class="normal">нужно<sp/>вывести<sp/>и<sp/>средний<sp/>балл<sp/>(в<sp/>следующей<sp/>строчке).<sp/>Известно,<sp/>что<sp/>информатику<sp/>сдавали<sp/>не</highlight></codeline>
+<codeline><highlight class="normal">менее<sp/>5<sp/>учеников.<sp/>Кроме<sp/>того,<sp/>школ<sp/>с<sp/>некоторыми<sp/>номерами<sp/>не<sp/>существует.</highlight></codeline>
+<codeline><highlight class="normal">На<sp/>вход<sp/>программе<sp/>в<sp/>первой<sp/>строке<sp/>подается<sp/>количество<sp/>учеников<sp/>списке<sp/>N.<sp/>В<sp/>каждой<sp/>из</highlight></codeline>
+<codeline><highlight class="normal">последующих<sp/>N<sp/>строк<sp/>находится<sp/>информация<sp/>в<sp/>следующем<sp/>формате:</highlight></codeline>
+<codeline><highlight class="normal">&lt;Фамилия&gt;&lt;Имя&gt;&lt;Школа&gt;&lt;Балл&gt;</highlight></codeline>
+<codeline><highlight class="normal">где<sp/>&lt;Фамилия&gt;<sp/>–<sp/>строка,<sp/>состоящая<sp/>не<sp/>более,<sp/>чем<sp/>из<sp/>20<sp/>символов<sp/>без<sp/>пробелов,<sp/>&lt;Имя&gt;–<sp/>строка,</highlight></codeline>
+<codeline><highlight class="normal">состоящая<sp/>не<sp/>более,<sp/>чем<sp/>из<sp/>20<sp/>символов<sp/>без<sp/>пробелов,<sp/>&lt;Школа&gt;<sp/>–<sp/>целое<sp/>число<sp/>от<sp/>1<sp/>до<sp/>99,<sp/>&lt;Балл&gt;<sp/>–</highlight></codeline>
+<codeline><highlight class="normal">целое<sp/>число<sp/>от<sp/>1<sp/>до<sp/>100.</highlight></codeline>
+<codeline><highlight class="normal">Пример<sp/>входной<sp/>строки:</highlight></codeline>
+<codeline><highlight class="normal">Иванов<sp/>Сергей<sp/>50<sp/>87</highlight></codeline>
+<codeline><highlight class="normal">Пример<sp/>выходных<sp/>данных,<sp/>когда<sp/>найдено<sp/>три<sp/>школы:</highlight></codeline>
+<codeline><highlight class="normal">50<sp/>87<sp/>23</highlight></codeline>
+<codeline><highlight class="normal">Пример<sp/>вывода<sp/>в<sp/>том<sp/>случае,<sp/>когда<sp/>найдена<sp/>одна<sp/>школа:</highlight></codeline>
+<codeline><highlight class="normal">18</highlight></codeline>
+<codeline><highlight class="normal">Средний<sp/>балл<sp/>=<sp/>85</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Алгоритм<sp/>решения:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Тестирование:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>**Шаг<sp/>1:<sp/>Открытие<sp/>файла<sp/>и<sp/>чтение<sp/>первой<sp/>строки**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Открыть<sp/>файл<sp/>`students.txt`<sp/>для<sp/>чтения.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**Считать<sp/>первое<sp/>число<sp/>`N`**<sp/>из<sp/>файла<sp/>—<sp/>это<sp/>количество<sp/>записей<sp/>об<sp/>учениках.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Проверить,<sp/>что<sp/>`N<sp/>&gt;<sp/>0`<sp/>(по<sp/>условию,<sp/>не<sp/>менее<sp/>5<sp/>учеников).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>**Шаг<sp/>2:<sp/>Чтение<sp/>данных<sp/>учеников<sp/>(ровно<sp/>N<sp/>записей)**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Организовать<sp/>цикл,<sp/>который<sp/>выполнится<sp/>ровно<sp/>**`N`**<sp/>раз.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>На<sp/>каждой<sp/>итерации<sp/>цикла:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Считать<sp/>данные<sp/>в<sp/>формате:<sp/>`&lt;Фамилия&gt;<sp/>&lt;Имя&gt;<sp/>&lt;Школа&gt;<sp/>&lt;Балл&gt;`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Создать<sp/>объект<sp/>`Student`<sp/>и<sp/>сохранить<sp/>его<sp/>в<sp/>общий<sp/>список.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>**Обновить<sp/>статистику<sp/>по<sp/>школе**<sp/>в<sp/>словаре<sp/>`schoolData`:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>Если<sp/>школа<sp/>с<sp/>таким<sp/>номером<sp/>уже<sp/>есть<sp/>в<sp/>словаре,<sp/>добавить<sp/>балл<sp/>к<sp/>ее<sp/>общей<sp/>сумме<sp/>и<sp/>увеличить<sp/>счетчик<sp/>учеников.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>Если<sp/>школы<sp/>нет<sp/>—<sp/>создать<sp/>новую<sp/>запись<sp/>`SchoolStats`,<sp/>инициализировать<sp/>ее<sp/>с<sp/>первым<sp/>баллом<sp/>и<sp/>счетчиком<sp/>`1`,<sp/>и<sp/>добавить<sp/>в<sp/>словарь.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>**Шаг<sp/>3:<sp/>Вычисление<sp/>среднего<sp/>балла<sp/>по<sp/>району**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Просуммировать<sp/>баллы<sp/>**всех**<sp/>учеников<sp/>из<sp/>общего<sp/>списка.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Разделить<sp/>на<sp/>общее<sp/>количество<sp/>учеников<sp/>(`N`).</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Получить<sp/>`districtAverage`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>**Шаг<sp/>4:<sp/>Анализ<sp/>и<sp/>вывод<sp/>результатов**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Для<sp/>каждого<sp/>номера<sp/>школы<sp/>от<sp/>1<sp/>до<sp/>99:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Если<sp/>школа<sp/>есть<sp/>в<sp/>словаре,<sp/>вычислить<sp/>ее<sp/>средний<sp/>балл.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Если<sp/>ее<sp/>средний<sp/>балл<sp/>**строго<sp/>больше**<sp/>`districtAverage`,<sp/>добавить<sp/>номер<sp/>школы<sp/>и<sp/>ее<sp/>балл<sp/>в<sp/>списки<sp/>`schoolsAboveAverage`<sp/>и<sp/>`schoolAverages`.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>В<sp/>зависимости<sp/>от<sp/>количества<sp/>найденных<sp/>школ:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>**0<sp/>школ:**<sp/>Вывести<sp/>сообщение.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>**1<sp/>школа:**<sp/>Вывести<sp/>номер<sp/>школы<sp/>на<sp/>одной<sp/>строке,<sp/>а<sp/>на<sp/>следующей<sp/>—<sp/>`Средний<sp/>балл<sp/>=<sp/>X`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>**&gt;1<sp/>школ:**<sp/>Вывести<sp/>номера<sp/>школ<sp/>в<sp/>одну<sp/>строку<sp/>через<sp/>пробел.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1766031642247](image/README/1766031642247.png)![1766031624912](image/README/1766031624912.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Задание<sp/>3.<sp/>Наследование</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Вариант<sp/>задания:<sp/>1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Описание:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Автомат.<sp/>Создайте<sp/>такой<sp/>подвид<sp/>сущности<sp/>Пистолет<sp/>из<sp/>задачи<sp/>3.5.1,<sp/>которая<sp/>будет<sp/>совпадать<sp/>с</highlight></codeline>
+<codeline><highlight class="normal">ней<sp/>во<sp/>всех<sp/>отношениях,<sp/>кроме<sp/>следующего:</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Имеет<sp/>скорострельность<sp/>(целое<sp/>число)<sp/>которое<sp/>обозначает<sp/>количество<sp/>выстрелов<sp/>в</highlight></codeline>
+<codeline><highlight class="normal">секунду,<sp/>поддерживаемое<sp/>данным<sp/>автоматом.<sp/>Скорострельность<sp/>всегда<sp/>положительное</highlight></codeline>
+<codeline><highlight class="normal">число.</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>При<sp/>вызове<sp/>Стрелять<sp/>количество<sp/>выстрелов<sp/>соответствует<sp/>скорострельности<sp/>(например,</highlight></codeline>
+<codeline><highlight class="normal">при<sp/>скорострельности<sp/>3<sp/>выводится<sp/>три<sp/>строки<sp/>с<sp/>текстом<sp/>выстрела).</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Умеет<sp/>Стрелять<sp/>N<sp/>секунд,<sp/>что<sp/>приводит<sp/>к<sp/>количеству<sp/>выстрелов<sp/>равному<sp/>N<sp/>умноженное</highlight></codeline>
+<codeline><highlight class="normal">на<sp/>скорострельность.</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>Инициализация<sp/>может<sp/>быть<sp/>выполнены<sp/>следующими<sp/>способами:</highlight></codeline>
+<codeline><highlight class="normal">a)<sp/>Без<sp/>параметров.<sp/>Скорострельность<sp/>30,<sp/>вместимость<sp/>30.</highlight></codeline>
+<codeline><highlight class="normal">b)<sp/>С<sp/>указанием<sp/>максимального<sp/>числа<sp/>патронов.<sp/>Скорострельность<sp/>будет<sp/>равна</highlight></codeline>
+<codeline><highlight class="normal">половине<sp/>обоймы</highlight></codeline>
+<codeline><highlight class="normal">c)<sp/>С<sp/>указанием<sp/>максимального<sp/>количества<sp/>патронов<sp/>в<sp/>обойме<sp/>и<sp/>скорострельности.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Алгоритм<sp/>решения:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>1:<sp/>Создание<sp/>базового<sp/>класса<sp/>Pistol</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Определяется<sp/>класс<sp/>`Pistol`,<sp/>представляющий<sp/>базовое<sp/>стрелковое<sp/>оружие.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Класс<sp/>содержит<sp/>основные<sp/>атрибуты:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`magazineCapacity`<sp/>-<sp/>вместимость<sp/>магазина<sp/>(максимальное<sp/>количество<sp/>патронов)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`bullets`<sp/>-<sp/>текущее<sp/>количество<sp/>патронов</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`model`<sp/>-<sp/>модель<sp/>пистолета</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Реализуются<sp/>основные<sp/>методы:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`Shoot()`<sp/>-<sp/>совершает<sp/>один<sp/>выстрел<sp/>(если<sp/>есть<sp/>патроны)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`ShootMultiple(times)`<sp/>-<sp/>совершает<sp/>указанное<sp/>количество<sp/>выстрелов</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`Reload()`<sp/>-<sp/>перезаряжает<sp/>оружие<sp/>(восполняет<sp/>количество<sp/>патронов)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`GetInfo()`<sp/>-<sp/>выводит<sp/>информацию<sp/>о<sp/>состоянии<sp/>оружия</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Определяются<sp/>конструкторы:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Конструктор<sp/>по<sp/>умолчанию<sp/>(без<sp/>параметров)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Конструктор<sp/>с<sp/>указанием<sp/>вместимости<sp/>магазина</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Конструктор<sp/>с<sp/>вместимостью<sp/>и<sp/>названием<sp/>модели</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>2:<sp/>Создание<sp/>производного<sp/>класса<sp/>AutomaticPistol</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>класс<sp/>`AutomaticPistol`,<sp/>который<sp/>наследуется<sp/>от<sp/>класса<sp/>`Pistol`.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Добавляется<sp/>новый<sp/>атрибут:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`fireRate`<sp/>-<sp/>скорострельность<sp/>(количество<sp/>выстрелов<sp/>в<sp/>секунду)</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Переопределяются<sp/>методы<sp/>базового<sp/>класса:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`Shoot()`<sp/>-<sp/>теперь<sp/>совершает<sp/>количество<sp/>выстрелов,<sp/>равное<sp/>скорострельности</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`GetInfo()`<sp/>-<sp/>добавляет<sp/>информацию<sp/>о<sp/>скорострельности</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Добавляются<sp/>новые<sp/>методы:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>`ShootSeconds(seconds)`<sp/>-<sp/>стреляет<sp/>в<sp/>течение<sp/>указанного<sp/>количества<sp/>секунд</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Реализуются<sp/>конструкторы<sp/>в<sp/>соответствии<sp/>с<sp/>условиями<sp/>задания:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Без<sp/>параметров<sp/>(скорострельность<sp/>30,<sp/>вместимость<sp/>30)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>С<sp/>указанием<sp/>максимального<sp/>числа<sp/>патронов<sp/>(скорострельность<sp/>=<sp/>половина<sp/>обоймы)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>С<sp/>указанием<sp/>вместимости<sp/>и<sp/>скорострельности</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>С<sp/>указанием<sp/>вместимости,<sp/>скорострельности<sp/>и<sp/>названия<sp/>модели</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>3:<sp/>Демонстрация<sp/>работы<sp/>класса<sp/>Pistol</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>объект<sp/>пистолета<sp/>с<sp/>помощью<sp/>конструктора<sp/>по<sp/>умолчанию.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Устанавливается<sp/>название<sp/>модели<sp/>пистолета.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Выводится<sp/>информация<sp/>о<sp/>пистолете.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Производится<sp/>один<sp/>выстрел.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Снова<sp/>выводится<sp/>информация<sp/>о<sp/>пистолете<sp/>(для<sp/>демонстрации<sp/>уменьшения<sp/>патронов).</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Производится<sp/>несколько<sp/>выстрелов<sp/>подряд.</highlight></codeline>
+<codeline><highlight class="normal">7.<sp/>Выполняется<sp/>перезарядка<sp/>пистолета.</highlight></codeline>
+<codeline><highlight class="normal">8.<sp/>Снова<sp/>выводится<sp/>информация<sp/>о<sp/>пистолете<sp/>(для<sp/>демонстрации<sp/>восстановления<sp/>патронов).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>4:<sp/>Демонстрация<sp/>работы<sp/>класса<sp/>AutomaticPistol</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Подшаг<sp/>4.1:<sp/>Конструктор<sp/>без<sp/>параметров</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>автомат<sp/>с<sp/>помощью<sp/>конструктора<sp/>без<sp/>параметров.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Выводится<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Производится<sp/>выстрел<sp/>(демонстрация<sp/>скорострельности).</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Выводится<sp/>обновленная<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Подшаг<sp/>4.2:<sp/>Конструктор<sp/>с<sp/>вместимостью</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>автомат<sp/>с<sp/>указанием<sp/>вместимости<sp/>60<sp/>патронов.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Устанавливается<sp/>название<sp/>модели.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Выводится<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Производится<sp/>выстрел.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Выводится<sp/>обновленная<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Подшаг<sp/>4.3:<sp/>Конструктор<sp/>с<sp/>вместимостью<sp/>и<sp/>скорострельностью</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>автомат<sp/>с<sp/>вместимостью<sp/>30<sp/>патронов<sp/>и<sp/>скорострельностью<sp/>10<sp/>выстрелов<sp/>в<sp/>секунду.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Устанавливается<sp/>название<sp/>модели.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Выводится<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Выполняется<sp/>перезарядка.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Производится<sp/>стрельба<sp/>в<sp/>течение<sp/>2<sp/>секунд.</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Выводится<sp/>информация<sp/>об<sp/>автомате<sp/>после<sp/>стрельбы.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Подшаг<sp/>4.4:<sp/>Дополнительный<sp/>конструктор</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>автомат<sp/>с<sp/>вместимостью<sp/>100<sp/>патронов,<sp/>скорострельностью<sp/>25<sp/>выстрелов<sp/>в<sp/>секунду<sp/>и<sp/>названием<sp/>модели.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Выводится<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Производится<sp/>стрельба<sp/>в<sp/>течение<sp/>1<sp/>секунды.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Выводится<sp/>обновленная<sp/>информация<sp/>об<sp/>автомате.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Шаг<sp/>5:<sp/>Полиморфизм</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создается<sp/>массив<sp/>указателей<sp/>на<sp/>базовый<sp/>класс<sp/>`Pistol`.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>В<sp/>массив<sp/>помещаются<sp/>объекты<sp/>разных<sp/>типов:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Указатель<sp/>на<sp/>объект<sp/>класса<sp/>`Pistol`</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Указатель<sp/>на<sp/>объект<sp/>класса<sp/>`AutomaticPistol`<sp/>(два<sp/>разных<sp/>объекта)</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Для<sp/>каждого<sp/>объекта<sp/>в<sp/>массиве:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Выводится<sp/>информация<sp/>о<sp/>типе<sp/>оружия</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Вызывается<sp/>метод<sp/>`GetInfo()`<sp/>(полиморфно,<sp/>в<sp/>зависимости<sp/>от<sp/>типа<sp/>объекта)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Вызывается<sp/>метод<sp/>`Shoot()`<sp/>(полиморфно)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>Снова<sp/>вызывается<sp/>метод<sp/>`GetInfo()`<sp/>для<sp/>демонстрации<sp/>изменений</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Освобождается<sp/>память,<sp/>выделенная<sp/>для<sp/>объектов.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Тестирование:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1766014026641](image/README/1766014026641.png)![1766014050540](image/README/1766014050540.png)![1766014075636](image/README/1766014075636.png)![1766014260545](image/README/1766014260545.png)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,3 @@
-// UnorderedList.hpp, ЧЕИ
-// Description: lab6, var6
 #ifndef UNORDEREDLIST_HPP
 #define UNORDEREDLIST_HPP
 
@@ -8,44 +6,133 @@
 #include <algorithm>
 #include <string>
 
-/**
- * @class UnorderedList
- * @brief Шаблонный класс для реализации неупорядоченного списка с уникальными элементами
- * 
- * @tparam T Тип элементов списка
- * 
- * Класс реализует функционал неупорядоченного списка, который может содержать
- * только уникальные элементы. Обращение к элементам по индексу не предусмотрено.
- */
+/// <summary>
+/// Шаблонный класс для реализации неупорядоченного списка с уникальными элементами.
+/// </summary>
+/// <typeparam name="T">Тип элементов списка.</typeparam>
+/// <remarks>
+/// Класс реализует функционал неупорядоченного списка, который может содержать
+/// только уникальные элементы. Обращение к элементам по индексу не предусмотрено.
+/// </remarks>
 template<typename T>
 class UnorderedList {
 public:
+    /// <summary>
+    /// Инициализирует новый экземпляр класса <see cref="UnorderedList{T}"/> с начальной емкостью 10.
+    /// </summary>
     UnorderedList();
+    
+    /// <summary>
+    /// Инициализирует новый экземпляр класса <see cref="UnorderedList{T}"/> с заданной емкостью.
+    /// </summary>
+    /// <param name="capacity">Начальная емкость списка.</param>
+    /// <exception cref="std::invalid_argument">Вызывается, если capacity <= 0.</exception>
     UnorderedList(int capacity);
+    
+    /// <summary>
+    /// Инициализирует новый экземпляр класса <see cref="UnorderedList{T}"/>, который является копией указанного списка.
+    /// </summary>
+    /// <param name="list">Список для копирования.</param>
     UnorderedList(const UnorderedList& list);
+    
+    /// <summary>
+    /// Освобождает все ресурсы, используемые классом <see cref="UnorderedList{T}"/>.
+    /// </summary>
     ~UnorderedList();
 
+    /// <summary>
+    /// Присваивает текущему списку значения другого списка.
+    /// </summary>
+    /// <param name="other">Список для присваивания.</param>
+    /// <returns>Ссылка на текущий объект.</returns>
     UnorderedList<T>& operator=(const UnorderedList<T>& other);
 
+    /// <summary>
+    /// Добавляет элемент в список.
+    /// </summary>
+    /// <param name="item">Элемент для добавления.</param>
+    /// <remarks>
+    /// Если элемент уже существует в списке, он не добавляется.
+    /// </remarks>
     void Add(const T& item);
+    
+    /// <summary>
+    /// Удаляет элемент из списка.
+    /// </summary>
+    /// <param name="item">Элемент для удаления.</param>
+    /// <returns>true, если элемент был найден и удален; в противном случае — false.</returns>
     bool Remove(const T& item);
+    
+    /// <summary>
+    /// Проверяет наличие элемента в списке.
+    /// </summary>
+    /// <param name="item">Элемент для проверки.</param>
+    /// <returns>true, если элемент существует в списке; в противном случае — false.</returns>
     bool Contains(const T& item) const;
 
+    /// <summary>
+    /// Объединяет два списка.
+    /// </summary>
+    /// <param name="list">Список для объединения.</param>
+    /// <returns>Новый список-результат объединения.</returns>
+    /// <remarks>
+    /// Создает новый список, содержащий все уникальные элементы из текущего
+    /// списка и списка-аргумента.
+    /// </remarks>
     UnorderedList<T> Union(const UnorderedList<T>& list) const;
+    
+    /// <summary>
+    /// Вычитает элементы другого списка из текущего.
+    /// </summary>
+    /// <param name="list">Список для вычитания.</param>
+    /// <returns>Новый список-результат вычитания.</returns>
+    /// <remarks>
+    /// Создает новый список, содержащий элементы текущего списка,
+    /// которых нет в списке-аргументе.
+    /// </remarks>
     UnorderedList<T> Except(const UnorderedList<T>& list) const;
+    
+    /// <summary>
+    /// Находит пересечение двух списков.
+    /// </summary>
+    /// <param name="list">Список для нахождения пересечения.</param>
+    /// <returns>Новый список-результат пересечения.</returns>
+    /// <remarks>
+    /// Создает новый список, содержащий элементы, которые есть
+    /// и в текущем списке, и в списке-аргументе.
+    /// </remarks>
     UnorderedList<T> Intersect(const UnorderedList<T>& list) const;
 
+    /// <summary>
+    /// Возвращает количество элементов в списке.
+    /// </summary>
+    /// <returns>Количество элементов.</returns>
     int count() const { return count_; };
+    
+    /// <summary>
+    /// Возвращает текущую емкость списка.
+    /// </summary>
+    /// <returns>Емкость списка.</returns>
     int capacity() const { return capacity_; };
 
+    /// <summary>
+    /// Выводит содержимое списка в стандартный вывод.
+    /// </summary>
     void Print() const;
+    
 private:
     T* items_;
     int count_;
     int capacity_;
 
+    /// <summary>
+    /// Увеличивает емкость массива при необходимости.
+    /// </summary>
+    /// <remarks>
+    /// Удваивает емкость массива, если текущее количество элементов
+    /// достигло предельной емкости.
+    /// </remarks>
     void AddCapacity();
-
 };
 
 template<typename T>

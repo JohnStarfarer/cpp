@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structMeloman" kind="struct" language="C++" prot="public">
+    <compoundname>Meloman</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMeloman_1a520de688533ecfe203be190c93888ce8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Meloman::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Meloman::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="18" column="17" bodyfile="main.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMeloman_1a1600f7551cd79ea925d1eee643ef92c9" prot="public" static="no" mutable="no">
+        <type><ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedList&lt;std::string&gt; Meloman::likedMusic</definition>
+        <argsstring></argsstring>
+        <name>likedMusic</name>
+        <qualifiedname>Meloman::likedMusic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="19" column="19" bodyfile="main.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Структура, представляющая меломана и его музыкальные предпочтения. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Meloman</label>
+        <link refid="structMeloman"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>likedMusic</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnorderedList&lt; std::string &gt;</label>
+        <link refid="classUnorderedList"/>
+      </node>
+    </collaborationgraph>
+    <location file="main.cpp" line="17" column="1" bodyfile="main.cpp" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structMeloman_1a1600f7551cd79ea925d1eee643ef92c9" prot="public" virt="non-virtual"><scope>Meloman</scope><name>likedMusic</name></member>
+      <member refid="structMeloman_1a520de688533ecfe203be190c93888ce8" prot="public" virt="non-virtual"><scope>Meloman</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

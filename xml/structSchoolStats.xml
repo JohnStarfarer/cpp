@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structSchoolStats" kind="struct" language="C++" prot="public">
+    <compoundname>SchoolStats</compoundname>
+    <includes refid="Dictionary_8hpp" local="no">Dictionary.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSchoolStats_1a37325cbd6cc624dc8792b69a877ab6ac" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SchoolStats::totalScore</definition>
+        <argsstring></argsstring>
+        <name>totalScore</name>
+        <qualifiedname>SchoolStats::totalScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="367" column="12" bodyfile="Dictionary.hpp" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSchoolStats_1a2b5c08a6d3dc903602c445dcd460f725" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SchoolStats::studentCount</definition>
+        <argsstring></argsstring>
+        <name>studentCount</name>
+        <qualifiedname>SchoolStats::studentCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="368" column="9" bodyfile="Dictionary.hpp" bodystart="368" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structSchoolStats_1a57032355c9b8d7549dc7515e33e7d73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SchoolStats::SchoolStats</definition>
+        <argsstring>()</argsstring>
+        <name>SchoolStats</name>
+        <qualifiedname>SchoolStats::SchoolStats</qualifiedname>
+        <briefdescription>
+<para>Инициализирует новый экземпляр структуры <ref refid="structSchoolStats" kindref="compound">SchoolStats</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="373" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structSchoolStats_1adc6d8f03abcd4be057110970023fcb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SchoolStats::addScore</definition>
+        <argsstring>(double score)</argsstring>
+        <name>addScore</name>
+        <qualifiedname>SchoolStats::addScore</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет балл ученика в статистику. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Балл ученика.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="379" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structSchoolStats_1a2702169db9384bb810c37d97eed04913" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SchoolStats::averageScore</definition>
+        <argsstring>() const</argsstring>
+        <name>averageScore</name>
+        <qualifiedname>SchoolStats::averageScore</qualifiedname>
+        <briefdescription>
+<para>Вычисляет средний балл школы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Средний балл или 0, если нет учеников.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="385" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Структура для хранения статистики школы. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Dictionary.hpp" line="366" column="1" bodyfile="Dictionary.hpp" bodystart="366" bodyend="386"/>
+    <listofallmembers>
+      <member refid="structSchoolStats_1adc6d8f03abcd4be057110970023fcb17" prot="public" virt="non-virtual"><scope>SchoolStats</scope><name>addScore</name></member>
+      <member refid="structSchoolStats_1a2702169db9384bb810c37d97eed04913" prot="public" virt="non-virtual"><scope>SchoolStats</scope><name>averageScore</name></member>
+      <member refid="structSchoolStats_1a57032355c9b8d7549dc7515e33e7d73d" prot="public" virt="non-virtual"><scope>SchoolStats</scope><name>SchoolStats</name></member>
+      <member refid="structSchoolStats_1a2b5c08a6d3dc903602c445dcd460f725" prot="public" virt="non-virtual"><scope>SchoolStats</scope><name>studentCount</name></member>
+      <member refid="structSchoolStats_1a37325cbd6cc624dc8792b69a877ab6ac" prot="public" virt="non-virtual"><scope>SchoolStats</scope><name>totalScore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

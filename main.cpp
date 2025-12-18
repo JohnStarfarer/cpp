@@ -11,20 +11,23 @@
 #include <iomanip>
 #include <locale>
 
-/**
- * @brief Структура меломана и его музыкальные предпочтения
- */
+/// <summary>
+/// Структура, представляющая меломана и его музыкальные предпочтения.
+/// </summary>
 struct Meloman {
     std::string name;
     UnorderedList<std::string> likedMusic;
 };
 
-/**
- * @brief Функция для выполнения задания 1 (HashSet)
- */
+/// <summary>
+/// Функция для выполнения задания 1 (HashSet).
+/// </summary>
+/// <remarks>
+/// Задача: Определить для каждого музыкального произведения, какие из них
+/// нравятся всем n меломанам, какие — некоторым из меломанов, и какие — никому из меломанов.
+/// </remarks>
 void task1() {
     try {
-        // все музыкальные произведения
         UnorderedList<std::string> allMusic;
         allMusic.Add("LudoWic - Chemical Brew");
         allMusic.Add("Invader 303 - Greate Escape");
@@ -38,7 +41,6 @@ void task1() {
         allMusic.Print();
         std::cout << std::endl;
 
-        // создаем меломанов и их предпочтения
         const int meloN = 4;
         Meloman melomans[meloN];
 
@@ -61,29 +63,23 @@ void task1() {
         melomans[3].likedMusic.Add("The Toxic Avenger - Road Rage");
         melomans[3].likedMusic.Add("Xtrullor - Precinct");
 
-        // выводим предпочтения каждого
         for (int i = 0; i < meloN; i++) {
             std::cout << melomans[i].name << " нравятся: ";
             melomans[i].likedMusic.Print();
         }
         std::cout << std::endl;
 
-        // произведения, которые нравятся хотя бы одному
         UnorderedList<std::string> atLeastOneLiked;
         for (int i = 0; i < meloN; i++) {
             atLeastOneLiked = atLeastOneLiked.Union(melomans[i].likedMusic);
         }
 
-        // произведения, которые нравятся всем
         UnorderedList<std::string> allLiked = melomans[0].likedMusic;
         for (int i = 1; i < meloN; i++) {
             allLiked = allLiked.Intersect(melomans[i].likedMusic);
         }
 
-        // произведения, которые не нравятся никому
         UnorderedList<std::string> noneLiked = allMusic.Except(atLeastOneLiked);
-        
-        // произведения, которые нравятся некоторым
         UnorderedList<std::string> someLiked = atLeastOneLiked.Except(allLiked);
 
         std::cout << "\n1. Произведения, которые нравятся ВСЕМ " << meloN << " меломанам:\n";
@@ -112,66 +108,78 @@ void task1() {
     }
 }
 
-/**
- * @brief Функция для выполнения задания 2 (Dictionary)
- */
+/// <summary>
+/// Функция для выполнения задания 2 (Dictionary).
+/// </summary>
+/// <remarks>
+/// Задача: Определить номера школ, в которых средний балл выше, чем средний по району.
+/// Формат входного файла: первая строка - количество учеников N,
+/// затем N строк в формате <Фамилия> <Имя> <Школа> <Балл>.
+/// </remarks>
 void task2() {
     try {
         std::string filename = "students.txt";
         std::ifstream file(filename);
         
+        if (!file.is_open()) {
+            throw std::runtime_error("Не удалось открыть файл " + filename);
+        }
+        
         Dictionary<int, SchoolStats> schoolData;
         std::vector<Student> students;
-        std::string line;
         
-        // чтение данных
+        int totalStudents = 0;
+        file >> totalStudents;
+        
+        if (totalStudents <= 0) {
+            throw std::runtime_error("Количество учеников должно быть положительным числом");
+        }
+        
         std::string lastName, firstName;
         int schoolNumber, score;
+        
+        for (int i = 0; i < totalStudents; i++) {
+            if (!(file >> lastName >> firstName >> schoolNumber >> score)) {
+                throw std::runtime_error("Ошибка чтения данных ученика " + std::to_string(i + 1));
+            }
             
-        while (file >> lastName >> firstName >> schoolNumber >> score) {
+            if (schoolNumber < 1 || schoolNumber > 99) {
+                throw std::runtime_error("Некорректный номер школы: " + std::to_string(schoolNumber));
+            }
+            if (score < 1 || score > 100) {
+                throw std::runtime_error("Некорректный балл: " + std::to_string(score));
+            }
+            
             Student student(lastName, firstName, schoolNumber, score);
             students.push_back(student);
             
-            // если уже есть такая школа в словаре, то прибавляем балл к общей сумме статистики этой школы
             if (schoolData.ContainsKey(schoolNumber)) {
                 SchoolStats* stats = schoolData.Get(schoolNumber);
                 stats->addScore(score);
-            // иначе, создаем новую структуру этой школы, добавляем балл и добавляем эту школу в словарь
             } else {
                 SchoolStats stats;
                 stats.addScore(score);
                 schoolData.Add(schoolNumber, stats);
             }
         }
+        
         file.close();
         
-        // вычисляем общий средний балл по району
         double totalScore = 0;
-        int totalStudents = 0;
-        
-        for (int i = 0; i < students.size(); i++) {
-            totalScore += students[i].score;
-            totalStudents++;
+        for (const auto& student : students) {
+            totalScore += student.score;
         }
         
-        // средний балл
-        double districtAverage;
-        if (totalStudents > 0) {
-            districtAverage = (double)totalScore / totalStudents;
-        } else {
-            districtAverage = 0;
-        }
-
+        double districtAverage = totalScore / totalStudents;
+        
         std::cout << "Всего учеников: " << totalStudents << std::endl;
         std::cout << "Средний балл по району: " << std::fixed << std::setprecision(2) 
                   << districtAverage << std::endl;
         std::cout << "\nСтатистика по школам:\n";
         
-        // школы с баллом выше среднего по району
         std::vector<int> schoolsAboveAverage;
         std::vector<double> schoolAverages;
         
-        // проходимся по всем школам в словаре
         for (int i = 1; i <= 99; i++) {
             if (schoolData.ContainsKey(i)) {
                 SchoolStats* stats = schoolData.Get(i);
@@ -188,6 +196,7 @@ void task2() {
             }
         }
         
+        std::cout << "\nРезультат:\n";
         if (schoolsAboveAverage.empty()) {
             std::cout << "Нет школ со средним баллом выше среднего по району.\n";
         } else if (schoolsAboveAverage.size() == 1) {
@@ -205,13 +214,16 @@ void task2() {
         }
         
     } catch (const std::exception& e) {
-        std::cerr << "Ошибка: " << e.what() << std::endl;
+        std::cerr << "Ошибка в задании 2: " << e.what() << std::endl;
     }
 }
 
-/**
- * @brief Функция для выполнения задания 3 (Наследование)
- */
+/// <summary>
+/// Функция для выполнения задания 3 (Наследование).
+/// </summary>
+/// <remarks>
+/// Демонстрация работы классов Pistol и AutomaticPistol.
+/// </remarks>
 void task3() {
     std::cout << "\nКЛАСС PISTOL ==================\\n";
     
@@ -276,11 +288,13 @@ void task3() {
     }
 }
 
-/**
- * @brief Меню выбора задания и вызов функций.
- * 
- * @return int Код завершения программы (0 - успешно)
- */
+/// <summary>
+/// Главная функция программы.
+/// </summary>
+/// <remarks>
+/// Предоставляет пользователю меню для выбора задания.
+/// </remarks>
+/// <returns>Код завершения программы (0 - успешно).</returns>
 int main() {
     setlocale(LC_ALL, "RU");
 
@@ -291,7 +305,6 @@ int main() {
         int action = 0;
         std::cout << "\nВыберите задание 1, 2, 3 (или -1 для выхода):\n > ";
         
-        // проверка на корректность выбора задания
         if (!(std::cin >> action)) {
             std::cin.clear();
             std::cin.ignore(10000, '\n');

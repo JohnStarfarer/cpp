@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classMyClass" kind="class" language="C++" prot="public">
+    <compoundname>MyClass</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyClass_1a8161c7c4af67086edbf1e3cae4b1acc0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyClass::m_i</definition>
+        <argsstring></argsstring>
+        <name>m_i</name>
+        <qualifiedname>MyClass::m_i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml_c_tag.cpp" line="7" column="9" bodyfile="xml_c_tag.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyClass_1a8c56a953295afdced0c95908bf2663da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyClass::MyClass</definition>
+        <argsstring>()</argsstring>
+        <name>MyClass</name>
+        <qualifiedname>MyClass::MyClass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml_c_tag.cpp" line="8" column="5" bodyfile="xml_c_tag.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyClass_1ac72401ad03a2cbcf937ae50b2801e532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyClass::MyMethod</definition>
+        <argsstring>(MyClass *a)</argsstring>
+        <name>MyMethod</name>
+        <qualifiedname>MyClass::MyMethod</qualifiedname>
+        <param>
+          <type><ref refid="classMyClass" kindref="compound">MyClass</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para><computeroutput>MyMethod</computeroutput> is a method in the <computeroutput><ref refid="classMyClass" kindref="compound">MyClass</ref></computeroutput> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml_c_tag.cpp" line="11" column="9" bodyfile="xml_c_tag.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Text for class <ref refid="classMyClass" kindref="compound">MyClass</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="xml_c_tag.cpp" line="5" column="1" bodyfile="xml_c_tag.cpp" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classMyClass_1a8161c7c4af67086edbf1e3cae4b1acc0" prot="public" virt="non-virtual"><scope>MyClass</scope><name>m_i</name></member>
+      <member refid="classMyClass_1a8c56a953295afdced0c95908bf2663da" prot="public" virt="non-virtual"><scope>MyClass</scope><name>MyClass</name></member>
+      <member refid="classMyClass_1ac72401ad03a2cbcf937ae50b2801e532" prot="public" virt="non-virtual"><scope>MyClass</scope><name>MyMethod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

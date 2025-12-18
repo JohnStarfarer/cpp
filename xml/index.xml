@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="classAutomaticPistol" kind="class"><name>AutomaticPistol</name>
+    <member refid="classAutomaticPistol_1a4af7a677d78d7e6b3e9a0504dc0c2d4b" kind="variable"><name>fireRate</name></member>
+    <member refid="classAutomaticPistol_1a73284de8899c50d6ef8ba6ade15f1dfb" kind="function"><name>AutomaticPistol</name></member>
+    <member refid="classAutomaticPistol_1aa9f9049447e5b692d1c8a3554fbcb7b5" kind="function"><name>AutomaticPistol</name></member>
+    <member refid="classAutomaticPistol_1ac83331ac84e3327236508a7bde3ac903" kind="function"><name>AutomaticPistol</name></member>
+    <member refid="classAutomaticPistol_1a271284342d2ace98d231453c0ccfea5d" kind="function"><name>AutomaticPistol</name></member>
+    <member refid="classAutomaticPistol_1a707f7d694f70d519cd8f1e1940a8d9ea" kind="function"><name>Shoot</name></member>
+    <member refid="classAutomaticPistol_1a5fb1cb31123cbc82afaf4cfbc6da06c8" kind="function"><name>ShootSeconds</name></member>
+    <member refid="classAutomaticPistol_1abdac598583e0e648141bafc96cbc93c4" kind="function"><name>GetInfo</name></member>
+    <member refid="classAutomaticPistol_1a85448d36c2bd1723c0d3a17c539295c6" kind="function"><name>getFireRate</name></member>
+    <member refid="classAutomaticPistol_1aa46e56454616f46b2e757bd0cff12b52" kind="function"><name>setFireRate</name></member>
+  </compound>
+  <compound refid="classDictionary" kind="class"><name>Dictionary</name>
+    <member refid="classDictionary_1aecc34c1528288f2f0de0f7c75f20ed55" kind="variable"><name>table</name></member>
+    <member refid="classDictionary_1a979c2753137a3303eb8f4ae42ce9e71b" kind="variable"><name>capacity_</name></member>
+    <member refid="classDictionary_1ad7e437eb99dce7eb9b1a450a4e269e78" kind="variable"><name>size_</name></member>
+    <member refid="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" kind="function"><name>Dictionary</name></member>
+    <member refid="classDictionary_1ae9d3998ef708fb04cc580a6270953457" kind="function"><name>Dictionary</name></member>
+    <member refid="classDictionary_1a459696bcf79b173cdc1f7aa97468f83a" kind="function"><name>~Dictionary</name></member>
+    <member refid="classDictionary_1a07c872c65cd23c7a05ef9ca4b20e23a7" kind="function"><name>operator=</name></member>
+    <member refid="classDictionary_1accdd77e50576305e2ee8455422b577d7" kind="function"><name>Add</name></member>
+    <member refid="classDictionary_1a2f31f10c0048aac7b72bd7e60259b655" kind="function"><name>Remove</name></member>
+    <member refid="classDictionary_1a0216ca5025492c4b9a732dd0f9ef5e00" kind="function"><name>ContainsKey</name></member>
+    <member refid="classDictionary_1ae9d01d98a96036add042e07dffe087d0" kind="function"><name>Get</name></member>
+    <member refid="classDictionary_1a4e102e2f25359cd250f5ad67089a2bb7" kind="function"><name>Get</name></member>
+    <member refid="classDictionary_1a7bb0259db09865cc213283c9a99a873a" kind="function"><name>size</name></member>
+    <member refid="classDictionary_1aa4b0ed4a30abf7acbfcae0b0ec4cb3ef" kind="function"><name>empty</name></member>
+    <member refid="classDictionary_1a41a0d164e5142ff1b564f5df842985d5" kind="function"><name>clear</name></member>
+    <member refid="classDictionary_1a18bce1236fb60754ce9b7ffedba09bfd" kind="function"><name>Print</name></member>
+    <member refid="classDictionary_1a91c7575127f435682074721ea35083da" kind="function"><name>hash</name></member>
+    <member refid="classDictionary_1aa15349b750ecf392e36b0b923e66d7b1" kind="function"><name>rehash</name></member>
+    <member refid="classDictionary_1a9bb3b2c8a398feb07ae4e1fdd2f24003" kind="function"><name>findPair</name></member>
+  </compound>
+  <compound refid="structDictionary_1_1KeyValuePair" kind="struct"><name>Dictionary::KeyValuePair</name>
+    <member refid="structDictionary_1_1KeyValuePair_1a9139c126fdf4a1b3bb773ebd10f0b1f6" kind="variable"><name>key</name></member>
+    <member refid="structDictionary_1_1KeyValuePair_1a691e2f7d281c6baf02809f7de13c7195" kind="variable"><name>value</name></member>
+    <member refid="structDictionary_1_1KeyValuePair_1adb242fb0fd7d0b312bd65d5250357b3f" kind="variable"><name>next</name></member>
+    <member refid="structDictionary_1_1KeyValuePair_1ae6a1bf659a026e9200abed38dbc35309" kind="function"><name>KeyValuePair</name></member>
+  </compound>
+  <compound refid="structMeloman" kind="struct"><name>Meloman</name>
+    <member refid="structMeloman_1a520de688533ecfe203be190c93888ce8" kind="variable"><name>name</name></member>
+    <member refid="structMeloman_1a1600f7551cd79ea925d1eee643ef92c9" kind="variable"><name>likedMusic</name></member>
+  </compound>
+  <compound refid="classMyClass" kind="class"><name>MyClass</name>
+    <member refid="classMyClass_1a8161c7c4af67086edbf1e3cae4b1acc0" kind="variable"><name>m_i</name></member>
+    <member refid="classMyClass_1a8c56a953295afdced0c95908bf2663da" kind="function"><name>MyClass</name></member>
+    <member refid="classMyClass_1ac72401ad03a2cbcf937ae50b2801e532" kind="function"><name>MyMethod</name></member>
+  </compound>
+  <compound refid="classPistol" kind="class"><name>Pistol</name>
+    <member refid="classPistol_1a4d23ff336f70de342f27061197e7a8ea" kind="variable"><name>magazineCapacity</name></member>
+    <member refid="classPistol_1a2e03981470790c3f78d797f33193a3d4" kind="variable"><name>bullets</name></member>
+    <member refid="classPistol_1a264466db788978de67eef20464e06440" kind="variable"><name>model</name></member>
+    <member refid="classPistol_1a0715c5243c875aeb8d8114954a463b47" kind="function"><name>Pistol</name></member>
+    <member refid="classPistol_1ae7d673c32addae20cc566bfe227add5b" kind="function"><name>Pistol</name></member>
+    <member refid="classPistol_1a7346674f6db5deaa018e6e417ba91cce" kind="function"><name>Pistol</name></member>
+    <member refid="classPistol_1a0d754f2a59a5fb26088b3126a1377403" kind="function"><name>~Pistol</name></member>
+    <member refid="classPistol_1a91030408457f2a0d8c708a0e0994dc8a" kind="function"><name>Shoot</name></member>
+    <member refid="classPistol_1aadc4367f03fce2c3d41f433f9757eb46" kind="function"><name>ShootMultiple</name></member>
+    <member refid="classPistol_1a154edf38944136414717f70a6e445344" kind="function"><name>Reload</name></member>
+    <member refid="classPistol_1a5158be7d3246add59af483c66f924f4e" kind="function"><name>GetInfo</name></member>
+    <member refid="classPistol_1ae726265e5ac115f8ec37d49e34be982a" kind="function"><name>getBullets</name></member>
+    <member refid="classPistol_1a5e2a2f450334d5dbc329b589c0430021" kind="function"><name>getCapacity</name></member>
+    <member refid="classPistol_1a73930ed6390c7e29cdfee1c200cdfbf2" kind="function"><name>getModel</name></member>
+    <member refid="classPistol_1afa42d785d3d116607a0cf337b1a225ad" kind="function"><name>setModel</name></member>
+  </compound>
+  <compound refid="structSchoolStats" kind="struct"><name>SchoolStats</name>
+    <member refid="structSchoolStats_1a37325cbd6cc624dc8792b69a877ab6ac" kind="variable"><name>totalScore</name></member>
+    <member refid="structSchoolStats_1a2b5c08a6d3dc903602c445dcd460f725" kind="variable"><name>studentCount</name></member>
+    <member refid="structSchoolStats_1a57032355c9b8d7549dc7515e33e7d73d" kind="function"><name>SchoolStats</name></member>
+    <member refid="structSchoolStats_1adc6d8f03abcd4be057110970023fcb17" kind="function"><name>addScore</name></member>
+    <member refid="structSchoolStats_1a2702169db9384bb810c37d97eed04913" kind="function"><name>averageScore</name></member>
+  </compound>
+  <compound refid="structStudent" kind="struct"><name>Student</name>
+    <member refid="structStudent_1a6e7991bf0505ba924cdd500e10b43fc2" kind="variable"><name>lastName</name></member>
+    <member refid="structStudent_1ad5e0ac0a8bd71e53ebb597debac0619b" kind="variable"><name>firstName</name></member>
+    <member refid="structStudent_1a6d5c8118384f5660dc85bd221751b930" kind="variable"><name>schoolNumber</name></member>
+    <member refid="structStudent_1a6fe2629a137232885ca1886b25ae6964" kind="variable"><name>score</name></member>
+    <member refid="structStudent_1af9168cedbfa5565cf0b20c1a9d3f5c9d" kind="function"><name>Student</name></member>
+    <member refid="structStudent_1a9ebe66eb8df5dc978d74321566a5d0e3" kind="function"><name>Student</name></member>
+  </compound>
+  <compound refid="classUnorderedList" kind="class"><name>UnorderedList</name>
+    <member refid="classUnorderedList_1a1743f2f89ec555a7c1144882fee0b55a" kind="variable"><name>items_</name></member>
+    <member refid="classUnorderedList_1a0f7bca4904320cfe445f81d167b2a5f6" kind="variable"><name>count_</name></member>
+    <member refid="classUnorderedList_1a16170366123d6bc4d079a58da1d19dcd" kind="variable"><name>capacity_</name></member>
+    <member refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" kind="function"><name>UnorderedList</name></member>
+    <member refid="classUnorderedList_1a81c96f2d6914baa0aea1c54dff06f3ec" kind="function"><name>UnorderedList</name></member>
+    <member refid="classUnorderedList_1a71b5bfa6169d98932c4f0b6f778b1628" kind="function"><name>UnorderedList</name></member>
+    <member refid="classUnorderedList_1af7c76f6364715da7bccaf720604e11a7" kind="function"><name>~UnorderedList</name></member>
+    <member refid="classUnorderedList_1aab655bae4aca489a8979f7ca9d7c4e75" kind="function"><name>operator=</name></member>
+    <member refid="classUnorderedList_1a05993ddebeb1712431d0e87a5244f1e7" kind="function"><name>Add</name></member>
+    <member refid="classUnorderedList_1adac82c13b43e98cd4629ea61801c8e35" kind="function"><name>Remove</name></member>
+    <member refid="classUnorderedList_1adf26211535de9241be47380cc958cb81" kind="function"><name>Contains</name></member>
+    <member refid="classUnorderedList_1a0379dc296336ece3225b51c257af2026" kind="function"><name>Union</name></member>
+    <member refid="classUnorderedList_1afea0fafe64064e1f8bb5837ef5cba51a" kind="function"><name>Except</name></member>
+    <member refid="classUnorderedList_1a5f9edef5a77b4a09b9e080e776eceeaa" kind="function"><name>Intersect</name></member>
+    <member refid="classUnorderedList_1a1f78c4705125f9e9308e750aeb7ba9f8" kind="function"><name>count</name></member>
+    <member refid="classUnorderedList_1a0fb631da23fe6bc8118c8352453e72e8" kind="function"><name>capacity</name></member>
+    <member refid="classUnorderedList_1acf6bf7da94ed9319c9c6f1d3654dd07c" kind="function"><name>Print</name></member>
+    <member refid="classUnorderedList_1ab13ec970ad70e44fd7be27f3cbc671fa" kind="function"><name>AddCapacity</name></member>
+  </compound>
+  <compound refid="Dictionary_8hpp" kind="file"><name>Dictionary.hpp</name>
+  </compound>
+  <compound refid="Guns_8hpp" kind="file"><name>Guns.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1afde07648040c326129670547738a0c86" kind="function"><name>task1</name></member>
+    <member refid="main_8cpp_1afb35a54f26606b4808ac0a8d9ad55433" kind="function"><name>task2</name></member>
+    <member refid="main_8cpp_1ace729e6ad571671db31c448c87b2331b" kind="function"><name>task3</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="UnorderedList_8hpp" kind="file"><name>UnorderedList.hpp</name>
+  </compound>
+  <compound refid="xml__c__tag_8cpp" kind="file"><name>xml_c_tag.cpp</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAutomaticPistol" kind="class" language="C++" prot="public">
+    <compoundname>AutomaticPistol</compoundname>
+    <basecompoundref refid="classPistol" prot="public" virt="non-virtual">Pistol</basecompoundref>
+    <includes refid="Guns_8hpp" local="no">Guns.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAutomaticPistol_1a4af7a677d78d7e6b3e9a0504dc0c2d4b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticPistol::fireRate</definition>
+        <argsstring></argsstring>
+        <name>fireRate</name>
+        <qualifiedname>AutomaticPistol::fireRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="178" column="9" bodyfile="Guns.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAutomaticPistol_1a73284de8899c50d6ef8ba6ade15f1dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutomaticPistol::AutomaticPistol</definition>
+        <argsstring>()</argsstring>
+        <name>AutomaticPistol</name>
+        <qualifiedname>AutomaticPistol::AutomaticPistol</qualifiedname>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref> с вместимостью 30 и скорострельностью 30. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="110" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1aa9f9049447e5b692d1c8a3554fbcb7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutomaticPistol::AutomaticPistol</definition>
+        <argsstring>(int maxBullets)</argsstring>
+        <name>AutomaticPistol</name>
+        <qualifiedname>AutomaticPistol::AutomaticPistol</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxBullets</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref> с указанной вместимостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxBullets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вместимость магазина.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Скорострельность устанавливается равной половине вместимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="119" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1ac83331ac84e3327236508a7bde3ac903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutomaticPistol::AutomaticPistol</definition>
+        <argsstring>(int capacity, int rate)</argsstring>
+        <name>AutomaticPistol</name>
+        <qualifiedname>AutomaticPistol::AutomaticPistol</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref> с указанной вместимостью и скорострельностью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вместимость магазина.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорострельность (выстрелов в секунду).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="126" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1a271284342d2ace98d231453c0ccfea5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutomaticPistol::AutomaticPistol</definition>
+        <argsstring>(int capacity, int rate, const std::string &amp;modelName)</argsstring>
+        <name>AutomaticPistol</name>
+        <qualifiedname>AutomaticPistol::AutomaticPistol</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelName</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classAutomaticPistol" kindref="compound">AutomaticPistol</ref> с указанными характеристиками. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вместимость магазина.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорострельность (выстрелов в секунду).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modelName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название модели.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="134" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1a707f7d694f70d519cd8f1e1940a8d9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AutomaticPistol::Shoot</definition>
+        <argsstring>() override</argsstring>
+        <name>Shoot</name>
+        <qualifiedname>AutomaticPistol::Shoot</qualifiedname>
+        <reimplements refid="classPistol_1a91030408457f2a0d8c708a0e0994dc8a">Shoot</reimplements>
+        <briefdescription>
+<para>Совершает выстрел с учетом скорострельности. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Совершает количество выстрелов, равное текущей скорострельности, но не более доступного количества патронов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1a5fb1cb31123cbc82afaf4cfbc6da06c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticPistol::ShootSeconds</definition>
+        <argsstring>(int seconds)</argsstring>
+        <name>ShootSeconds</name>
+        <qualifiedname>AutomaticPistol::ShootSeconds</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Стреляет в течение указанного времени. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Время стрельбы в секундах.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Совершает количество выстрелов, равное произведению времени на скорострельность. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1abdac598583e0e648141bafc96cbc93c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AutomaticPistol::GetInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetInfo</name>
+        <qualifiedname>AutomaticPistol::GetInfo</qualifiedname>
+        <reimplements refid="classPistol_1a5158be7d3246add59af483c66f924f4e">GetInfo</reimplements>
+        <briefdescription>
+<para>Выводит информацию об автомате. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Добавляет информацию о скорострельности. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="160" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1a85448d36c2bd1723c0d3a17c539295c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AutomaticPistol::getFireRate</definition>
+        <argsstring>() const</argsstring>
+        <name>getFireRate</name>
+        <qualifiedname>AutomaticPistol::getFireRate</qualifiedname>
+        <briefdescription>
+<para>Возвращает текущую скорострельность. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Скорострельность (выстрелов в секунду).</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="166" column="9" bodyfile="Guns.hpp" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutomaticPistol_1aa46e56454616f46b2e757bd0cff12b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticPistol::setFireRate</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>setFireRate</name>
+        <qualifiedname>AutomaticPistol::setFireRate</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает скорострельность. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая скорострельность.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Скорострельность должна быть положительной. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="175" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Производный класс, представляющий автомат. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Наследуется от класса <ref refid="classPistol" kindref="compound">Pistol</ref>. Добавляет функционал скорострельности и возможность стрельбы в течение нескольких секунд. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AutomaticPistol</label>
+        <link refid="classAutomaticPistol"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pistol</label>
+        <link refid="classPistol"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AutomaticPistol</label>
+        <link refid="classAutomaticPistol"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Pistol</label>
+        <link refid="classPistol"/>
+      </node>
+    </collaborationgraph>
+    <location file="Guns.hpp" line="105" column="1" bodyfile="Guns.hpp" bodystart="105" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classAutomaticPistol_1a73284de8899c50d6ef8ba6ade15f1dfb" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>AutomaticPistol</name></member>
+      <member refid="classAutomaticPistol_1aa9f9049447e5b692d1c8a3554fbcb7b5" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>AutomaticPistol</name></member>
+      <member refid="classAutomaticPistol_1ac83331ac84e3327236508a7bde3ac903" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>AutomaticPistol</name></member>
+      <member refid="classAutomaticPistol_1a271284342d2ace98d231453c0ccfea5d" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>AutomaticPistol</name></member>
+      <member refid="classPistol_1a2e03981470790c3f78d797f33193a3d4" prot="protected" virt="non-virtual"><scope>AutomaticPistol</scope><name>bullets</name></member>
+      <member refid="classAutomaticPistol_1a4af7a677d78d7e6b3e9a0504dc0c2d4b" prot="private" virt="non-virtual"><scope>AutomaticPistol</scope><name>fireRate</name></member>
+      <member refid="classPistol_1ae726265e5ac115f8ec37d49e34be982a" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>getBullets</name></member>
+      <member refid="classPistol_1a5e2a2f450334d5dbc329b589c0430021" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>getCapacity</name></member>
+      <member refid="classAutomaticPistol_1a85448d36c2bd1723c0d3a17c539295c6" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>getFireRate</name></member>
+      <member refid="classAutomaticPistol_1abdac598583e0e648141bafc96cbc93c4" prot="public" virt="virtual"><scope>AutomaticPistol</scope><name>GetInfo</name></member>
+      <member refid="classPistol_1a73930ed6390c7e29cdfee1c200cdfbf2" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>getModel</name></member>
+      <member refid="classPistol_1a4d23ff336f70de342f27061197e7a8ea" prot="protected" virt="non-virtual"><scope>AutomaticPistol</scope><name>magazineCapacity</name></member>
+      <member refid="classPistol_1a264466db788978de67eef20464e06440" prot="protected" virt="non-virtual"><scope>AutomaticPistol</scope><name>model</name></member>
+      <member refid="classPistol_1a0715c5243c875aeb8d8114954a463b47" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1ae7d673c32addae20cc566bfe227add5b" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1a7346674f6db5deaa018e6e417ba91cce" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1a154edf38944136414717f70a6e445344" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>Reload</name></member>
+      <member refid="classAutomaticPistol_1aa46e56454616f46b2e757bd0cff12b52" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>setFireRate</name></member>
+      <member refid="classPistol_1afa42d785d3d116607a0cf337b1a225ad" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>setModel</name></member>
+      <member refid="classAutomaticPistol_1a707f7d694f70d519cd8f1e1940a8d9ea" prot="public" virt="virtual"><scope>AutomaticPistol</scope><name>Shoot</name></member>
+      <member refid="classPistol_1aadc4367f03fce2c3d41f433f9757eb46" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>ShootMultiple</name></member>
+      <member refid="classAutomaticPistol_1a5fb1cb31123cbc82afaf4cfbc6da06c8" prot="public" virt="non-virtual"><scope>AutomaticPistol</scope><name>ShootSeconds</name></member>
+      <member refid="classPistol_1a0d754f2a59a5fb26088b3126a1377403" prot="public" virt="virtual"><scope>AutomaticPistol</scope><name>~Pistol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

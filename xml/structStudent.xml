@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structStudent" kind="struct" language="C++" prot="public">
+    <compoundname>Student</compoundname>
+    <includes refid="Dictionary_8hpp" local="no">Dictionary.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStudent_1a6e7991bf0505ba924cdd500e10b43fc2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Student::lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <qualifiedname>Student::lastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="343" column="17" bodyfile="Dictionary.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStudent_1ad5e0ac0a8bd71e53ebb597debac0619b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Student::firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <qualifiedname>Student::firstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="344" column="17" bodyfile="Dictionary.hpp" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStudent_1a6d5c8118384f5660dc85bd221751b930" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Student::schoolNumber</definition>
+        <argsstring></argsstring>
+        <name>schoolNumber</name>
+        <qualifiedname>Student::schoolNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="345" column="9" bodyfile="Dictionary.hpp" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStudent_1a6fe2629a137232885ca1886b25ae6964" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Student::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>Student::score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="346" column="9" bodyfile="Dictionary.hpp" bodystart="346" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structStudent_1af9168cedbfa5565cf0b20c1a9d3f5c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Student::Student</definition>
+        <argsstring>()</argsstring>
+        <name>Student</name>
+        <qualifiedname>Student::Student</qualifiedname>
+        <briefdescription>
+<para>Инициализирует новый экземпляр структуры <ref refid="structStudent" kindref="compound">Student</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="351" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structStudent_1a9ebe66eb8df5dc978d74321566a5d0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Student::Student</definition>
+        <argsstring>(const std::string &amp;ln, const std::string &amp;fn, int sn, int s)</argsstring>
+        <name>Student</name>
+        <qualifiedname>Student::Student</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ln</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр структуры <ref refid="structStudent" kindref="compound">Student</ref> с указанными значениями. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ln</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Фамилия.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер школы.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Балл.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="360" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Структура для хранения информации об ученике. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Dictionary.hpp" line="342" column="1" bodyfile="Dictionary.hpp" bodystart="342" bodyend="361"/>
+    <listofallmembers>
+      <member refid="structStudent_1ad5e0ac0a8bd71e53ebb597debac0619b" prot="public" virt="non-virtual"><scope>Student</scope><name>firstName</name></member>
+      <member refid="structStudent_1a6e7991bf0505ba924cdd500e10b43fc2" prot="public" virt="non-virtual"><scope>Student</scope><name>lastName</name></member>
+      <member refid="structStudent_1a6d5c8118384f5660dc85bd221751b930" prot="public" virt="non-virtual"><scope>Student</scope><name>schoolNumber</name></member>
+      <member refid="structStudent_1a6fe2629a137232885ca1886b25ae6964" prot="public" virt="non-virtual"><scope>Student</scope><name>score</name></member>
+      <member refid="structStudent_1af9168cedbfa5565cf0b20c1a9d3f5c9d" prot="public" virt="non-virtual"><scope>Student</scope><name>Student</name></member>
+      <member refid="structStudent_1a9ebe66eb8df5dc978d74321566a5d0e3" prot="public" virt="non-virtual"><scope>Student</scope><name>Student</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

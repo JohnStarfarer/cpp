@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classPistol" kind="class" language="C++" prot="public">
+    <compoundname>Pistol</compoundname>
+    <derivedcompoundref refid="classAutomaticPistol" prot="public" virt="non-virtual">AutomaticPistol</derivedcompoundref>
+    <includes refid="Guns_8hpp" local="no">Guns.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPistol_1a4d23ff336f70de342f27061197e7a8ea" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pistol::magazineCapacity</definition>
+        <argsstring></argsstring>
+        <name>magazineCapacity</name>
+        <qualifiedname>Pistol::magazineCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="18" column="9" bodyfile="Guns.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPistol_1a2e03981470790c3f78d797f33193a3d4" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pistol::bullets</definition>
+        <argsstring></argsstring>
+        <name>bullets</name>
+        <qualifiedname>Pistol::bullets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="19" column="9" bodyfile="Guns.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPistol_1a264466db788978de67eef20464e06440" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Pistol::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>Pistol::model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="20" column="17" bodyfile="Guns.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPistol_1a0715c5243c875aeb8d8114954a463b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pistol::Pistol</definition>
+        <argsstring>()</argsstring>
+        <name>Pistol</name>
+        <qualifiedname>Pistol::Pistol</qualifiedname>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classPistol" kindref="compound">Pistol</ref> с вместимостью 10 патронов. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1ae7d673c32addae20cc566bfe227add5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pistol::Pistol</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>Pistol</name>
+        <qualifiedname>Pistol::Pistol</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classPistol" kindref="compound">Pistol</ref> с указанной вместимостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вместимость магазина.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="32" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a7346674f6db5deaa018e6e417ba91cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pistol::Pistol</definition>
+        <argsstring>(int capacity, const std::string &amp;modelName)</argsstring>
+        <name>Pistol</name>
+        <qualifiedname>Pistol::Pistol</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelName</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classPistol" kindref="compound">Pistol</ref> с указанной вместимостью и названием модели. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вместимость магазина.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modelName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название модели.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a0d754f2a59a5fb26088b3126a1377403" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Pistol::~Pistol</definition>
+        <argsstring>()</argsstring>
+        <name>~Pistol</name>
+        <qualifiedname>Pistol::~Pistol</qualifiedname>
+        <briefdescription>
+<para>Освобождает все ресурсы, используемые классом <ref refid="classPistol" kindref="compound">Pistol</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="44" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a91030408457f2a0d8c708a0e0994dc8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pistol::Shoot</definition>
+        <argsstring>()</argsstring>
+        <name>Shoot</name>
+        <qualifiedname>Pistol::Shoot</qualifiedname>
+        <reimplementedby refid="classAutomaticPistol_1a707f7d694f70d519cd8f1e1940a8d9ea">Shoot</reimplementedby>
+        <briefdescription>
+<para>Совершает один выстрел. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если патроны есть, уменьшает их количество на 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1aadc4367f03fce2c3d41f433f9757eb46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pistol::ShootMultiple</definition>
+        <argsstring>(int times)</argsstring>
+        <name>ShootMultiple</name>
+        <qualifiedname>Pistol::ShootMultiple</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>times</declname>
+        </param>
+        <briefdescription>
+<para>Совершает несколько выстрелов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>times</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество выстрелов.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a154edf38944136414717f70a6e445344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pistol::Reload</definition>
+        <argsstring>()</argsstring>
+        <name>Reload</name>
+        <qualifiedname>Pistol::Reload</qualifiedname>
+        <briefdescription>
+<para>Перезаряжает пистолет. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Восстанавливает количество патронов до максимальной вместимости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a5158be7d3246add59af483c66f924f4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Pistol::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <qualifiedname>Pistol::GetInfo</qualifiedname>
+        <reimplementedby refid="classAutomaticPistol_1abdac598583e0e648141bafc96cbc93c4">GetInfo</reimplementedby>
+        <briefdescription>
+<para>Выводит информацию о пистолете. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="71" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1ae726265e5ac115f8ec37d49e34be982a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pistol::getBullets</definition>
+        <argsstring>() const</argsstring>
+        <name>getBullets</name>
+        <qualifiedname>Pistol::getBullets</qualifiedname>
+        <briefdescription>
+<para>Возвращает текущее количество патронов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество патронов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="77" column="9" bodyfile="Guns.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a5e2a2f450334d5dbc329b589c0430021" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pistol::getCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapacity</name>
+        <qualifiedname>Pistol::getCapacity</qualifiedname>
+        <briefdescription>
+<para>Возвращает вместимость магазина. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Вместимость магазина.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="83" column="9" bodyfile="Guns.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1a73930ed6390c7e29cdfee1c200cdfbf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Pistol::getModel</definition>
+        <argsstring>() const</argsstring>
+        <name>getModel</name>
+        <qualifiedname>Pistol::getModel</qualifiedname>
+        <briefdescription>
+<para>Возвращает модель пистолета. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Название модели.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="89" column="17" bodyfile="Guns.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classPistol_1afa42d785d3d116607a0cf337b1a225ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pistol::setModel</definition>
+        <argsstring>(const std::string &amp;newModel)</argsstring>
+        <name>setModel</name>
+        <qualifiedname>Pistol::setModel</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newModel</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает модель пистолета. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое название модели.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Guns.hpp" line="95" column="10" bodyfile="Guns.hpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Базовый класс, представляющий пистолет. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Класс реализует базовый функционал пистолета: стрельбу, перезарядку, получение информации о состоянии. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AutomaticPistol</label>
+        <link refid="classAutomaticPistol"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Pistol</label>
+        <link refid="classPistol"/>
+      </node>
+    </inheritancegraph>
+    <location file="Guns.hpp" line="16" column="1" bodyfile="Guns.hpp" bodystart="16" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classPistol_1a2e03981470790c3f78d797f33193a3d4" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>bullets</name></member>
+      <member refid="classPistol_1ae726265e5ac115f8ec37d49e34be982a" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getBullets</name></member>
+      <member refid="classPistol_1a5e2a2f450334d5dbc329b589c0430021" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getCapacity</name></member>
+      <member refid="classPistol_1a5158be7d3246add59af483c66f924f4e" prot="public" virt="virtual"><scope>Pistol</scope><name>GetInfo</name></member>
+      <member refid="classPistol_1a73930ed6390c7e29cdfee1c200cdfbf2" prot="public" virt="non-virtual"><scope>Pistol</scope><name>getModel</name></member>
+      <member refid="classPistol_1a4d23ff336f70de342f27061197e7a8ea" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>magazineCapacity</name></member>
+      <member refid="classPistol_1a264466db788978de67eef20464e06440" prot="protected" virt="non-virtual"><scope>Pistol</scope><name>model</name></member>
+      <member refid="classPistol_1a0715c5243c875aeb8d8114954a463b47" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1ae7d673c32addae20cc566bfe227add5b" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1a7346674f6db5deaa018e6e417ba91cce" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Pistol</name></member>
+      <member refid="classPistol_1a154edf38944136414717f70a6e445344" prot="public" virt="non-virtual"><scope>Pistol</scope><name>Reload</name></member>
+      <member refid="classPistol_1afa42d785d3d116607a0cf337b1a225ad" prot="public" virt="non-virtual"><scope>Pistol</scope><name>setModel</name></member>
+      <member refid="classPistol_1a91030408457f2a0d8c708a0e0994dc8a" prot="public" virt="virtual"><scope>Pistol</scope><name>Shoot</name></member>
+      <member refid="classPistol_1aadc4367f03fce2c3d41f433f9757eb46" prot="public" virt="non-virtual"><scope>Pistol</scope><name>ShootMultiple</name></member>
+      <member refid="classPistol_1a0d754f2a59a5fb26088b3126a1377403" prot="public" virt="virtual"><scope>Pistol</scope><name>~Pistol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

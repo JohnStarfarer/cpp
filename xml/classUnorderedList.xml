@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classUnorderedList" kind="class" language="C++" prot="public">
+    <compoundname>UnorderedList</compoundname>
+    <includes refid="UnorderedList_8hpp" local="no">UnorderedList.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUnorderedList_1a1743f2f89ec555a7c1144882fee0b55a" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* UnorderedList&lt; T &gt;::items_</definition>
+        <argsstring></argsstring>
+        <name>items_</name>
+        <qualifiedname>UnorderedList::items_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="124" column="7" bodyfile="UnorderedList.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUnorderedList_1a0f7bca4904320cfe445f81d167b2a5f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnorderedList&lt; T &gt;::count_</definition>
+        <argsstring></argsstring>
+        <name>count_</name>
+        <qualifiedname>UnorderedList::count_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="125" column="9" bodyfile="UnorderedList.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUnorderedList_1a16170366123d6bc4d079a58da1d19dcd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnorderedList&lt; T &gt;::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <qualifiedname>UnorderedList::capacity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="126" column="9" bodyfile="UnorderedList.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedList&lt; T &gt;::UnorderedList</definition>
+        <argsstring>()</argsstring>
+        <name>UnorderedList</name>
+        <qualifiedname>UnorderedList::UnorderedList</qualifiedname>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" kindref="member">UnorderedList&lt;T&gt;</ref> с начальной емкостью 10. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="23" column="5" bodyfile="UnorderedList.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a81c96f2d6914baa0aea1c54dff06f3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedList&lt; T &gt;::UnorderedList</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>UnorderedList</name>
+        <qualifiedname>UnorderedList::UnorderedList</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" kindref="member">UnorderedList&lt;T&gt;</ref> с заданной емкостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начальная емкость списка.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вызывается, если capacity &lt;= 0.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="30" column="5" bodyfile="UnorderedList.hpp" bodystart="145" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a71b5bfa6169d98932c4f0b6f778b1628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedList&lt; T &gt;::UnorderedList</definition>
+        <argsstring>(const UnorderedList &amp;list)</argsstring>
+        <name>UnorderedList</name>
+        <qualifiedname>UnorderedList::UnorderedList</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedList" kindref="compound">UnorderedList</ref> &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" kindref="member">UnorderedList&lt;T&gt;</ref>, который является копией указанного списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="36" column="5" bodyfile="UnorderedList.hpp" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1af7c76f6364715da7bccaf720604e11a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedList&lt; T &gt;::~UnorderedList</definition>
+        <argsstring>()</argsstring>
+        <name>~UnorderedList</name>
+        <qualifiedname>UnorderedList::~UnorderedList</qualifiedname>
+        <briefdescription>
+<para>Освобождает все ресурсы, используемые классом <ref refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" kindref="member">UnorderedList&lt;T&gt;</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="41" column="5" bodyfile="UnorderedList.hpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1aab655bae4aca489a8979f7ca9d7c4e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt; &amp;</type>
+        <definition>UnorderedList&lt; T &gt; &amp; UnorderedList&lt; T &gt;::operator=</definition>
+        <argsstring>(const UnorderedList&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>UnorderedList::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Присваивает текущему списку значения другого списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список для присваивания.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="48" column="19" bodyfile="UnorderedList.hpp" bodystart="280" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a05993ddebeb1712431d0e87a5244f1e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedList&lt; T &gt;::Add</definition>
+        <argsstring>(const T &amp;item)</argsstring>
+        <name>Add</name>
+        <qualifiedname>UnorderedList::Add</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет элемент в список. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для добавления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Если элемент уже существует в списке, он не добавляется. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="57" column="10" bodyfile="UnorderedList.hpp" bodystart="187" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1adac82c13b43e98cd4629ea61801c8e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnorderedList&lt; T &gt;::Remove</definition>
+        <argsstring>(const T &amp;item)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>UnorderedList::Remove</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет элемент из списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для удаления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если элемент был найден и удален; в противном случае — false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="64" column="10" bodyfile="UnorderedList.hpp" bodystart="199" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1adf26211535de9241be47380cc958cb81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnorderedList&lt; T &gt;::Contains</definition>
+        <argsstring>(const T &amp;item) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>UnorderedList::Contains</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет наличие элемента в списке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для проверки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если элемент существует в списке; в противном случае — false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="71" column="10" bodyfile="UnorderedList.hpp" bodystart="215" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a0379dc296336ece3225b51c257af2026" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt;</type>
+        <definition>UnorderedList&lt; T &gt; UnorderedList&lt; T &gt;::Union</definition>
+        <argsstring>(const UnorderedList&lt; T &gt; &amp;list) const</argsstring>
+        <name>Union</name>
+        <qualifiedname>UnorderedList::Union</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Объединяет два списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список для объединения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новый список-результат объединения.</para>
+</simplesect>
+</para>
+<para>Создает новый список, содержащий все уникальные элементы из текущего списка и списка-аргумента. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="82" column="19" bodyfile="UnorderedList.hpp" bodystart="226" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1afea0fafe64064e1f8bb5837ef5cba51a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt;</type>
+        <definition>UnorderedList&lt; T &gt; UnorderedList&lt; T &gt;::Except</definition>
+        <argsstring>(const UnorderedList&lt; T &gt; &amp;list) const</argsstring>
+        <name>Except</name>
+        <qualifiedname>UnorderedList::Except</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Вычитает элементы другого списка из текущего. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список для вычитания.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новый список-результат вычитания.</para>
+</simplesect>
+</para>
+<para>Создает новый список, содержащий элементы текущего списка, которых нет в списке-аргументе. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="93" column="19" bodyfile="UnorderedList.hpp" bodystart="242" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a5f9edef5a77b4a09b9e080e776eceeaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt;</type>
+        <definition>UnorderedList&lt; T &gt; UnorderedList&lt; T &gt;::Intersect</definition>
+        <argsstring>(const UnorderedList&lt; T &gt; &amp;list) const</argsstring>
+        <name>Intersect</name>
+        <qualifiedname>UnorderedList::Intersect</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedList" kindref="compound">UnorderedList</ref>&lt; T &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Находит пересечение двух списков. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список для нахождения пересечения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новый список-результат пересечения.</para>
+</simplesect>
+</para>
+<para>Создает новый список, содержащий элементы, которые есть и в текущем списке, и в списке-аргументе. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="104" column="19" bodyfile="UnorderedList.hpp" bodystart="255" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a1f78c4705125f9e9308e750aeb7ba9f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnorderedList&lt; T &gt;::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <qualifiedname>UnorderedList::count</qualifiedname>
+        <briefdescription>
+<para>Возвращает количество элементов в списке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество элементов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="110" column="9" bodyfile="UnorderedList.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1a0fb631da23fe6bc8118c8352453e72e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnorderedList&lt; T &gt;::capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>capacity</name>
+        <qualifiedname>UnorderedList::capacity</qualifiedname>
+        <briefdescription>
+<para>Возвращает текущую емкость списка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Емкость списка.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="116" column="9" bodyfile="UnorderedList.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedList_1acf6bf7da94ed9319c9c6f1d3654dd07c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedList&lt; T &gt;::Print</definition>
+        <argsstring>() const</argsstring>
+        <name>Print</name>
+        <qualifiedname>UnorderedList::Print</qualifiedname>
+        <briefdescription>
+<para>Выводит содержимое списка в стандартный вывод. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="121" column="10" bodyfile="UnorderedList.hpp" bodystart="268" bodyend="277"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUnorderedList_1ab13ec970ad70e44fd7be27f3cbc671fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedList&lt; T &gt;::AddCapacity</definition>
+        <argsstring>()</argsstring>
+        <name>AddCapacity</name>
+        <qualifiedname>UnorderedList::AddCapacity</qualifiedname>
+        <briefdescription>
+<para>Увеличивает емкость массива при необходимости. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Удваивает емкость массива, если текущее количество элементов достигло предельной емкости. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UnorderedList.hpp" line="135" column="10" bodyfile="UnorderedList.hpp" bodystart="169" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Шаблонный класс для реализации неупорядоченного списка с уникальными элементами. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип элементов списка.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Класс реализует функционал неупорядоченного списка, который может содержать только уникальные элементы. Обращение к элементам по индексу не предусмотрено. </para>
+    </detaileddescription>
+    <location file="UnorderedList.hpp" line="18" column="1" bodyfile="UnorderedList.hpp" bodystart="18" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classUnorderedList_1a05993ddebeb1712431d0e87a5244f1e7" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Add</name></member>
+      <member refid="classUnorderedList_1ab13ec970ad70e44fd7be27f3cbc671fa" prot="private" virt="non-virtual"><scope>UnorderedList</scope><name>AddCapacity</name></member>
+      <member refid="classUnorderedList_1a0fb631da23fe6bc8118c8352453e72e8" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>capacity</name></member>
+      <member refid="classUnorderedList_1a16170366123d6bc4d079a58da1d19dcd" prot="private" virt="non-virtual"><scope>UnorderedList</scope><name>capacity_</name></member>
+      <member refid="classUnorderedList_1adf26211535de9241be47380cc958cb81" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Contains</name></member>
+      <member refid="classUnorderedList_1a1f78c4705125f9e9308e750aeb7ba9f8" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>count</name></member>
+      <member refid="classUnorderedList_1a0f7bca4904320cfe445f81d167b2a5f6" prot="private" virt="non-virtual"><scope>UnorderedList</scope><name>count_</name></member>
+      <member refid="classUnorderedList_1afea0fafe64064e1f8bb5837ef5cba51a" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Except</name></member>
+      <member refid="classUnorderedList_1a5f9edef5a77b4a09b9e080e776eceeaa" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Intersect</name></member>
+      <member refid="classUnorderedList_1a1743f2f89ec555a7c1144882fee0b55a" prot="private" virt="non-virtual"><scope>UnorderedList</scope><name>items_</name></member>
+      <member refid="classUnorderedList_1aab655bae4aca489a8979f7ca9d7c4e75" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>operator=</name></member>
+      <member refid="classUnorderedList_1acf6bf7da94ed9319c9c6f1d3654dd07c" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Print</name></member>
+      <member refid="classUnorderedList_1adac82c13b43e98cd4629ea61801c8e35" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Remove</name></member>
+      <member refid="classUnorderedList_1a0379dc296336ece3225b51c257af2026" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>Union</name></member>
+      <member refid="classUnorderedList_1a4fb4f94a780f4c59fe2b0a6d415fba29" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>UnorderedList</name></member>
+      <member refid="classUnorderedList_1a81c96f2d6914baa0aea1c54dff06f3ec" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>UnorderedList</name></member>
+      <member refid="classUnorderedList_1a71b5bfa6169d98932c4f0b6f778b1628" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>UnorderedList</name></member>
+      <member refid="classUnorderedList_1af7c76f6364715da7bccaf720604e11a7" prot="public" virt="non-virtual"><scope>UnorderedList</scope><name>~UnorderedList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

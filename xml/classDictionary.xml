@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classDictionary" kind="class" language="C++" prot="public">
+    <compoundname>Dictionary</compoundname>
+    <includes refid="Dictionary_8hpp" local="no">Dictionary.hpp</includes>
+    <innerclass refid="structDictionary_1_1KeyValuePair" prot="private">Dictionary::KeyValuePair</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename KeyType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDictionary_1aecc34c1528288f2f0de0f7c75f20ed55" prot="private" static="no" mutable="no">
+        <type>KeyValuePair **</type>
+        <definition>KeyValuePair** Dictionary&lt; KeyType, ValueType &gt;::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <qualifiedname>Dictionary::table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="125" column="18" bodyfile="Dictionary.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDictionary_1a979c2753137a3303eb8f4ae42ce9e71b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dictionary&lt; KeyType, ValueType &gt;::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <qualifiedname>Dictionary::capacity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="126" column="9" bodyfile="Dictionary.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDictionary_1ad7e437eb99dce7eb9b1a450a4e269e78" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Dictionary&lt; KeyType, ValueType &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>Dictionary::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="127" column="9" bodyfile="Dictionary.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt;::Dictionary</definition>
+        <argsstring>(int initialCapacity=16)</argsstring>
+        <name>Dictionary</name>
+        <qualifiedname>Dictionary::Dictionary</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>initialCapacity</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" kindref="member">Dictionary&lt;KeyType, ValueType&gt;</ref> с указанной начальной емкостью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initialCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начальная емкость хэш-таблицы.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="28" column="5" bodyfile="Dictionary.hpp" bodystart="150" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1ae9d3998ef708fb04cc580a6270953457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt;::Dictionary</definition>
+        <argsstring>(const Dictionary &amp;other)</argsstring>
+        <name>Dictionary</name>
+        <qualifiedname>Dictionary::Dictionary</qualifiedname>
+        <param>
+          <type>const <ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует новый экземпляр класса <ref refid="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" kindref="member">Dictionary&lt;KeyType, ValueType&gt;</ref>, который является копией указанного словаря. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="34" column="5" bodyfile="Dictionary.hpp" bodystart="159" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a459696bcf79b173cdc1f7aa97468f83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt;::~Dictionary</definition>
+        <argsstring>()</argsstring>
+        <name>~Dictionary</name>
+        <qualifiedname>Dictionary::~Dictionary</qualifiedname>
+        <briefdescription>
+<para>Освобождает все ресурсы, используемые классом <ref refid="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" kindref="member">Dictionary&lt;KeyType, ValueType&gt;</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="39" column="5" bodyfile="Dictionary.hpp" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a07c872c65cd23c7a05ef9ca4b20e23a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt; &amp; Dictionary&lt; KeyType, ValueType &gt;::operator=</definition>
+        <argsstring>(const Dictionary &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Dictionary::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Присваивает текущему словарю значения другого словаря. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для присваивания.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="46" column="16" bodyfile="Dictionary.hpp" bodystart="182" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1accdd77e50576305e2ee8455422b577d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; KeyType, ValueType &gt;::Add</definition>
+        <argsstring>(const KeyType &amp;key, const ValueType &amp;value)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Dictionary::Add</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const ValueType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет пару ключ-значение в словарь. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для добавления.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение для добавления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Если ключ уже существует, обновляет его значение. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="56" column="10" bodyfile="Dictionary.hpp" bodystart="210" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a2f31f10c0048aac7b72bd7e60259b655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dictionary&lt; KeyType, ValueType &gt;::Remove</definition>
+        <argsstring>(const KeyType &amp;key)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Dictionary::Remove</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет пару ключ-значение из словаря. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для удаления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если ключ был найден и удален; в противном случае — false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="63" column="10" bodyfile="Dictionary.hpp" bodystart="231" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a0216ca5025492c4b9a732dd0f9ef5e00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dictionary&lt; KeyType, ValueType &gt;::ContainsKey</definition>
+        <argsstring>(const KeyType &amp;key) const</argsstring>
+        <name>ContainsKey</name>
+        <qualifiedname>Dictionary::ContainsKey</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет наличие ключа в словаре. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для проверки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если ключ существует; в противном случае — false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="70" column="10" bodyfile="Dictionary.hpp" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1ae9d01d98a96036add042e07dffe087d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ValueType *</type>
+        <definition>ValueType * Dictionary&lt; KeyType, ValueType &gt;::Get</definition>
+        <argsstring>(const KeyType &amp;key)</argsstring>
+        <name>Get</name>
+        <qualifiedname>Dictionary::Get</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает значение по ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на значение или nullptr, если ключ не найден.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="77" column="15" bodyfile="Dictionary.hpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a4e102e2f25359cd250f5ad67089a2bb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const ValueType *</type>
+        <definition>const ValueType * Dictionary&lt; KeyType, ValueType &gt;::Get</definition>
+        <argsstring>(const KeyType &amp;key) const</argsstring>
+        <name>Get</name>
+        <qualifiedname>Dictionary::Get</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает значение по ключу (константная версия). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на значение или nullptr, если ключ не найден.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="84" column="21" bodyfile="Dictionary.hpp" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a7bb0259db09865cc213283c9a99a873a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dictionary&lt; KeyType, ValueType &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>Dictionary::size</qualifiedname>
+        <briefdescription>
+<para>Возвращает количество элементов в словаре. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество элементов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="90" column="9" bodyfile="Dictionary.hpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1aa4b0ed4a30abf7acbfcae0b0ec4cb3ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dictionary&lt; KeyType, ValueType &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>Dictionary::empty</qualifiedname>
+        <briefdescription>
+<para>Проверяет, пуст ли словарь. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, если словарь пуст; в противном случае — false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="96" column="10" bodyfile="Dictionary.hpp" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a41a0d164e5142ff1b564f5df842985d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; KeyType, ValueType &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>Dictionary::clear</qualifiedname>
+        <briefdescription>
+<para>Очищает словарь. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="101" column="10" bodyfile="Dictionary.hpp" bodystart="271" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a18bce1236fb60754ce9b7ffedba09bfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; KeyType, ValueType &gt;::Print</definition>
+        <argsstring>() const</argsstring>
+        <name>Print</name>
+        <qualifiedname>Dictionary::Print</qualifiedname>
+        <briefdescription>
+<para>Выводит содержимое словаря в стандартный вывод. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="106" column="10" bodyfile="Dictionary.hpp" bodystart="285" bodyend="295"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDictionary_1a91c7575127f435682074721ea35083da" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dictionary&lt; KeyType, ValueType &gt;::hash</definition>
+        <argsstring>(const KeyType &amp;key) const</argsstring>
+        <name>hash</name>
+        <qualifiedname>Dictionary::hash</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет хэш ключа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для хэширования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Индекс в таблице.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="134" column="9" bodyfile="Dictionary.hpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1aa15349b750ecf392e36b0b923e66d7b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; KeyType, ValueType &gt;::rehash</definition>
+        <argsstring>()</argsstring>
+        <name>rehash</name>
+        <qualifiedname>Dictionary::rehash</qualifiedname>
+        <briefdescription>
+<para>Перехэширует таблицу при достижении коэффициента загрузки 0.75. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="139" column="10" bodyfile="Dictionary.hpp" bodystart="304" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a9bb3b2c8a398feb07ae4e1fdd2f24003" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>KeyValuePair *</type>
+        <definition>Dictionary&lt; KeyType, ValueType &gt;::KeyValuePair * Dictionary&lt; KeyType, ValueType &gt;::findPair</definition>
+        <argsstring>(const KeyType &amp;key) const</argsstring>
+        <name>findPair</name>
+        <qualifiedname>Dictionary::findPair</qualifiedname>
+        <param>
+          <type>const KeyType &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Находит пару ключ-значение по ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на найденную пару или nullptr.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Dictionary.hpp" line="146" column="18" bodyfile="Dictionary.hpp" bodystart="326" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Шаблонный класс для реализации словаря (хэш-таблицы) с уникальными ключами. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>KeyType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип ключей словаря.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип значений словаря.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Класс реализует словарь на основе хэш-таблицы. Поддерживает основные операции: добавление, удаление, поиск. </para>
+    </detaileddescription>
+    <location file="Dictionary.hpp" line="22" column="1" bodyfile="Dictionary.hpp" bodystart="22" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classDictionary_1accdd77e50576305e2ee8455422b577d7" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Add</name></member>
+      <member refid="classDictionary_1a979c2753137a3303eb8f4ae42ce9e71b" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>capacity_</name></member>
+      <member refid="classDictionary_1a41a0d164e5142ff1b564f5df842985d5" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>clear</name></member>
+      <member refid="classDictionary_1a0216ca5025492c4b9a732dd0f9ef5e00" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>ContainsKey</name></member>
+      <member refid="classDictionary_1a364044859ceca0019f7abd8f75b5f09b" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Dictionary</name></member>
+      <member refid="classDictionary_1ae9d3998ef708fb04cc580a6270953457" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Dictionary</name></member>
+      <member refid="classDictionary_1aa4b0ed4a30abf7acbfcae0b0ec4cb3ef" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>empty</name></member>
+      <member refid="classDictionary_1a9bb3b2c8a398feb07ae4e1fdd2f24003" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>findPair</name></member>
+      <member refid="classDictionary_1ae9d01d98a96036add042e07dffe087d0" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Get</name></member>
+      <member refid="classDictionary_1a4e102e2f25359cd250f5ad67089a2bb7" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Get</name></member>
+      <member refid="classDictionary_1a91c7575127f435682074721ea35083da" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>hash</name></member>
+      <member refid="classDictionary_1a07c872c65cd23c7a05ef9ca4b20e23a7" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>operator=</name></member>
+      <member refid="classDictionary_1a18bce1236fb60754ce9b7ffedba09bfd" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Print</name></member>
+      <member refid="classDictionary_1aa15349b750ecf392e36b0b923e66d7b1" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>rehash</name></member>
+      <member refid="classDictionary_1a2f31f10c0048aac7b72bd7e60259b655" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Remove</name></member>
+      <member refid="classDictionary_1a7bb0259db09865cc213283c9a99a873a" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>size</name></member>
+      <member refid="classDictionary_1ad7e437eb99dce7eb9b1a450a4e269e78" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>size_</name></member>
+      <member refid="classDictionary_1aecc34c1528288f2f0de0f7c75f20ed55" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>table</name></member>
+      <member refid="classDictionary_1a459696bcf79b173cdc1f7aa97468f83a" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>~Dictionary</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
