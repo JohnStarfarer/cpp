@@ -385,4 +385,20 @@ struct SchoolStats {
     double averageScore() const;
 };
 
+inline Student::Student() : schoolNumber(0), score(0) {}
+
+inline Student::Student(const std::string& ln, const std::string& fn, int sn, int s)
+    : lastName(ln), firstName(fn), schoolNumber(sn), score(s) {}
+
+inline SchoolStats::SchoolStats() : totalScore(0), studentCount(0) {}
+
+inline void SchoolStats::addScore(double score) {
+    totalScore += score;
+    studentCount++;
+}
+
+inline double SchoolStats::averageScore() const {
+    return studentCount > 0 ? totalScore / studentCount : 0;
+}
+
 #endif

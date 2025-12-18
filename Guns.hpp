@@ -23,25 +23,33 @@ public:
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="Pistol"/> с вместимостью 10 патронов.
     /// </summary>
-    Pistol();
+    Pistol() : magazineCapacity(10), bullets(10), model("Пистолет") {
+        std::cout << "Создан пистолет с ёмкостью: " << magazineCapacity << std::endl;
+    }
     
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="Pistol"/> с указанной вместимостью.
     /// </summary>
     /// <param name="capacity">Вместимость магазина.</param>
-    Pistol(int capacity);
+    Pistol(int capacity) : magazineCapacity(capacity), bullets(capacity), model("Пистолет") {
+        std::cout << "Создан пистолет с ёмкостью: " << magazineCapacity << std::endl;
+    }
     
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="Pistol"/> с указанной вместимостью и названием модели.
     /// </summary>
     /// <param name="capacity">Вместимость магазина.</param>
     /// <param name="modelName">Название модели.</param>
-    Pistol(int capacity, const std::string& modelName);
+    Pistol(int capacity, const std::string& modelName) : magazineCapacity(capacity), bullets(capacity), model(modelName) {
+        std::cout << "Создан пистолет '" << model << "' с ёмкостью: " << magazineCapacity << std::endl;
+    }
     
     /// <summary>
     /// Освобождает все ресурсы, используемые классом <see cref="Pistol"/>.
     /// </summary>
-    virtual ~Pistol();
+    virtual ~Pistol() {
+        std::cout << "Пистолет " << model << " разобран" << std::endl;
+    }
     
     /// <summary>
     /// Совершает один выстрел.
@@ -49,13 +57,25 @@ public:
     /// <remarks>
     /// Если патроны есть, уменьшает их количество на 1.
     /// </remarks>
-    virtual void Shoot();
+    virtual void Shoot() {
+        if (bullets > 0) {
+            std::cout << model << ": Бам!" << std::endl;
+            bullets--;
+        } else {
+            std::cout << model << ": Клик! (закончились патроны)" << std::endl;
+        }
+    }
     
     /// <summary>
     /// Совершает несколько выстрелов.
     /// </summary>
     /// <param name="times">Количество выстрелов.</param>
-    void ShootMultiple(int times);
+    void ShootMultiple(int times) {
+        std::cout << "Стреляем " << times << " раз:" << std::endl;
+        for (int i = 0; i < times && bullets > 0; i++) {
+            Shoot();
+        }
+    }
     
     /// <summary>
     /// Перезаряжает пистолет.
@@ -63,12 +83,19 @@ public:
     /// <remarks>
     /// Восстанавливает количество патронов до максимальной вместимости.
     /// </remarks>
-    void Reload();
+    void Reload() {
+        bullets = magazineCapacity;
+        std::cout << model << ": Перезарядка. Патронов: " << bullets << std::endl;
+    }
     
     /// <summary>
     /// Выводит информацию о пистолете.
     /// </summary>
-    virtual void GetInfo() const;
+    virtual void GetInfo() const {
+        std::cout << "Модель пистолета: " << model 
+                  << " | Ёмкость: " << magazineCapacity 
+                  << " | Патронов: " << bullets << std::endl;
+    }
     
     /// <summary>
     /// Возвращает текущее количество патронов.
@@ -107,7 +134,9 @@ public:
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="AutomaticPistol"/> с вместимостью 30 и скорострельностью 30.
     /// </summary>
-    AutomaticPistol();
+    AutomaticPistol() : Pistol(30, "Автомат"), fireRate(30) {
+        std::cout << "Создан автомат со скорострельностью: " << fireRate << std::endl;
+    }
     
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="AutomaticPistol"/> с указанной вместимостью.
@@ -116,14 +145,21 @@ public:
     /// <remarks>
     /// Скорострельность устанавливается равной половине вместимости.
     /// </remarks>
-    AutomaticPistol(int maxBullets);
+    AutomaticPistol(int maxBullets) : Pistol(maxBullets, "Автомат"), fireRate(maxBullets / 2) {
+        std::cout << "Создан автомат со скорострельностью: " << fireRate << std::endl;
+    }
     
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="AutomaticPistol"/> с указанной вместимостью и скорострельностью.
     /// </summary>
     /// <param name="capacity">Вместимость магазина.</param>
     /// <param name="rate">Скорострельность (выстрелов в секунду).</param>
-    AutomaticPistol(int capacity, int rate);
+    AutomaticPistol(int capacity, int rate) : Pistol(capacity, "Автомат"), fireRate(rate) {
+        if (fireRate <= 0) {
+            fireRate = 1;
+        }
+        std::cout << "Создан автомат со скорострельностью: " << fireRate << std::endl;
+    }
     
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="AutomaticPistol"/> с указанными характеристиками.
@@ -131,7 +167,12 @@ public:
     /// <param name="capacity">Вместимость магазина.</param>
     /// <param name="rate">Скорострельность (выстрелов в секунду).</param>
     /// <param name="modelName">Название модели.</param>
-    AutomaticPistol(int capacity, int rate, const std::string& modelName);
+    AutomaticPistol(int capacity, int rate, const std::string& modelName) : Pistol(capacity, modelName), fireRate(rate) {
+        if (fireRate <= 0) {
+            fireRate = 1;
+        }
+        std::cout << "Создан автомат '" << model << "' со скорострельностью: " << fireRate << std::endl;
+    }
 
     /// <summary>
     /// Совершает выстрел с учетом скорострельности.
@@ -140,7 +181,21 @@ public:
     /// Совершает количество выстрелов, равное текущей скорострельности,
     /// но не более доступного количества патронов.
     /// </remarks>
-    void Shoot() override;
+    void Shoot() override {
+        if (bullets <= 0) {
+            std::cout << model << ": Клик! (закончились патроны)" << std::endl;
+            return;
+        }
+        
+        int shots = std::min(fireRate, bullets);
+        std::cout << model << ": Стреляем " << shots << " раз:" << std::endl;
+        
+        for (int i = 0; i < shots; i++) {
+            std::cout << "Туф!" << std::endl;
+        }
+        
+        bullets -= shots;
+    }
     
     /// <summary>
     /// Стреляет в течение указанного времени.
@@ -149,7 +204,26 @@ public:
     /// <remarks>
     /// Совершает количество выстрелов, равное произведению времени на скорострельность.
     /// </remarks>
-    void ShootSeconds(int seconds);
+    void ShootSeconds(int seconds) {
+        if (seconds <= 0) {
+            std::cout << "Время должно быть больше нуля!" << std::endl;
+            return;
+        }
+        
+        int totalShots = seconds * fireRate;
+        std::cout << model << ": Стреляем " << seconds << " секунд (всего " << totalShots << " раз)..." << std::endl;
+        
+        for (int i = 0; i < totalShots && bullets > 0; i++) {
+            if (bullets > 0) {
+                std::cout << "Та!" << std::endl;
+                bullets--;
+            }
+        }
+        
+        if (bullets == 0) {
+            std::cout << model << ": Клик! (закончились патроны)" << std::endl;
+        }
+    }
     
     /// <summary>
     /// Выводит информацию об автомате.
@@ -157,7 +231,12 @@ public:
     /// <remarks>
     /// Добавляет информацию о скорострельности.
     /// </remarks>
-    void GetInfo() const override;
+    void GetInfo() const override {
+        std::cout << "Модель автомата: " << model 
+                  << " | Ёмкость: " << magazineCapacity 
+                  << " | Патронов: " << bullets 
+                  << " | Скорострельность: " << fireRate << "/сек" << std::endl;
+    }
     
     /// <summary>
     /// Возвращает текущую скорострельность.
@@ -172,7 +251,11 @@ public:
     /// <remarks>
     /// Скорострельность должна быть положительной.
     /// </remarks>
-    void setFireRate(int rate);
+    void setFireRate(int rate) {
+        if (rate > 0) {
+            fireRate = rate;
+        }
+    }
 
 private:
     int fireRate;

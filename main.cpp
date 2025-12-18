@@ -225,7 +225,7 @@ void task2() {
 /// Демонстрация работы классов Pistol и AutomaticPistol.
 /// </remarks>
 void task3() {
-    std::cout << "\nКЛАСС PISTOL ==================\\n";
+    std::cout << "\nКЛАСС PISTOL ==================\n";
     
     Pistol pistol1;
     pistol1.setModel("ПМ");
@@ -236,7 +236,7 @@ void task3() {
     pistol1.Reload();
     pistol1.GetInfo();
     
-    std::cout << "\nКЛАСС AUTOPISTOL ==================\\n";
+    std::cout << "\nКЛАСС AUTOPISTOL ==================\n";
     
     std::cout << "\na) Конструктор без параметров ==================\n";
     AutomaticPistol autoPistol1;
@@ -244,31 +244,31 @@ void task3() {
     autoPistol1.Shoot();
     autoPistol1.GetInfo();
 
-    std::cout << "\nb) Конструктор с вместимостью 30 ==================\\n";
+    std::cout << "\nb) Конструктор с вместимостью 30 ==================\n";
     AutomaticPistol autoPistol2(60);
     autoPistol2.setModel("AK-74");
     autoPistol2.GetInfo();
     autoPistol2.Shoot();
     autoPistol2.GetInfo();
     
-    std::cout << "\nc) Конструктор с вместимостью 30 и скорострельностью 10 ==================\\n";
+    std::cout << "\nc) Конструктор с вместимостью 30 и скорострельностью 10 ==================\n";
     AutomaticPistol autoPistol3(30, 10);
     autoPistol3.setModel("M4A1");
     autoPistol3.GetInfo();
     
-    std::cout << "\nСтрельба на протяжении 2 секунд ==================\\n";
+    std::cout << "\nСтрельба на протяжении 2 секунд ==================\n";
     autoPistol3.Reload();
     autoPistol3.GetInfo();
     autoPistol3.ShootSeconds(2);
     autoPistol3.GetInfo();
     
-    std::cout << "\nd) Доп. полный конструктор (для удобства создания) ==================\\n";
+    std::cout << "\nd) Доп. полный конструктор (для удобства создания) ==================\n";
     AutomaticPistol autoPistol4(100, 25, "Minigun");
     autoPistol4.GetInfo();
     autoPistol4.ShootSeconds(1);
     autoPistol4.GetInfo();
 
-    std::cout << "\nПОЛИМОРФИЗМА ==================\\n";
+    std::cout << "\nПОЛИМОРФИЗМА ==================\n";
     
     Pistol* weapons[3];
     
