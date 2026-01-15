@@ -14,16 +14,11 @@
 /// получение информации о состоянии.
 /// </remarks>
 class Pistol {
-protected:
-    int magazineCapacity;
-    int bullets;
-    std::string model;
-    
 public:
     /// <summary>
     /// Инициализирует новый экземпляр класса <see cref="Pistol"/> с вместимостью 10 патронов.
     /// </summary>
-    Pistol() : magazineCapacity(10), bullets(10), model("Пистолет") {
+    Pistol() : magazineCapacity(5), bullets(5), model("Пистолет") {
         std::cout << "Создан пистолет с ёмкостью: " << magazineCapacity << std::endl;
     }
     
@@ -59,10 +54,10 @@ public:
     /// </remarks>
     virtual void Shoot() {
         if (bullets > 0) {
-            std::cout << model << ": Бам!" << std::endl;
+            std::cout << model << ": Бах!" << std::endl;
             bullets--;
         } else {
-            std::cout << model << ": Клик! (закончились патроны)" << std::endl;
+            std::cout << model << ": Клац! (закончились патроны)" << std::endl;
         }
     }
     
@@ -120,6 +115,11 @@ public:
     /// </summary>
     /// <param name="newModel">Новое название модели.</param>
     void setModel(const std::string& newModel) { model = newModel; }
+
+protected:
+    int magazineCapacity;
+    int bullets;
+    std::string model;
 };
 
 /// <summary>

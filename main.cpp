@@ -251,7 +251,7 @@ void task3() {
     std::cout << "\nСтрельба на протяжении 2 секунд ==================\n";
     autoPistol3.Reload();
     autoPistol3.GetInfo();
-    autoPistol3.ShootSeconds(2);
+    autoPistol3.ShootSeconds(4);
     autoPistol3.GetInfo();
     
     std::cout << "\nd) Доп. полный конструктор (для удобства создания) ==================\n";
@@ -260,7 +260,7 @@ void task3() {
     autoPistol4.ShootSeconds(1);
     autoPistol4.GetInfo();
 
-    std::cout << "\nПОЛИМОРФИЗМА ==================\n";
+    std::cout << "\nПОЛИМОРФИЗМ ==================\n\n";
     
     Pistol* weapons[3];
     
