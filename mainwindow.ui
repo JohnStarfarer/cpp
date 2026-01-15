@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Курьер Менеджер</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="courierTab">
+       <attribute name="title">
+        <string>Курьеры</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="addCourierButton">
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editCourierButton">
+            <property name="text">
+             <string>Редактировать</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteCourierButton">
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="activeCourierCheck">
+            <property name="text">
+             <string>Только активные</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchCourierEdit">
+            <property name="placeholderText">
+             <string>Поиск по фамилии, имени, телефону</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="refreshCourierButton">
+            <property name="text">
+             <string>Обновить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="courierTableView"/>
+        </item>
+       </layout>
+      </widget>
+	<widget class="QWidget" name="productTab">
+	 <attribute name="title">
+	  <string>Товары</string>
+	 </attribute>
+	 <layout class="QVBoxLayout" name="verticalLayout_3">
+	  <item>
+	   <layout class="QHBoxLayout" name="horizontalLayout_2">
+	    <item>
+	     <widget class="QPushButton" name="addProductButton">
+	      <property name="text">
+	       <string>Добавить</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="editProductButton">
+	      <property name="text">
+	       <string>Редактировать</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="deleteProductButton">
+	      <property name="text">
+	       <string>Удалить</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <spacer name="horizontalSpacer_2">
+	      <property name="orientation">
+	       <enum>Qt::Horizontal</enum>
+	      </property>
+	      <property name="sizeHint" stdset="0">
+	       <size>
+		<width>40</width>
+		<height>20</height>
+	       </size>
+	      </property>
+	     </spacer>
+	    </item>
+	    <item>
+	     <widget class="QLineEdit" name="searchProductEdit">
+	      <property name="placeholderText">
+	       <string>Поиск по названию, описанию, артикулу</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="refreshProductButton">
+	      <property name="text">
+	       <string>Обновить</string>
+	      </property>
+	     </widget>
+	    </item>
+	   </layout>
+	  </item>
+	  <item>
+	   <widget class="QTableView" name="productTableView"/>
+	  </item>
+	 </layout>
+	</widget>
+	<widget class="QWidget" name="orderTab">
+	 <attribute name="title">
+	  <string>Заказы</string>
+	 </attribute>
+	 <layout class="QVBoxLayout" name="verticalLayout_4">
+	  <item>
+	   <layout class="QHBoxLayout" name="horizontalLayout_3">
+	    <item>
+	     <widget class="QPushButton" name="addOrderButton">
+	      <property name="text">
+	       <string>Добавить</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="editOrderButton">
+	      <property name="text">
+	       <string>Редактировать</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="deleteOrderButton">
+	      <property name="text">
+	       <string>Удалить</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <spacer name="horizontalSpacer_3">
+	      <property name="orientation">
+	       <enum>Qt::Horizontal</enum>
+	      </property>
+	      <property name="sizeHint" stdset="0">
+	       <size>
+		<width>40</width>
+		<height>20</height>
+	       </size>
+	      </property>
+	     </spacer>
+	    </item>
+	    <item>
+	     <widget class="QComboBox" name="statusFilterCombo">
+	      <item>
+	       <property name="text">
+		<string>Все статусы</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>новый</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>в обработке</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>собирается</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>готов к отправке</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>в пути</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>доставлен</string>
+	       </property>
+	      </item>
+	      <item>
+	       <property name="text">
+		<string>отменен</string>
+	       </property>
+	      </item>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QLineEdit" name="searchOrderEdit">
+	      <property name="placeholderText">
+	       <string>Поиск по заказчику, телефону, адресу</string>
+	      </property>
+	     </widget>
+	    </item>
+	    <item>
+	     <widget class="QPushButton" name="refreshOrderButton">
+	      <property name="text">
+	       <string>Обновить</string>
+	      </property>
+	     </widget>
+	    </item>
+	   </layout>
+	  </item>
+	  <item>
+	   <widget class="QTableView" name="orderTableView"/>
+	  </item>
+	 </layout>
+	</widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

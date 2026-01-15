@@ -1,0 +1,5 @@
+/home/jack/Qt/CourierManager/build/Desktop-Debug/CMakeFiles/CourierManager.dir
+/home/jack/Qt/CourierManager/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/jack/Qt/CourierManager/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/jack/Qt/CourierManager/build/Desktop-Debug/CMakeFiles/CourierManager_autogen_timestamp_deps.dir
+/home/jack/Qt/CourierManager/build/Desktop-Debug/CMakeFiles/CourierManager_autogen.dir
