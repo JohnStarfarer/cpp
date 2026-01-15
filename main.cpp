@@ -12,14 +12,6 @@
 #include <locale>
 
 /// <summary>
-/// Структура, представляющая меломана и его музыкальные предпочтения.
-/// </summary>
-struct Meloman {
-    std::string name;
-    UnorderedList<std::string> likedMusic;
-};
-
-/// <summary>
 /// Функция для выполнения задания 1 (HashSet).
 /// </summary>
 /// <remarks>

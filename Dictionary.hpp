@@ -10,6 +10,14 @@
 #include <fstream>
 
 /// <summary>
+/// Структура, представляющая меломана и его музыкальные предпочтения.
+/// </summary>
+struct Meloman {
+    std::string name;
+    UnorderedList<std::string> likedMusic;
+};
+
+/// <summary>
 /// Шаблонный класс для реализации словаря (хэш-таблицы) с уникальными ключами.
 /// </summary>
 /// <typeparam name="KeyType">Тип ключей словаря.</typeparam>
