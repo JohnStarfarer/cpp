@@ -1,0 +1,54 @@
+\doxysection{addroutedialog.\+h}
+\hypertarget{addroutedialog_8h_source}{}\label{addroutedialog_8h_source}\index{dialogs/addroutedialog.h@{dialogs/addroutedialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADDROUTEDIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADDROUTEDIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDoubleSpinBox>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QFormLayout>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }AddRouteDialog\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ AddRouteDialog(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ \ \ \ \ AddRouteDialog(\textcolor{keywordtype}{int}\ routeId,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ QString\ getDeparture()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_departureEdit-\/>text();\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ QString\ getArrival()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_arrivalEdit-\/>text();\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ getBasePrice()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_priceSpin-\/>value();\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ QString\ getStatus()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_statusCombo-\/>currentText();\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ getDistance()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_distanceSpin-\/>value();\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ validateAndAccept();}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUI();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ loadRouteData(\textcolor{keywordtype}{int}\ routeId);}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ QLineEdit\ *m\_departureEdit;}
+\DoxyCodeLine{00038\ \ \ \ \ QLineEdit\ *m\_arrivalEdit;}
+\DoxyCodeLine{00039\ \ \ \ \ QSpinBox\ *m\_distanceSpin;}
+\DoxyCodeLine{00040\ \ \ \ \ QDoubleSpinBox\ *m\_priceSpin;}
+\DoxyCodeLine{00041\ \ \ \ \ QComboBox\ *m\_statusCombo;}
+\DoxyCodeLine{00042\ \ \ \ \ QPushButton\ *m\_okButton;}
+\DoxyCodeLine{00043\ \ \ \ \ QPushButton\ *m\_cancelButton;}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_routeId;}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADDROUTEDIALOG\_H}}
+
+\end{DoxyCode}

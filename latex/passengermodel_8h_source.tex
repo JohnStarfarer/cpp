@@ -1,0 +1,47 @@
+\doxysection{passengermodel.\+h}
+\hypertarget{passengermodel_8h_source}{}\label{passengermodel_8h_source}\index{models/passengermodel.h@{models/passengermodel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PASSENGERMODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PASSENGERMODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QSqlTableModel>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSqlError>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDate>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }PassengerModel\ :\ \textcolor{keyword}{public}\ QSqlTableModel}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ PassengerModel(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Методы\ для\ работы\ с\ данными}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ addPassenger(\textcolor{keyword}{const}\ QString\ \&lastName,\ \textcolor{keyword}{const}\ QString\ \&firstName,\ \textcolor{keyword}{const}\ QString\ \&middleName,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDate\ \&birthDate,\ \textcolor{keyword}{const}\ QString\ \&gender,\ \textcolor{keyword}{const}\ QString\ \&documentType,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&documentNumber,\ \textcolor{keyword}{const}\ QString\ \&phone\ =\ \textcolor{stringliteral}{"{}"{}},\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&email\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ updatePassenger(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ QString\ \&lastName,\ \textcolor{keyword}{const}\ QString\ \&firstName,\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&middleName,\ \textcolor{keyword}{const}\ QDate\ \&birthDate,\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&gender,\ \textcolor{keyword}{const}\ QString\ \&documentType,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&documentNumber,\ \textcolor{keyword}{const}\ QString\ \&phone\ =\ \textcolor{stringliteral}{"{}"{}},\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&email\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ removePassenger(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Получение\ пассажиров\ для\ комбобокса}}
+\DoxyCodeLine{00032\ \ \ \ \ QMap<int,\ QString>\ getPassengersMap();}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Проверка\ существования\ пассажира\ по\ номеру\ документа}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ passengerExists(\textcolor{keyword}{const}\ QString\ \&documentNumber);}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setupModel();}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PASSENGERMODEL\_H}}
+
+\end{DoxyCode}

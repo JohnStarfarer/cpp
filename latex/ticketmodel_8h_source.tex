@@ -1,0 +1,52 @@
+\doxysection{ticketmodel.\+h}
+\hypertarget{ticketmodel_8h_source}{}\label{ticketmodel_8h_source}\index{models/ticketmodel.h@{models/ticketmodel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TICKETMODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TICKETMODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QSqlTableModel>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSqlError>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }TicketModel\ :\ \textcolor{keyword}{public}\ QSqlTableModel}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \ \ \ \ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ TicketModel(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Методы\ для\ работы\ с\ данными}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ addTicket(\textcolor{keywordtype}{int}\ scheduleId,\ \textcolor{keywordtype}{int}\ passengerId,\ \textcolor{keywordtype}{int}\ wagonNumber,\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seatNumber,\ \textcolor{keywordtype}{double}\ price,\ \textcolor{keyword}{const}\ QString\ \&status\ =\ \textcolor{stringliteral}{"{}active"{}});}
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ updateTicket(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ scheduleId,\ \textcolor{keywordtype}{int}\ passengerId,\ \textcolor{keywordtype}{int}\ wagonNumber,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seatNumber,\ \textcolor{keywordtype}{double}\ price,\ \textcolor{keyword}{const}\ QString\ \&status\ =\ \textcolor{stringliteral}{"{}active"{}});}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ removeTicket(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Продажа\ билета\ (с\ проверками)}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ sellTicket(\textcolor{keywordtype}{int}\ scheduleId,\ \textcolor{keywordtype}{int}\ passengerId,\ \textcolor{keywordtype}{int}\ wagonNumber,\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seatNumber,\ \textcolor{keywordtype}{double}\ price);}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Отмена\ билета}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ cancelTicket(\textcolor{keywordtype}{int}\ ticketId);}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Получение\ детальной\ информации\ о\ билетах}}
+\DoxyCodeLine{00034\ \ \ \ \ QSqlQuery\ getTicketDetails();}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Получение\ статистики\ продаж}}
+\DoxyCodeLine{00037\ \ \ \ \ QMap<QString,\ double>\ getSalesStatistics(\textcolor{keyword}{const}\ QDate\ \&from,\ \textcolor{keyword}{const}\ QDate\ \&to);}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Проверка\ доступности\ места}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ isSeatAvailable(\textcolor{keywordtype}{int}\ scheduleId,\ \textcolor{keywordtype}{int}\ wagonNumber,\ \textcolor{keywordtype}{int}\ seatNumber);}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ setupModel();}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TICKETMODEL\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,53 @@
+\doxysection{addtraindialog.\+h}
+\hypertarget{addtraindialog_8h_source}{}\label{addtraindialog_8h_source}\index{dialogs/addtraindialog.h@{dialogs/addtraindialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADDTRAINDIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADDTRAINDIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QFormLayout>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }AddTrainDialog\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ \ \ \ \ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Конструктор\ для\ добавления\ нового\ поезда}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ AddTrainDialog(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Конструктор\ для\ редактирования\ существующего\ поезда}}
+\DoxyCodeLine{00024\ \ \ \ \ AddTrainDialog(\textcolor{keywordtype}{int}\ trainId,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ QString\ getName()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_nameEdit-\/>text();\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ QString\ getStatus()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_statusCombo-\/>currentText();\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ getTotalSeats()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ m\_seatsSpin-\/>value();\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ validateAndAccept();}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUI();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ loadTrainData(\textcolor{keywordtype}{int}\ trainId);}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Виджеты}}
+\DoxyCodeLine{00038\ \ \ \ \ QLineEdit\ *m\_nameEdit;}
+\DoxyCodeLine{00039\ \ \ \ \ QComboBox\ *m\_statusCombo;}
+\DoxyCodeLine{00040\ \ \ \ \ QSpinBox\ *m\_seatsSpin;}
+\DoxyCodeLine{00041\ \ \ \ \ QPushButton\ *m\_okButton;}
+\DoxyCodeLine{00042\ \ \ \ \ QPushButton\ *m\_cancelButton;}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_trainId;\ \textcolor{comment}{//\ 0\ для\ добавления,\ >0\ для\ редактирования}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADDTRAINDIALOG\_H}}
+
+\end{DoxyCode}

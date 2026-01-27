@@ -1,0 +1,136 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QApplication>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QTabWidget>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QTableView>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QStatusBar>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QSplitter>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}database.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Включаем\ модели}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}models/trainmodel.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}models/wagontypemodel.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}models/routemodel.h"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}models/passengermodel.h"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}models/schedulemodel.h"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}models/ticketmodel.h"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}models/scheduleviewmodel.h"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}models/ticketviewmodel.h"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }MainWindow\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ MainWindow(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00034\ \ \ \ \ \string~MainWindow();}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshAllTables();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ showAbout();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ checkDatabaseConnection();}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ Слоты\ для\ кнопок}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ addTrain();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ editTrain();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteTrain();}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ addWagonType();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ editWagonType();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteWagonType();}
+\DoxyCodeLine{00049\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ addRoute();}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ editRoute();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteRoute();}
+\DoxyCodeLine{00053\ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ addPassenger();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ editPassenger();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ deletePassenger();}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ addSchedule();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ editSchedule();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteSchedule();}
+\DoxyCodeLine{00061\ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ addTicket();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ editTicket();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteTicket();}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUI();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ setupMenuBar();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ setupToolBar();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ setupStatusBar();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ setupConnections();}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ createMainTabWidget();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ createReportsTabWidget();}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ База\ данных}}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classDatabase}{Database}}\ *m\_database;}
+\DoxyCodeLine{00077\ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ Основной\ виджет\ для\ разделения}}
+\DoxyCodeLine{00079\ \ \ \ \ QSplitter\ *m\_mainSplitter;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ Два\ табвиджета\ вместо\ одного}}
+\DoxyCodeLine{00082\ \ \ \ \ QTabWidget\ *m\_mainTabWidget;\ \ \ \ \ \ \textcolor{comment}{//\ Основные\ операции}}
+\DoxyCodeLine{00083\ \ \ \ \ QTabWidget\ *m\_reportsTabWidget;\ \ \ \textcolor{comment}{//\ Отчеты}}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//\ Таблицы}}
+\DoxyCodeLine{00086\ \ \ \ \ QTableView\ *m\_trainTable;}
+\DoxyCodeLine{00087\ \ \ \ \ QTableView\ *m\_wagonTypeTable;}
+\DoxyCodeLine{00088\ \ \ \ \ QTableView\ *m\_routeTable;}
+\DoxyCodeLine{00089\ \ \ \ \ QTableView\ *m\_passengerTable;}
+\DoxyCodeLine{00090\ \ \ \ \ QTableView\ *m\_scheduleTable;}
+\DoxyCodeLine{00091\ \ \ \ \ QTableView\ *m\_ticketTable;}
+\DoxyCodeLine{00092\ \ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ Модели}}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classTrainModel}{TrainModel}}\ *m\_trainModel;}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classWagonTypeModel}{WagonTypeModel}}\ *m\_wagonTypeModel;}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classRouteModel}{RouteModel}}\ *m\_routeModel;}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classPassengerModel}{PassengerModel}}\ *m\_passengerModel;}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classScheduleModel}{ScheduleModel}}\ *m\_scheduleModel;}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classTicketModel}{TicketModel}}\ *m\_ticketModel;}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classScheduleViewModel}{ScheduleViewModel}}\ *m\_scheduleViewModel;}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{classTicketViewModel}{TicketViewModel}}\ *m\_ticketViewModel;}
+\DoxyCodeLine{00102\ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{comment}{//\ Кнопки\ для\ каждой\ вкладки}}
+\DoxyCodeLine{00104\ \ \ \ \ QPushButton\ *m\_btnAddTrain;}
+\DoxyCodeLine{00105\ \ \ \ \ QPushButton\ *m\_btnEditTrain;}
+\DoxyCodeLine{00106\ \ \ \ \ QPushButton\ *m\_btnDeleteTrain;}
+\DoxyCodeLine{00107\ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ QPushButton\ *m\_btnAddWagonType;}
+\DoxyCodeLine{00109\ \ \ \ \ QPushButton\ *m\_btnEditWagonType;}
+\DoxyCodeLine{00110\ \ \ \ \ QPushButton\ *m\_btnDeleteWagonType;}
+\DoxyCodeLine{00111\ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ QPushButton\ *m\_btnAddRoute;}
+\DoxyCodeLine{00113\ \ \ \ \ QPushButton\ *m\_btnEditRoute;}
+\DoxyCodeLine{00114\ \ \ \ \ QPushButton\ *m\_btnDeleteRoute;}
+\DoxyCodeLine{00115\ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ QPushButton\ *m\_btnAddPassenger;}
+\DoxyCodeLine{00117\ \ \ \ \ QPushButton\ *m\_btnEditPassenger;}
+\DoxyCodeLine{00118\ \ \ \ \ QPushButton\ *m\_btnDeletePassenger;}
+\DoxyCodeLine{00119\ \ \ \ \ }
+\DoxyCodeLine{00120\ \ \ \ \ QPushButton\ *m\_btnAddSchedule;}
+\DoxyCodeLine{00121\ \ \ \ \ QPushButton\ *m\_btnEditSchedule;}
+\DoxyCodeLine{00122\ \ \ \ \ QPushButton\ *m\_btnDeleteSchedule;}
+\DoxyCodeLine{00123\ \ \ \ \ }
+\DoxyCodeLine{00124\ \ \ \ \ QPushButton\ *m\_btnAddTicket;}
+\DoxyCodeLine{00125\ \ \ \ \ QPushButton\ *m\_btnEditTicket;}
+\DoxyCodeLine{00126\ \ \ \ \ QPushButton\ *m\_btnDeleteTicket;}
+\DoxyCodeLine{00127\ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ QLabel\ *m\_statusLabel;}
+\DoxyCodeLine{00129\ \};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

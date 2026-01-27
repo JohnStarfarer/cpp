@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md_README.html"><param name="Name" value="Репозиторий лабороторных работ по дисциплине &quot;Язык программирования C++&quot;"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddPassengerDialog.html"><param name="Name" value="AddPassengerDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddRouteDialog.html"><param name="Name" value="AddRouteDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddScheduleDialog.html"><param name="Name" value="AddScheduleDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddTicketDialog.html"><param name="Name" value="AddTicketDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddTrainDialog.html"><param name="Name" value="AddTrainDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAddWagonTypeDialog.html"><param name="Name" value="AddWagonTypeDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classDatabase.html"><param name="Name" value="Database"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html"><param name="Name" value="MainWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classPassengerModel.html"><param name="Name" value="PassengerModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classRouteModel.html"><param name="Name" value="RouteModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classScheduleModel.html"><param name="Name" value="ScheduleModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classScheduleViewModel.html"><param name="Name" value="ScheduleViewModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classTicketModel.html"><param name="Name" value="TicketModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classTicketViewModel.html"><param name="Name" value="TicketViewModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classTrainModel.html"><param name="Name" value="TrainModel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classWagonTypeModel.html"><param name="Name" value="WagonTypeModel"></OBJECT>
+</UL>
+</BODY>
+</HTML>

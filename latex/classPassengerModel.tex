@@ -1,0 +1,35 @@
+\doxysection{Passenger\+Model Class Reference}
+\hypertarget{classPassengerModel}{}\label{classPassengerModel}\index{PassengerModel@{PassengerModel}}
+Inheritance diagram for Passenger\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPassengerModel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPassengerModel_a192f13a0c6621c9f3b82ada29168f415}\label{classPassengerModel_a192f13a0c6621c9f3b82ada29168f415} 
+{\bfseries Passenger\+Model} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{classPassengerModel_adf2c1c075abf2b61a03de1c44a096300}\label{classPassengerModel_adf2c1c075abf2b61a03de1c44a096300} 
+bool {\bfseries add\+Passenger} (const QString \&last\+Name, const QString \&first\+Name, const QString \&middle\+Name, const QDate \&birth\+Date, const QString \&gender, const QString \&document\+Type, const QString \&document\+Number, const QString \&phone="{}"{}, const QString \&email="{}"{})
+\item 
+\Hypertarget{classPassengerModel_ac42cf541266cafca576e80c2f56b3245}\label{classPassengerModel_ac42cf541266cafca576e80c2f56b3245} 
+bool {\bfseries update\+Passenger} (int id, const QString \&last\+Name, const QString \&first\+Name, const QString \&middle\+Name, const QDate \&birth\+Date, const QString \&gender, const QString \&document\+Type, const QString \&document\+Number, const QString \&phone="{}"{}, const QString \&email="{}"{})
+\item 
+\Hypertarget{classPassengerModel_a3daddb3f80d1f83653deae67ebef28be}\label{classPassengerModel_a3daddb3f80d1f83653deae67ebef28be} 
+bool {\bfseries remove\+Passenger} (int id)
+\item 
+\Hypertarget{classPassengerModel_ad9d3a3766147e439b66fe6ac981326b4}\label{classPassengerModel_ad9d3a3766147e439b66fe6ac981326b4} 
+QMap$<$ int, QString $>$ {\bfseries get\+Passengers\+Map} ()
+\item 
+\Hypertarget{classPassengerModel_aaaa954bf16acd6304513456037249865}\label{classPassengerModel_aaaa954bf16acd6304513456037249865} 
+bool {\bfseries passenger\+Exists} (const QString \&document\+Number)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+models/passengermodel.\+h\item 
+models/passengermodel.\+cpp\end{DoxyCompactItemize}

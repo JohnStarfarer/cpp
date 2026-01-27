@@ -1,0 +1,38 @@
+\doxysection{Schedule\+Model Class Reference}
+\hypertarget{classScheduleModel}{}\label{classScheduleModel}\index{ScheduleModel@{ScheduleModel}}
+Inheritance diagram for Schedule\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classScheduleModel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classScheduleModel_ac388ec5d05d75b7279b36d2854115378}\label{classScheduleModel_ac388ec5d05d75b7279b36d2854115378} 
+{\bfseries Schedule\+Model} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{classScheduleModel_a6a39665c4af631eb079815dd900b7903}\label{classScheduleModel_a6a39665c4af631eb079815dd900b7903} 
+bool {\bfseries add\+Schedule} (int route\+Id, int train\+Id, int wagon\+Type\+Id, const QDate \&departure\+Date, const QTime \&departure\+Time, const QDate \&arrival\+Date, const QTime \&arrival\+Time, int available\+Seats, double price, const QString \&status="{}scheduled"{})
+\item 
+\Hypertarget{classScheduleModel_a7df0cc45739dc6b79563198738b426b4}\label{classScheduleModel_a7df0cc45739dc6b79563198738b426b4} 
+bool {\bfseries update\+Schedule} (int id, int route\+Id, int train\+Id, int wagon\+Type\+Id, const QDate \&departure\+Date, const QTime \&departure\+Time, const QDate \&arrival\+Date, const QTime \&arrival\+Time, int available\+Seats, double price, const QString \&status="{}scheduled"{})
+\item 
+\Hypertarget{classScheduleModel_ae15754cf99db71963fc9ba9216c3c296}\label{classScheduleModel_ae15754cf99db71963fc9ba9216c3c296} 
+bool {\bfseries remove\+Schedule} (int id)
+\item 
+\Hypertarget{classScheduleModel_a14b132a5eb395d4522556cbf47956295}\label{classScheduleModel_a14b132a5eb395d4522556cbf47956295} 
+QSql\+Query {\bfseries get\+Full\+Schedule} ()
+\item 
+\Hypertarget{classScheduleModel_a216479867318c7b50ccd636402582b21}\label{classScheduleModel_a216479867318c7b50ccd636402582b21} 
+bool {\bfseries update\+Available\+Seats} (int schedule\+Id, int change)
+\item 
+\Hypertarget{classScheduleModel_a4a706eb642442459523c447bb8fc935f}\label{classScheduleModel_a4a706eb642442459523c447bb8fc935f} 
+QMap$<$ int, QString $>$ {\bfseries get\+Schedule\+Map} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+models/schedulemodel.\+h\item 
+models/schedulemodel.\+cpp\end{DoxyCompactItemize}
