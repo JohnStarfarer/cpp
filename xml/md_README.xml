@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Репозиторий лабороторных работ по дисциплине &quot;Язык программирования C++&quot;</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md_README_1autotoc_md0"/></para>
+<sect1 id="md_README_1autotoc_md1">
+<title>ИКМ</title></sect1>
+<sect1 id="md_README_1autotoc_md2">
+<title>Группа: ИТ-5-2024</title></sect1>
+<sect1 id="md_README_1autotoc_md3">
+<title>ФИО: Чугаев Евгений Игоревич</title></sect1>
+<sect1 id="md_README_1autotoc_md4">
+<title>Описание ИКМ:</title><para>Необходимо разработать приложение с использованием фреймворка QT и базы данных, разработанной по дисциплине Базы данных и СУБД. Программа должна иметь интуитивно-понятный дружественный интерфейс и проверку вводимых значений. В программе должны присутствовать классы. Необходимо реализовать функции: • просмотр данных из базы; • редактирование данных в базе; • удаление данных из базы; • добавление данных в базу. Функции должны быть доступны для каждой таблицы. База данных должна содержать минимум 3 связные таблицы. К проекту должна быть написана xml-документация (отсутствие документации -5 баллов). К данной работе писать отчет НЕ нужно. В качестве ответа прикрепить ссылку на github. Максимально за лабораторную работу можно получить 20 баллов. Для получения минимального количества баллов (10 баллов) должно быть реализовано 2 функции (одна из которых просмотр) и база данных может содержать 2 таблицы.</para>
+</sect1>
+<sect1 id="md_README_1autotoc_md5">
+<title>Реализация:</title><para><image type="html" name="image/README/1769490859808.png" alt="1769490859808" inline="yes"></image>
+</para>
+<sect2 id="md_README_1autotoc_md6">
+<title>Фреймворк:</title><para>QT Create</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md7">
+<title>СУБД:</title><para>Postgresql</para>
+</sect2>
+</sect1>
+<sect1 id="md_README_1autotoc_md8">
+<title>Алгоритм работы программы</title><sect2 id="md_README_1autotoc_md9">
+<title>Общая архитектура</title><para>Программа использует паттерн Model-View-Controller (MVC):</para>
+<para><orderedlist>
+<listitem><para>Модели (Model) - классы, наследующие от QSqlTableModel и QSqlQueryModel</para>
+</listitem><listitem><para>Представление (View) - QTableView, QTabWidget, диалоговые окна</para>
+</listitem><listitem><para>Контроллер (Controller) - класс <ref refid="classMainWindow" kindref="compound">MainWindow</ref>, обрабатывающий пользовательские действия</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="md_README_1autotoc_md10">
+<title>Последовательность работы программы</title><sect3 id="md_README_1autotoc_md11">
+<title>1. Запуск приложения (main.cpp)</title><para><orderedlist>
+<listitem><para>Создание QApplication</para>
+</listitem><listitem><para>Установка стиля Fusion</para>
+</listitem><listitem><para>Проверка подключения к БД (Database::testConnection())</para>
+</listitem><listitem><para>Если подключение успешно:<itemizedlist>
+<listitem><para>Создание <ref refid="classMainWindow" kindref="compound">MainWindow</ref></para>
+</listitem><listitem><para>Отображение главного окна</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Запуск главного цикла приложения (app.exec())</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md12">
+<title>2. Инициализация главного окна (MainWindow)</title><para><orderedlist>
+<listitem><para>Создание объекта <ref refid="classDatabase" kindref="compound">Database</ref></para>
+</listitem><listitem><para>Подключение к БД (m_database-&gt;connectToDatabase())</para>
+</listitem><listitem><para>Создание всех моделей данных:<itemizedlist>
+<listitem><para><ref refid="classTrainModel" kindref="compound">TrainModel</ref>, <ref refid="classWagonTypeModel" kindref="compound">WagonTypeModel</ref>, <ref refid="classRouteModel" kindref="compound">RouteModel</ref></para>
+</listitem><listitem><para><ref refid="classPassengerModel" kindref="compound">PassengerModel</ref>, <ref refid="classScheduleModel" kindref="compound">ScheduleModel</ref>, <ref refid="classTicketModel" kindref="compound">TicketModel</ref></para>
+</listitem><listitem><para><ref refid="classScheduleViewModel" kindref="compound">ScheduleViewModel</ref>, <ref refid="classTicketViewModel" kindref="compound">TicketViewModel</ref></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Настройка UI (setupUI())</para>
+</listitem><listitem><para>Настройка меню и тулбара</para>
+</listitem><listitem><para>Настройка статусбара</para>
+</listitem><listitem><para>Установка соединений (setupConnections())</para>
+</listitem><listitem><para>Обновление всех таблиц (refreshAllTables())</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md13">
+<title>3. Структура вкладок</title><para><bold>Основные операции (m_mainTabWidget)</bold>:</para>
+<para><itemizedlist>
+<listitem><para>Поезда</para>
+</listitem><listitem><para>Типы вагонов</para>
+</listitem><listitem><para>Маршруты</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Отчеты (m_reportsTabWidget)</bold>:</para>
+<para><itemizedlist>
+<listitem><para>Пассажиры</para>
+</listitem><listitem><para>Расписание</para>
+</listitem><listitem><para>Билеты</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md14">
+<title>4. Алгоритм добавления новой записи (на примере поезда)</title><para><orderedlist>
+<listitem><para>Пользователь нажимает &quot;Добавить поезд&quot;</para>
+</listitem><listitem><para>Вызывается MainWindow::addTrain()</para>
+</listitem><listitem><para>Создается <ref refid="classAddTrainDialog" kindref="compound">AddTrainDialog</ref></para>
+</listitem><listitem><para>Пользователь заполняет поля в диалоге</para>
+</listitem><listitem><para>При нажатии &quot;Добавить&quot;:<itemizedlist>
+<listitem><para>Выполняется валидация данных</para>
+</listitem><listitem><para>Вызывается TrainModel::addTrain()</para>
+</listitem><listitem><para>Метод выполняет SQL INSERT запрос</para>
+</listitem><listitem><para>При успехе: модель обновляется (select())</para>
+</listitem><listitem><para>Таблица автоматически обновляется</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md15">
+<title>5. Взаимодействие с базой данных</title><para><ref refid="classMainWindow" kindref="compound">MainWindow</ref> → Модель → <ref refid="classDatabase" kindref="compound">Database</ref> → PostgreSQL</para>
+<para><bold>Классы-модели</bold>:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classTrainModel" kindref="compound">TrainModel</ref> - работа с таблицей trains</para>
+</listitem><listitem><para><ref refid="classWagonTypeModel" kindref="compound">WagonTypeModel</ref> - работа с таблицей wagon_types</para>
+</listitem><listitem><para><ref refid="classRouteModel" kindref="compound">RouteModel</ref> - работа с таблицей routes</para>
+</listitem><listitem><para><ref refid="classPassengerModel" kindref="compound">PassengerModel</ref> - работа с таблицей passengers</para>
+</listitem><listitem><para><ref refid="classScheduleModel" kindref="compound">ScheduleModel</ref> - работа с таблицей schedule</para>
+</listitem><listitem><para><ref refid="classTicketModel" kindref="compound">TicketModel</ref> - работа с таблицей tickets</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Специальные модели для представлений</bold>:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classScheduleViewModel" kindref="compound">ScheduleViewModel</ref> - JOIN запросы для расписания</para>
+</listitem><listitem><para><ref refid="classTicketViewModel" kindref="compound">TicketViewModel</ref> - JOIN запросы для билетов</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md16">
+<title>6. Алгоритм редактирования записи</title><para><orderedlist>
+<listitem><para>Пользователь выбирает строку в таблице</para>
+</listitem><listitem><para>Нажимает &quot;Редактировать&quot;</para>
+</listitem><listitem><para>Вызывается соответствующий метод (editTrain(), editWagonType(), и т.д.)</para>
+</listitem><listitem><para>Создается диалог с передачей ID записи</para>
+</listitem><listitem><para>Диалог загружает текущие данные</para>
+</listitem><listitem><para>Пользователь изменяет данные</para>
+</listitem><listitem><para>При сохранении вызывается метод updateXXX() модели</para>
+</listitem><listitem><para>Выполняется SQL UPDATE запрос</para>
+</listitem><listitem><para>Таблица обновляется</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md17">
+<title>7. Алгоритм удаления записи</title><para><orderedlist>
+<listitem><para>Пользователь выбирает строку</para>
+</listitem><listitem><para>Нажимает &quot;Удалить&quot;</para>
+</listitem><listitem><para>Показывается диалог подтверждения</para>
+</listitem><listitem><para>При подтверждении вызывается метод removeXXX() модели</para>
+</listitem><listitem><para>Выполняется SQL DELETE запрос</para>
+</listitem><listitem><para>Таблица обновляется</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md18">
+<title>8. Обновление данных</title><para>MainWindow::refreshAllTables() {</para>
+<para><orderedlist>
+<listitem><para>Для каждой модели вызывается select()</para>
+</listitem><listitem><para>Для ViewModel вызывается refresh()</para>
+</listitem><listitem><para>Обновляется статус в статусбаре }</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md19">
+<title>9. Диалоговые окна</title><para>Каждая сущность имеет свой диалог:</para>
+<para><itemizedlist>
+<listitem><para><ref refid="classAddTrainDialog" kindref="compound">AddTrainDialog</ref> - добавление/редактирование поездов</para>
+</listitem><listitem><para><ref refid="classAddWagonTypeDialog" kindref="compound">AddWagonTypeDialog</ref> - типы вагонов</para>
+</listitem><listitem><para><ref refid="classAddRouteDialog" kindref="compound">AddRouteDialog</ref> - маршруты</para>
+</listitem><listitem><para><ref refid="classAddPassengerDialog" kindref="compound">AddPassengerDialog</ref> - пассажиры</para>
+</listitem><listitem><para><ref refid="classAddScheduleDialog" kindref="compound">AddScheduleDialog</ref> - расписание</para>
+</listitem><listitem><para><ref refid="classAddTicketDialog" kindref="compound">AddTicketDialog</ref> - билеты</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md20">
+<title>10. Валидация данных</title><para>Каждый диалог имеет:</para>
+<para><orderedlist>
+<listitem><para>Проверку обязательных полей</para>
+</listitem><listitem><para>Валидацию форматов (email, телефон, даты)</para>
+</listitem><listitem><para>Проверку бизнес-логики (например, дата прибытия позже отправления)</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md21">
+<title>11. Триггеры и ограничения в БД</title><para>База данных включает:</para>
+<para><itemizedlist>
+<listitem><para>Триггер для генерации номеров билетов</para>
+</listitem><listitem><para>Триггер для обновления свободных мест</para>
+</listitem><listitem><para>Ограничения целостности (FOREIGN KEY)</para>
+</listitem><listitem><para>Представления для сложных запросов</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="md_README_1autotoc_md22">
+<title>12. Обработка ошибок</title><para><orderedlist>
+<listitem><para>Проверка подключения при запуске</para>
+</listitem><listitem><para>Проверка выполнения SQL запросов</para>
+</listitem><listitem><para>Валидация пользовательского ввода</para>
+</listitem><listitem><para>Отображение сообщений об ошибках через QMessageBox </para>
+</listitem></orderedlist>
+</para>
+</sect3>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

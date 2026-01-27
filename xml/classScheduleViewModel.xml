@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classScheduleViewModel" kind="class" language="C++" prot="public">
+    <compoundname>ScheduleViewModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlQueryModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classScheduleViewModel_1afbc8fe107b998b76021c92fb28e2a7ea" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScheduleViewModel::ScheduleViewModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ScheduleViewModel</name>
+        <qualifiedname>ScheduleViewModel::ScheduleViewModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/scheduleviewmodel.h" line="16" column="14" bodyfile="models/scheduleviewmodel.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleViewModel_1a647bac2ba4ec7e606de7d7b12f743e45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant ScheduleViewModel::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</argsstring>
+        <name>data</name>
+        <qualifiedname>ScheduleViewModel::data</qualifiedname>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/scheduleviewmodel.h" line="18" column="14" bodyfile="models/scheduleviewmodel.cpp" bodystart="40" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleViewModel_1ac45b0f7df2a2a3db4ea03bb5a7b81283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScheduleViewModel::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>ScheduleViewModel::refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/scheduleviewmodel.h" line="19" column="10" bodyfile="models/scheduleviewmodel.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classScheduleViewModel_1ac9624977144f2b9363b7b4295bec373f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScheduleViewModel::setupQuery</definition>
+        <argsstring>()</argsstring>
+        <name>setupQuery</name>
+        <qualifiedname>ScheduleViewModel::setupQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/scheduleviewmodel.h" line="22" column="10" bodyfile="models/scheduleviewmodel.cpp" bodystart="11" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlQueryModel</label>
+      </node>
+      <node id="1">
+        <label>ScheduleViewModel</label>
+        <link refid="classScheduleViewModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlQueryModel</label>
+      </node>
+      <node id="1">
+        <label>ScheduleViewModel</label>
+        <link refid="classScheduleViewModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/scheduleviewmodel.h" line="11" column="1" bodyfile="models/scheduleviewmodel.h" bodystart="12" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classScheduleViewModel_1a647bac2ba4ec7e606de7d7b12f743e45" prot="public" virt="non-virtual"><scope>ScheduleViewModel</scope><name>data</name></member>
+      <member refid="classScheduleViewModel_1ac45b0f7df2a2a3db4ea03bb5a7b81283" prot="public" virt="non-virtual"><scope>ScheduleViewModel</scope><name>refresh</name></member>
+      <member refid="classScheduleViewModel_1afbc8fe107b998b76021c92fb28e2a7ea" prot="public" virt="non-virtual"><scope>ScheduleViewModel</scope><name>ScheduleViewModel</name></member>
+      <member refid="classScheduleViewModel_1ac9624977144f2b9363b7b4295bec373f" prot="private" virt="non-virtual"><scope>ScheduleViewModel</scope><name>setupQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

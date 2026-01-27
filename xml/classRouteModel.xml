@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classRouteModel" kind="class" language="C++" prot="public">
+    <compoundname>RouteModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRouteModel_1a2b945e74837a706013f95b1dbc921e41" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RouteModel::RouteModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>RouteModel</name>
+        <qualifiedname>RouteModel::RouteModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="14" column="14" bodyfile="models/routemodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classRouteModel_1a8f3b70eabe960313103dc25e42160c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RouteModel::addRoute</definition>
+        <argsstring>(const QString &amp;departure, const QString &amp;arrival, double basePrice, const QString &amp;status=&quot;active&quot;, int distance=0)</argsstring>
+        <name>addRoute</name>
+        <qualifiedname>RouteModel::addRoute</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>departure</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arrival</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>basePrice</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;active&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="17" column="10" bodyfile="models/routemodel.cpp" bodystart="24" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classRouteModel_1a541a10c6883862828652ad6e71807ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RouteModel::updateRoute</definition>
+        <argsstring>(int id, const QString &amp;departure, const QString &amp;arrival, double basePrice, const QString &amp;status=&quot;active&quot;, int distance=0)</argsstring>
+        <name>updateRoute</name>
+        <qualifiedname>RouteModel::updateRoute</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>departure</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arrival</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>basePrice</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;active&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="20" column="10" bodyfile="models/routemodel.cpp" bodystart="45" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classRouteModel_1af72bad9f213fbb690cc060e3b6cdf8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RouteModel::removeRoute</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removeRoute</name>
+        <qualifiedname>RouteModel::removeRoute</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="23" column="10" bodyfile="models/routemodel.cpp" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classRouteModel_1a073b1cc9a2150b73e1722eee73e20919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMap&lt; int, QString &gt;</type>
+        <definition>QMap&lt; int, QString &gt; RouteModel::getRoutesMap</definition>
+        <argsstring>()</argsstring>
+        <name>getRoutesMap</name>
+        <qualifiedname>RouteModel::getRoutesMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="26" column="10" bodyfile="models/routemodel.cpp" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classRouteModel_1ac893b236dd7601b58a9c5e3ef072a6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RouteModel::routeExists</definition>
+        <argsstring>(const QString &amp;departure, const QString &amp;arrival)</argsstring>
+        <name>routeExists</name>
+        <qualifiedname>RouteModel::routeExists</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>departure</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arrival</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="29" column="10" bodyfile="models/routemodel.cpp" bodystart="94" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classRouteModel_1aa0e66dc99e50ea09b0e4e581f2f706f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RouteModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>RouteModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/routemodel.h" line="32" column="10" bodyfile="models/routemodel.cpp" bodystart="9" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>RouteModel</label>
+        <link refid="classRouteModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>RouteModel</label>
+        <link refid="classRouteModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/routemodel.h" line="9" column="1" bodyfile="models/routemodel.h" bodystart="10" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classRouteModel_1a8f3b70eabe960313103dc25e42160c10" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>addRoute</name></member>
+      <member refid="classRouteModel_1a073b1cc9a2150b73e1722eee73e20919" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>getRoutesMap</name></member>
+      <member refid="classRouteModel_1af72bad9f213fbb690cc060e3b6cdf8e4" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>removeRoute</name></member>
+      <member refid="classRouteModel_1ac893b236dd7601b58a9c5e3ef072a6ca" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>routeExists</name></member>
+      <member refid="classRouteModel_1a2b945e74837a706013f95b1dbc921e41" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>RouteModel</name></member>
+      <member refid="classRouteModel_1aa0e66dc99e50ea09b0e4e581f2f706f7" prot="private" virt="non-virtual"><scope>RouteModel</scope><name>setupModel</name></member>
+      <member refid="classRouteModel_1a541a10c6883862828652ad6e71807ecd" prot="public" virt="non-virtual"><scope>RouteModel</scope><name>updateRoute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

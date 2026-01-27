@@ -10,7 +10,30 @@
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Группа: ИТ-5-2024"><param name="Local" value="md_README.html#autotoc_md2"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="ФИО: Чугаев Евгений Игоревич"><param name="Local" value="md_README.html#autotoc_md3"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Описание ИКМ:"><param name="Local" value="md_README.html#autotoc_md4"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="Реализация:"><param name="Local" value="md_README.html#autotoc_md5"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Реализация:"><param name="Local" value="md_README.html#autotoc_md5"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Фреймворк:"><param name="Local" value="md_README.html#autotoc_md6"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="СУБД:"><param name="Local" value="md_README.html#autotoc_md7"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Алгоритм работы программы"><param name="Local" value="md_README.html#autotoc_md8"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Общая архитектура"><param name="Local" value="md_README.html#autotoc_md9"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Последовательность работы программы"><param name="Local" value="md_README.html#autotoc_md10"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Запуск приложения (main.cpp)"><param name="Local" value="md_README.html#autotoc_md11"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Инициализация главного окна (MainWindow)"><param name="Local" value="md_README.html#autotoc_md12"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Структура вкладок"><param name="Local" value="md_README.html#autotoc_md13"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Алгоритм добавления новой записи (на примере поезда)"><param name="Local" value="md_README.html#autotoc_md14"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Взаимодействие с базой данных"><param name="Local" value="md_README.html#autotoc_md15"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Алгоритм редактирования записи"><param name="Local" value="md_README.html#autotoc_md16"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Алгоритм удаления записи"><param name="Local" value="md_README.html#autotoc_md17"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Обновление данных"><param name="Local" value="md_README.html#autotoc_md18"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Диалоговые окна"><param name="Local" value="md_README.html#autotoc_md19"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Валидация данных"><param name="Local" value="md_README.html#autotoc_md20"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Триггеры и ограничения в БД"><param name="Local" value="md_README.html#autotoc_md21"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Обработка ошибок"><param name="Local" value="md_README.html#autotoc_md22"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
   </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
   <UL>

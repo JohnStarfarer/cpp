@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddTicketDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddTicketDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddTicketDialog_1a0454875276d3b97c5ff6057c559888ab" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddTicketDialog::m_scheduleCombo</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleCombo</name>
+        <qualifiedname>AddTicketDialog::m_scheduleCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="46" column="15" bodyfile="dialogs/addticketdialog.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a11d8c26a949347fb7bffc391c81a7ce6" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddTicketDialog::m_passengerCombo</definition>
+        <argsstring></argsstring>
+        <name>m_passengerCombo</name>
+        <qualifiedname>AddTicketDialog::m_passengerCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="47" column="15" bodyfile="dialogs/addticketdialog.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a46fb944f7712a8490d2bbe0e392083e6" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddTicketDialog::m_wagonSpin</definition>
+        <argsstring></argsstring>
+        <name>m_wagonSpin</name>
+        <qualifiedname>AddTicketDialog::m_wagonSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="48" column="14" bodyfile="dialogs/addticketdialog.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1ab923ac68575f75d151a7913195b6f4dd" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddTicketDialog::m_seatSpin</definition>
+        <argsstring></argsstring>
+        <name>m_seatSpin</name>
+        <qualifiedname>AddTicketDialog::m_seatSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="49" column="14" bodyfile="dialogs/addticketdialog.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a2e0fdef4d32918505bdd849aca1d4441" prot="private" static="no" mutable="no">
+        <type>QDoubleSpinBox *</type>
+        <definition>QDoubleSpinBox* AddTicketDialog::m_priceSpin</definition>
+        <argsstring></argsstring>
+        <name>m_priceSpin</name>
+        <qualifiedname>AddTicketDialog::m_priceSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="50" column="20" bodyfile="dialogs/addticketdialog.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a0b53b93da0aa07e61f32e845c124d8e7" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddTicketDialog::m_statusCombo</definition>
+        <argsstring></argsstring>
+        <name>m_statusCombo</name>
+        <qualifiedname>AddTicketDialog::m_statusCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="51" column="15" bodyfile="dialogs/addticketdialog.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1ab6a5ec21953c334a21e2b55391e95d4f" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddTicketDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddTicketDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="52" column="17" bodyfile="dialogs/addticketdialog.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a9f93044438a1d908a8b9a01b2aababe2" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddTicketDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddTicketDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="53" column="17" bodyfile="dialogs/addticketdialog.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a6cc654b1a993fedf605fe5682c42ae45" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddTicketDialog::m_checkSeatButton</definition>
+        <argsstring></argsstring>
+        <name>m_checkSeatButton</name>
+        <qualifiedname>AddTicketDialog::m_checkSeatButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="54" column="17" bodyfile="dialogs/addticketdialog.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a17869eeeeda38512f4bcea6bdd12c469" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddTicketDialog::m_scheduleInfoLabel</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleInfoLabel</name>
+        <qualifiedname>AddTicketDialog::m_scheduleInfoLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="56" column="12" bodyfile="dialogs/addticketdialog.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a27ffe3fc8b46ac162e009f2eef7ce0d3" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddTicketDialog::m_passengerInfoLabel</definition>
+        <argsstring></argsstring>
+        <name>m_passengerInfoLabel</name>
+        <qualifiedname>AddTicketDialog::m_passengerInfoLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="57" column="12" bodyfile="dialogs/addticketdialog.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a47f678173fabd659bb2e5e8316660dbc" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddTicketDialog::m_seatStatusLabel</definition>
+        <argsstring></argsstring>
+        <name>m_seatStatusLabel</name>
+        <qualifiedname>AddTicketDialog::m_seatStatusLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="58" column="12" bodyfile="dialogs/addticketdialog.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1a2f44a4bc8ff97797abe744c919dd4660" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddTicketDialog::m_availableSeatsLabel</definition>
+        <argsstring></argsstring>
+        <name>m_availableSeatsLabel</name>
+        <qualifiedname>AddTicketDialog::m_availableSeatsLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="59" column="12" bodyfile="dialogs/addticketdialog.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1acdd74bc2cfa55614ad48627e704df01b" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* AddTicketDialog::m_autoPriceCheck</definition>
+        <argsstring></argsstring>
+        <name>m_autoPriceCheck</name>
+        <qualifiedname>AddTicketDialog::m_autoPriceCheck</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="61" column="15" bodyfile="dialogs/addticketdialog.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTicketDialog_1aed1ed99e44c0ff44108e8c284629c687" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddTicketDialog::m_ticketId</definition>
+        <argsstring></argsstring>
+        <name>m_ticketId</name>
+        <qualifiedname>AddTicketDialog::m_ticketId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="63" column="9" bodyfile="dialogs/addticketdialog.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddTicketDialog_1af7174a6459bc3f5b9c75c7d46cb5924f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddTicketDialog::AddTicketDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddTicketDialog</name>
+        <qualifiedname>AddTicketDialog::AddTicketDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="23" column="14" bodyfile="dialogs/addticketdialog.cpp" bodystart="6" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a47dc1160b6a3caff3af8101b54a93b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddTicketDialog::AddTicketDialog</definition>
+        <argsstring>(int ticketId, QWidget *parent=nullptr)</argsstring>
+        <name>AddTicketDialog</name>
+        <qualifiedname>AddTicketDialog::AddTicketDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ticketId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="24" column="5" bodyfile="dialogs/addticketdialog.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a2bcbc372b467d6b5adec8ab971a79b39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddTicketDialog::getScheduleId</definition>
+        <argsstring>() const</argsstring>
+        <name>getScheduleId</name>
+        <qualifiedname>AddTicketDialog::getScheduleId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="26" column="9" bodyfile="dialogs/addticketdialog.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a7da9aafc4fb85280c63b4867522569ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddTicketDialog::getPassengerId</definition>
+        <argsstring>() const</argsstring>
+        <name>getPassengerId</name>
+        <qualifiedname>AddTicketDialog::getPassengerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="27" column="9" bodyfile="dialogs/addticketdialog.cpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1ab6f486542ad05c996f10ef7fbf4e615e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddTicketDialog::getWagonNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getWagonNumber</name>
+        <qualifiedname>AddTicketDialog::getWagonNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="28" column="9" bodyfile="dialogs/addticketdialog.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a9b9e61ba35cf3229b4d9a7013cce351e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddTicketDialog::getSeatNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getSeatNumber</name>
+        <qualifiedname>AddTicketDialog::getSeatNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="29" column="9" bodyfile="dialogs/addticketdialog.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1aa2d69bcac93984fb5119ff9efa1a76f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AddTicketDialog::getPrice</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrice</name>
+        <qualifiedname>AddTicketDialog::getPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="30" column="12" bodyfile="dialogs/addticketdialog.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a4ae4c74d73013d68dceecb9f21367f8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddTicketDialog::getStatus</definition>
+        <argsstring>() const</argsstring>
+        <name>getStatus</name>
+        <qualifiedname>AddTicketDialog::getStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="31" column="13" bodyfile="dialogs/addticketdialog.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddTicketDialog_1aa6cf28395b20f480f5c6f13de2863a8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddTicketDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="34" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="219" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAddTicketDialog_1a3d2df35af3cbd6a02532a610de16a5af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::checkSeatAvailability</definition>
+        <argsstring>()</argsstring>
+        <name>checkSeatAvailability</name>
+        <qualifiedname>AddTicketDialog::checkSeatAvailability</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="35" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="254" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAddTicketDialog_1ab385c7ebd19765bb0892e7c05bfd2b93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::onScheduleChanged</definition>
+        <argsstring>()</argsstring>
+        <name>onScheduleChanged</name>
+        <qualifiedname>AddTicketDialog::onScheduleChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="36" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="285" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAddTicketDialog_1a0d5c38ae0160aa59f56d4e5161561be4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::onPassengerChanged</definition>
+        <argsstring>()</argsstring>
+        <name>onPassengerChanged</name>
+        <qualifiedname>AddTicketDialog::onPassengerChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="37" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="316" bodyend="330"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddTicketDialog_1a80bceb1693f669b0b747772bd6cc00f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddTicketDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="40" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="23" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a264b86c0b47d3de454e06025e8ad9bb1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::loadTicketData</definition>
+        <argsstring>(int ticketId)</argsstring>
+        <name>loadTicketData</name>
+        <qualifiedname>AddTicketDialog::loadTicketData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ticketId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="41" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="172" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1af86018b693ffd213c7f9b32f39198d9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::loadComboBoxData</definition>
+        <argsstring>()</argsstring>
+        <name>loadComboBoxData</name>
+        <qualifiedname>AddTicketDialog::loadComboBoxData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="42" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="148" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a2a0b67bf800dd02496120bf2df23cdd0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::updatePrice</definition>
+        <argsstring>()</argsstring>
+        <name>updatePrice</name>
+        <qualifiedname>AddTicketDialog::updatePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="43" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="332" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTicketDialog_1a954efb5f3c3ed5717cfe048ff93b66a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTicketDialog::updateAvailableSeats</definition>
+        <argsstring>()</argsstring>
+        <name>updateAvailableSeats</name>
+        <qualifiedname>AddTicketDialog::updateAvailableSeats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addticketdialog.h" line="44" column="10" bodyfile="dialogs/addticketdialog.cpp" bodystart="348" bodyend="369"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddTicketDialog</label>
+        <link refid="classAddTicketDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddTicketDialog</label>
+        <link refid="classAddTicketDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addticketdialog.h" line="18" column="1" bodyfile="dialogs/addticketdialog.h" bodystart="19" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classAddTicketDialog_1af7174a6459bc3f5b9c75c7d46cb5924f" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>AddTicketDialog</name></member>
+      <member refid="classAddTicketDialog_1a47dc1160b6a3caff3af8101b54a93b69" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>AddTicketDialog</name></member>
+      <member refid="classAddTicketDialog_1a3d2df35af3cbd6a02532a610de16a5af" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>checkSeatAvailability</name></member>
+      <member refid="classAddTicketDialog_1a7da9aafc4fb85280c63b4867522569ec" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getPassengerId</name></member>
+      <member refid="classAddTicketDialog_1aa2d69bcac93984fb5119ff9efa1a76f0" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getPrice</name></member>
+      <member refid="classAddTicketDialog_1a2bcbc372b467d6b5adec8ab971a79b39" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getScheduleId</name></member>
+      <member refid="classAddTicketDialog_1a9b9e61ba35cf3229b4d9a7013cce351e" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getSeatNumber</name></member>
+      <member refid="classAddTicketDialog_1a4ae4c74d73013d68dceecb9f21367f8a" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getStatus</name></member>
+      <member refid="classAddTicketDialog_1ab6f486542ad05c996f10ef7fbf4e615e" prot="public" virt="non-virtual"><scope>AddTicketDialog</scope><name>getWagonNumber</name></member>
+      <member refid="classAddTicketDialog_1af86018b693ffd213c7f9b32f39198d9e" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>loadComboBoxData</name></member>
+      <member refid="classAddTicketDialog_1a264b86c0b47d3de454e06025e8ad9bb1" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>loadTicketData</name></member>
+      <member refid="classAddTicketDialog_1acdd74bc2cfa55614ad48627e704df01b" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_autoPriceCheck</name></member>
+      <member refid="classAddTicketDialog_1a2f44a4bc8ff97797abe744c919dd4660" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_availableSeatsLabel</name></member>
+      <member refid="classAddTicketDialog_1a9f93044438a1d908a8b9a01b2aababe2" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddTicketDialog_1a6cc654b1a993fedf605fe5682c42ae45" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_checkSeatButton</name></member>
+      <member refid="classAddTicketDialog_1ab6a5ec21953c334a21e2b55391e95d4f" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddTicketDialog_1a11d8c26a949347fb7bffc391c81a7ce6" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_passengerCombo</name></member>
+      <member refid="classAddTicketDialog_1a27ffe3fc8b46ac162e009f2eef7ce0d3" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_passengerInfoLabel</name></member>
+      <member refid="classAddTicketDialog_1a2e0fdef4d32918505bdd849aca1d4441" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_priceSpin</name></member>
+      <member refid="classAddTicketDialog_1a0454875276d3b97c5ff6057c559888ab" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_scheduleCombo</name></member>
+      <member refid="classAddTicketDialog_1a17869eeeeda38512f4bcea6bdd12c469" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_scheduleInfoLabel</name></member>
+      <member refid="classAddTicketDialog_1ab923ac68575f75d151a7913195b6f4dd" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_seatSpin</name></member>
+      <member refid="classAddTicketDialog_1a47f678173fabd659bb2e5e8316660dbc" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_seatStatusLabel</name></member>
+      <member refid="classAddTicketDialog_1a0b53b93da0aa07e61f32e845c124d8e7" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_statusCombo</name></member>
+      <member refid="classAddTicketDialog_1aed1ed99e44c0ff44108e8c284629c687" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_ticketId</name></member>
+      <member refid="classAddTicketDialog_1a46fb944f7712a8490d2bbe0e392083e6" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>m_wagonSpin</name></member>
+      <member refid="classAddTicketDialog_1a0d5c38ae0160aa59f56d4e5161561be4" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>onPassengerChanged</name></member>
+      <member refid="classAddTicketDialog_1ab385c7ebd19765bb0892e7c05bfd2b93" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>onScheduleChanged</name></member>
+      <member refid="classAddTicketDialog_1a80bceb1693f669b0b747772bd6cc00f6" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>setupUI</name></member>
+      <member refid="classAddTicketDialog_1a954efb5f3c3ed5717cfe048ff93b66a5" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>updateAvailableSeats</name></member>
+      <member refid="classAddTicketDialog_1a2a0b67bf800dd02496120bf2df23cdd0" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>updatePrice</name></member>
+      <member refid="classAddTicketDialog_1aa6cf28395b20f480f5c6f13de2863a8b" prot="private" virt="non-virtual"><scope>AddTicketDialog</scope><name>validateAndAccept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

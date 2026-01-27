@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_1ae4179d5e953611aae20c997279e02c" kind="dir">
+    <compoundname>models</compoundname>
+    <innerfile refid="passengermodel_8cpp">passengermodel.cpp</innerfile>
+    <innerfile refid="passengermodel_8h">passengermodel.h</innerfile>
+    <innerfile refid="routemodel_8cpp">routemodel.cpp</innerfile>
+    <innerfile refid="routemodel_8h">routemodel.h</innerfile>
+    <innerfile refid="schedulemodel_8cpp">schedulemodel.cpp</innerfile>
+    <innerfile refid="schedulemodel_8h">schedulemodel.h</innerfile>
+    <innerfile refid="scheduleviewmodel_8cpp">scheduleviewmodel.cpp</innerfile>
+    <innerfile refid="scheduleviewmodel_8h">scheduleviewmodel.h</innerfile>
+    <innerfile refid="ticketmodel_8cpp">ticketmodel.cpp</innerfile>
+    <innerfile refid="ticketmodel_8h">ticketmodel.h</innerfile>
+    <innerfile refid="ticketviewmodel_8cpp">ticketviewmodel.cpp</innerfile>
+    <innerfile refid="ticketviewmodel_8h">ticketviewmodel.h</innerfile>
+    <innerfile refid="trainmodel_8cpp">trainmodel.cpp</innerfile>
+    <innerfile refid="trainmodel_8h">trainmodel.h</innerfile>
+    <innerfile refid="wagontypemodel_8cpp">wagontypemodel.cpp</innerfile>
+    <innerfile refid="wagontypemodel_8h">wagontypemodel.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models/"/>
+  </compounddef>
+</doxygen>

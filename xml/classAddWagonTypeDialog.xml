@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddWagonTypeDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddWagonTypeDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1acfc266a1e98d6c8f027d7f6202717c97" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddWagonTypeDialog::m_nameEdit</definition>
+        <argsstring></argsstring>
+        <name>m_nameEdit</name>
+        <qualifiedname>AddWagonTypeDialog::m_nameEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="34" column="15" bodyfile="dialogs/addwagontypedialog.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1a349542e64a8554782679b40d79fa4dac" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddWagonTypeDialog::m_capacitySpin</definition>
+        <argsstring></argsstring>
+        <name>m_capacitySpin</name>
+        <qualifiedname>AddWagonTypeDialog::m_capacitySpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="35" column="14" bodyfile="dialogs/addwagontypedialog.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1a65fd35f8497bce0ef8dd15eb93cae23a" prot="private" static="no" mutable="no">
+        <type>QTextEdit *</type>
+        <definition>QTextEdit* AddWagonTypeDialog::m_descEdit</definition>
+        <argsstring></argsstring>
+        <name>m_descEdit</name>
+        <qualifiedname>AddWagonTypeDialog::m_descEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="36" column="15" bodyfile="dialogs/addwagontypedialog.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1aa77a0c1b6eb6b96a167a708ec7da5d86" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddWagonTypeDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddWagonTypeDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="37" column="17" bodyfile="dialogs/addwagontypedialog.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1ae28e17231bcafd199685791f62bfa515" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddWagonTypeDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddWagonTypeDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="38" column="17" bodyfile="dialogs/addwagontypedialog.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddWagonTypeDialog_1a7ffb8a5f9286239766fd9197ef042de6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddWagonTypeDialog::m_wagonTypeId</definition>
+        <argsstring></argsstring>
+        <name>m_wagonTypeId</name>
+        <qualifiedname>AddWagonTypeDialog::m_wagonTypeId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="40" column="9" bodyfile="dialogs/addwagontypedialog.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddWagonTypeDialog_1a07acef17a74044d2ffdfcaba2de17a40" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddWagonTypeDialog::AddWagonTypeDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddWagonTypeDialog</name>
+        <qualifiedname>AddWagonTypeDialog::AddWagonTypeDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="20" column="14" bodyfile="dialogs/addwagontypedialog.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddWagonTypeDialog_1a80827eb1527c04cb1a46374840d4f1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddWagonTypeDialog::AddWagonTypeDialog</definition>
+        <argsstring>(int wagonTypeId, QWidget *parent=nullptr)</argsstring>
+        <name>AddWagonTypeDialog</name>
+        <qualifiedname>AddWagonTypeDialog::AddWagonTypeDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>wagonTypeId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="21" column="5" bodyfile="dialogs/addwagontypedialog.cpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddWagonTypeDialog_1a2879f2149085de2bd1781e7d279a1562" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddWagonTypeDialog::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>AddWagonTypeDialog::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="23" column="13" bodyfile="dialogs/addwagontypedialog.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddWagonTypeDialog_1a08c7a940a2b4e918264664965ef4db10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddWagonTypeDialog::getCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapacity</name>
+        <qualifiedname>AddWagonTypeDialog::getCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="24" column="9" bodyfile="dialogs/addwagontypedialog.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddWagonTypeDialog_1ac684c0913e6b8435cda4cc08e4ef5284" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddWagonTypeDialog::getDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescription</name>
+        <qualifiedname>AddWagonTypeDialog::getDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="25" column="13" bodyfile="dialogs/addwagontypedialog.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddWagonTypeDialog_1a783c678474a7fe3b7d461ac5a086fb38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddWagonTypeDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddWagonTypeDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="28" column="10" bodyfile="dialogs/addwagontypedialog.cpp" bodystart="84" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddWagonTypeDialog_1afb7c6bb2f16fe694769e2e0236343d00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddWagonTypeDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddWagonTypeDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="31" column="10" bodyfile="dialogs/addwagontypedialog.cpp" bodystart="22" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddWagonTypeDialog_1ad321a1a4e79f35f5f88b05bc1acb3ba8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddWagonTypeDialog::loadWagonTypeData</definition>
+        <argsstring>(int wagonTypeId)</argsstring>
+        <name>loadWagonTypeData</name>
+        <qualifiedname>AddWagonTypeDialog::loadWagonTypeData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>wagonTypeId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addwagontypedialog.h" line="32" column="10" bodyfile="dialogs/addwagontypedialog.cpp" bodystart="70" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddWagonTypeDialog</label>
+        <link refid="classAddWagonTypeDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddWagonTypeDialog</label>
+        <link refid="classAddWagonTypeDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addwagontypedialog.h" line="15" column="1" bodyfile="dialogs/addwagontypedialog.h" bodystart="16" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classAddWagonTypeDialog_1a07acef17a74044d2ffdfcaba2de17a40" prot="public" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>AddWagonTypeDialog</name></member>
+      <member refid="classAddWagonTypeDialog_1a80827eb1527c04cb1a46374840d4f1cd" prot="public" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>AddWagonTypeDialog</name></member>
+      <member refid="classAddWagonTypeDialog_1a08c7a940a2b4e918264664965ef4db10" prot="public" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>getCapacity</name></member>
+      <member refid="classAddWagonTypeDialog_1ac684c0913e6b8435cda4cc08e4ef5284" prot="public" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>getDescription</name></member>
+      <member refid="classAddWagonTypeDialog_1a2879f2149085de2bd1781e7d279a1562" prot="public" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>getName</name></member>
+      <member refid="classAddWagonTypeDialog_1ad321a1a4e79f35f5f88b05bc1acb3ba8" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>loadWagonTypeData</name></member>
+      <member refid="classAddWagonTypeDialog_1ae28e17231bcafd199685791f62bfa515" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddWagonTypeDialog_1a349542e64a8554782679b40d79fa4dac" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_capacitySpin</name></member>
+      <member refid="classAddWagonTypeDialog_1a65fd35f8497bce0ef8dd15eb93cae23a" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_descEdit</name></member>
+      <member refid="classAddWagonTypeDialog_1acfc266a1e98d6c8f027d7f6202717c97" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_nameEdit</name></member>
+      <member refid="classAddWagonTypeDialog_1aa77a0c1b6eb6b96a167a708ec7da5d86" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddWagonTypeDialog_1a7ffb8a5f9286239766fd9197ef042de6" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>m_wagonTypeId</name></member>
+      <member refid="classAddWagonTypeDialog_1afb7c6bb2f16fe694769e2e0236343d00" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>setupUI</name></member>
+      <member refid="classAddWagonTypeDialog_1a783c678474a7fe3b7d461ac5a086fb38" prot="private" virt="non-virtual"><scope>AddWagonTypeDialog</scope><name>validateAndAccept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

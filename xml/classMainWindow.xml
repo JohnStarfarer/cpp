@@ -1,0 +1,1054 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classMainWindow" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainWindow_1ad4fcda29170398da4f4c2aba7875dee6" prot="private" static="no" mutable="no">
+        <type><ref refid="classDatabase" kindref="compound">Database</ref> *</type>
+        <definition>Database* MainWindow::m_database</definition>
+        <argsstring></argsstring>
+        <name>m_database</name>
+        <qualifiedname>MainWindow::m_database</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="76" column="14" bodyfile="mainwindow.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a5560d9b1fad0cdb3e64eba77c4602202" prot="private" static="no" mutable="no">
+        <type>QSplitter *</type>
+        <definition>QSplitter* MainWindow::m_mainSplitter</definition>
+        <argsstring></argsstring>
+        <name>m_mainSplitter</name>
+        <qualifiedname>MainWindow::m_mainSplitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="79" column="15" bodyfile="mainwindow.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a478fa0e7fb8260f41970d93a3f7c8669" prot="private" static="no" mutable="no">
+        <type>QTabWidget *</type>
+        <definition>QTabWidget* MainWindow::m_mainTabWidget</definition>
+        <argsstring></argsstring>
+        <name>m_mainTabWidget</name>
+        <qualifiedname>MainWindow::m_mainTabWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="82" column="16" bodyfile="mainwindow.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a090faa16ecf10a8c12eaf918ad083632" prot="private" static="no" mutable="no">
+        <type>QTabWidget *</type>
+        <definition>QTabWidget* MainWindow::m_reportsTabWidget</definition>
+        <argsstring></argsstring>
+        <name>m_reportsTabWidget</name>
+        <qualifiedname>MainWindow::m_reportsTabWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="83" column="16" bodyfile="mainwindow.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a9a7cc530005b80456e3ac6eb65060395" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_trainTable</definition>
+        <argsstring></argsstring>
+        <name>m_trainTable</name>
+        <qualifiedname>MainWindow::m_trainTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="86" column="16" bodyfile="mainwindow.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a40d4192b3fdc3aa354e7bbc52e21b5e1" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_wagonTypeTable</definition>
+        <argsstring></argsstring>
+        <name>m_wagonTypeTable</name>
+        <qualifiedname>MainWindow::m_wagonTypeTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="87" column="16" bodyfile="mainwindow.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a1cf987c1359e5aa67ac04c89f9a8e634" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_routeTable</definition>
+        <argsstring></argsstring>
+        <name>m_routeTable</name>
+        <qualifiedname>MainWindow::m_routeTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="88" column="16" bodyfile="mainwindow.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a2fad77c34fb93b9ac269ccd12cfb8dc4" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_passengerTable</definition>
+        <argsstring></argsstring>
+        <name>m_passengerTable</name>
+        <qualifiedname>MainWindow::m_passengerTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="89" column="16" bodyfile="mainwindow.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a04c34034b5f89719f272da0eedad0e95" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_scheduleTable</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleTable</name>
+        <qualifiedname>MainWindow::m_scheduleTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="90" column="16" bodyfile="mainwindow.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a966ba86745af3dab285fd14c89001703" prot="private" static="no" mutable="no">
+        <type>QTableView *</type>
+        <definition>QTableView* MainWindow::m_ticketTable</definition>
+        <argsstring></argsstring>
+        <name>m_ticketTable</name>
+        <qualifiedname>MainWindow::m_ticketTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="91" column="16" bodyfile="mainwindow.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a5134454e942b7b58b6230de5c418efbd" prot="private" static="no" mutable="no">
+        <type><ref refid="classTrainModel" kindref="compound">TrainModel</ref> *</type>
+        <definition>TrainModel* MainWindow::m_trainModel</definition>
+        <argsstring></argsstring>
+        <name>m_trainModel</name>
+        <qualifiedname>MainWindow::m_trainModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="94" column="16" bodyfile="mainwindow.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a9d55838dfa81c0f072559859b02ddde7" prot="private" static="no" mutable="no">
+        <type><ref refid="classWagonTypeModel" kindref="compound">WagonTypeModel</ref> *</type>
+        <definition>WagonTypeModel* MainWindow::m_wagonTypeModel</definition>
+        <argsstring></argsstring>
+        <name>m_wagonTypeModel</name>
+        <qualifiedname>MainWindow::m_wagonTypeModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="95" column="20" bodyfile="mainwindow.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1abf796c3db82b62c84f37aa65c7c2ab44" prot="private" static="no" mutable="no">
+        <type><ref refid="classRouteModel" kindref="compound">RouteModel</ref> *</type>
+        <definition>RouteModel* MainWindow::m_routeModel</definition>
+        <argsstring></argsstring>
+        <name>m_routeModel</name>
+        <qualifiedname>MainWindow::m_routeModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="96" column="16" bodyfile="mainwindow.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a950a4db6bc78e3c548e318766acc5573" prot="private" static="no" mutable="no">
+        <type><ref refid="classPassengerModel" kindref="compound">PassengerModel</ref> *</type>
+        <definition>PassengerModel* MainWindow::m_passengerModel</definition>
+        <argsstring></argsstring>
+        <name>m_passengerModel</name>
+        <qualifiedname>MainWindow::m_passengerModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="97" column="20" bodyfile="mainwindow.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a47be418ab202d488ec5f649023a1eac8" prot="private" static="no" mutable="no">
+        <type><ref refid="classScheduleModel" kindref="compound">ScheduleModel</ref> *</type>
+        <definition>ScheduleModel* MainWindow::m_scheduleModel</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleModel</name>
+        <qualifiedname>MainWindow::m_scheduleModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="98" column="19" bodyfile="mainwindow.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a6f2a880626cb8aa4d164856f892f2cdc" prot="private" static="no" mutable="no">
+        <type><ref refid="classTicketModel" kindref="compound">TicketModel</ref> *</type>
+        <definition>TicketModel* MainWindow::m_ticketModel</definition>
+        <argsstring></argsstring>
+        <name>m_ticketModel</name>
+        <qualifiedname>MainWindow::m_ticketModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="99" column="17" bodyfile="mainwindow.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a876182a1e95b65b4503f9a8e336ab421" prot="private" static="no" mutable="no">
+        <type><ref refid="classScheduleViewModel" kindref="compound">ScheduleViewModel</ref> *</type>
+        <definition>ScheduleViewModel* MainWindow::m_scheduleViewModel</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleViewModel</name>
+        <qualifiedname>MainWindow::m_scheduleViewModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="100" column="23" bodyfile="mainwindow.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a4cebae02eb65f1bba5d1a16516693f68" prot="private" static="no" mutable="no">
+        <type><ref refid="classTicketViewModel" kindref="compound">TicketViewModel</ref> *</type>
+        <definition>TicketViewModel* MainWindow::m_ticketViewModel</definition>
+        <argsstring></argsstring>
+        <name>m_ticketViewModel</name>
+        <qualifiedname>MainWindow::m_ticketViewModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="101" column="21" bodyfile="mainwindow.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a45d8cf0ba72856226f8fa32032fec24d" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddTrain</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddTrain</name>
+        <qualifiedname>MainWindow::m_btnAddTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="104" column="17" bodyfile="mainwindow.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1af7649c80b9c114359aefd79d02d8f1a3" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditTrain</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditTrain</name>
+        <qualifiedname>MainWindow::m_btnEditTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="105" column="17" bodyfile="mainwindow.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a3432acb1c16bda6e4fd2483f0cc614b9" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeleteTrain</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeleteTrain</name>
+        <qualifiedname>MainWindow::m_btnDeleteTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="106" column="17" bodyfile="mainwindow.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a8daea51d201704fb77df9ff1a24e0d9e" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddWagonType</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddWagonType</name>
+        <qualifiedname>MainWindow::m_btnAddWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="108" column="17" bodyfile="mainwindow.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac17117bb6762a25da0dbf1479611327f" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditWagonType</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditWagonType</name>
+        <qualifiedname>MainWindow::m_btnEditWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="109" column="17" bodyfile="mainwindow.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a6ebb9848fbb61ec0bb80e8c4ba608b28" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeleteWagonType</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeleteWagonType</name>
+        <qualifiedname>MainWindow::m_btnDeleteWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="110" column="17" bodyfile="mainwindow.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a2b48c6bd94ff8bb361df0c27661e61e7" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddRoute</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddRoute</name>
+        <qualifiedname>MainWindow::m_btnAddRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="112" column="17" bodyfile="mainwindow.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a4ae7563d46d1c8eb23840eefb157d77b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditRoute</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditRoute</name>
+        <qualifiedname>MainWindow::m_btnEditRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="113" column="17" bodyfile="mainwindow.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a16f8af73f6696be3473261ea5f8ec8e5" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeleteRoute</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeleteRoute</name>
+        <qualifiedname>MainWindow::m_btnDeleteRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="114" column="17" bodyfile="mainwindow.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ae428f2866aa699853b9360576e1ab082" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddPassenger</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddPassenger</name>
+        <qualifiedname>MainWindow::m_btnAddPassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="116" column="17" bodyfile="mainwindow.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a4ee97e81c4c6891c774ada7e3ca686ab" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditPassenger</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditPassenger</name>
+        <qualifiedname>MainWindow::m_btnEditPassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="117" column="17" bodyfile="mainwindow.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a2aa83430b2910f86d4bb6fcd802d38b0" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeletePassenger</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeletePassenger</name>
+        <qualifiedname>MainWindow::m_btnDeletePassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="118" column="17" bodyfile="mainwindow.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac979bdc5a55ed0006a19f51bc1abf38e" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddSchedule</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddSchedule</name>
+        <qualifiedname>MainWindow::m_btnAddSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="120" column="17" bodyfile="mainwindow.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a3b9e32d3a063e1b8a2a7afbe5024c5f2" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditSchedule</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditSchedule</name>
+        <qualifiedname>MainWindow::m_btnEditSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="121" column="17" bodyfile="mainwindow.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1aa9ce7ea1f690459d13d7aad292c3313c" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeleteSchedule</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeleteSchedule</name>
+        <qualifiedname>MainWindow::m_btnDeleteSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="122" column="17" bodyfile="mainwindow.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a62a202ee2bf81818b0a435361e6a555d" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnAddTicket</definition>
+        <argsstring></argsstring>
+        <name>m_btnAddTicket</name>
+        <qualifiedname>MainWindow::m_btnAddTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="124" column="17" bodyfile="mainwindow.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a3f8c36847f565a1afba88472f055e62e" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnEditTicket</definition>
+        <argsstring></argsstring>
+        <name>m_btnEditTicket</name>
+        <qualifiedname>MainWindow::m_btnEditTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="125" column="17" bodyfile="mainwindow.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1afc378b959818535a04998b2fa2559032" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* MainWindow::m_btnDeleteTicket</definition>
+        <argsstring></argsstring>
+        <name>m_btnDeleteTicket</name>
+        <qualifiedname>MainWindow::m_btnDeleteTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="126" column="17" bodyfile="mainwindow.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ab9c6492b81f3117ca8fed55c7b97da44" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* MainWindow::m_statusLabel</definition>
+        <argsstring></argsstring>
+        <name>m_statusLabel</name>
+        <qualifiedname>MainWindow::m_statusLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="128" column="12" bodyfile="mainwindow.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>MainWindow::MainWindow</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="33" column="5" bodyfile="mainwindow.cpp" bodystart="18" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <qualifiedname>MainWindow::~MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="34" column="5" bodyfile="mainwindow.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classMainWindow_1a1920e8733835e33561d7700f38afa0ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::refreshAllTables</definition>
+        <argsstring>()</argsstring>
+        <name>refreshAllTables</name>
+        <qualifiedname>MainWindow::refreshAllTables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="37" column="10" bodyfile="mainwindow.cpp" bodystart="355" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa3aa0f3ce42e748b931d6211921ea197" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::showAbout</definition>
+        <argsstring>()</argsstring>
+        <name>showAbout</name>
+        <qualifiedname>MainWindow::showAbout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="38" column="10" bodyfile="mainwindow.cpp" bodystart="373" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a892d5c2d62a2e35671d8f04b7aa4bb58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::checkDatabaseConnection</definition>
+        <argsstring>()</argsstring>
+        <name>checkDatabaseConnection</name>
+        <qualifiedname>MainWindow::checkDatabaseConnection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="39" column="10" bodyfile="mainwindow.cpp" bodystart="392" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad0f053326ebfc4a341cd563b42cc52ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addTrain</definition>
+        <argsstring>()</argsstring>
+        <name>addTrain</name>
+        <qualifiedname>MainWindow::addTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="42" column="10" bodyfile="mainwindow.cpp" bodystart="404" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a6e129cd3ecb8260c7ea6a5504c496937" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editTrain</definition>
+        <argsstring>()</argsstring>
+        <name>editTrain</name>
+        <qualifiedname>MainWindow::editTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="43" column="10" bodyfile="mainwindow.cpp" bodystart="419" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad2e15009b9e13bd242012df26dd2247a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteTrain</definition>
+        <argsstring>()</argsstring>
+        <name>deleteTrain</name>
+        <qualifiedname>MainWindow::deleteTrain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="44" column="10" bodyfile="mainwindow.cpp" bodystart="444" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1afc6c0fb650cd27425121dc0b073eba7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addWagonType</definition>
+        <argsstring>()</argsstring>
+        <name>addWagonType</name>
+        <qualifiedname>MainWindow::addWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="46" column="10" bodyfile="mainwindow.cpp" bodystart="472" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a68d6b42bc2b9db47671cd276c26c4a88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editWagonType</definition>
+        <argsstring>()</argsstring>
+        <name>editWagonType</name>
+        <qualifiedname>MainWindow::editWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="47" column="10" bodyfile="mainwindow.cpp" bodystart="487" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a98cdfbb1201582b0fef4bc21025e79c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteWagonType</definition>
+        <argsstring>()</argsstring>
+        <name>deleteWagonType</name>
+        <qualifiedname>MainWindow::deleteWagonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="48" column="10" bodyfile="mainwindow.cpp" bodystart="512" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a468986a27d051f2995f71b64cd5bad4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addRoute</definition>
+        <argsstring>()</argsstring>
+        <name>addRoute</name>
+        <qualifiedname>MainWindow::addRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="50" column="10" bodyfile="mainwindow.cpp" bodystart="540" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1acfc57376bc977bf1b8c8c273c0e4f3ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editRoute</definition>
+        <argsstring>()</argsstring>
+        <name>editRoute</name>
+        <qualifiedname>MainWindow::editRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="51" column="10" bodyfile="mainwindow.cpp" bodystart="557" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a9a1bbede86014a4693e0d1d58e3ebc7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteRoute</definition>
+        <argsstring>()</argsstring>
+        <name>deleteRoute</name>
+        <qualifiedname>MainWindow::deleteRoute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="52" column="10" bodyfile="mainwindow.cpp" bodystart="584" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a83b8e8d4a440dfce46499f474172b240" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addPassenger</definition>
+        <argsstring>()</argsstring>
+        <name>addPassenger</name>
+        <qualifiedname>MainWindow::addPassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="54" column="10" bodyfile="mainwindow.cpp" bodystart="613" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a783d3eed7a75ef7f927f62370c5ea26f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editPassenger</definition>
+        <argsstring>()</argsstring>
+        <name>editPassenger</name>
+        <qualifiedname>MainWindow::editPassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="55" column="10" bodyfile="mainwindow.cpp" bodystart="634" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a8767949bb63e01a91f59767d0cb6df93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deletePassenger</definition>
+        <argsstring>()</argsstring>
+        <name>deletePassenger</name>
+        <qualifiedname>MainWindow::deletePassenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="56" column="10" bodyfile="mainwindow.cpp" bodystart="665" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a59aa2dc4c74f6a723c821058e25d3232" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>addSchedule</name>
+        <qualifiedname>MainWindow::addSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="58" column="10" bodyfile="mainwindow.cpp" bodystart="694" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a5af97e1dd7c6a7e7414a9059fb011879" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>editSchedule</name>
+        <qualifiedname>MainWindow::editSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="59" column="10" bodyfile="mainwindow.cpp" bodystart="703" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a332af8284c83803f8c849bf7ea6fa1e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>deleteSchedule</name>
+        <qualifiedname>MainWindow::deleteSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="60" column="10" bodyfile="mainwindow.cpp" bodystart="721" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ab4cd94b5e802ae9977e48e5320fbed47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::addTicket</definition>
+        <argsstring>()</argsstring>
+        <name>addTicket</name>
+        <qualifiedname>MainWindow::addTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="62" column="10" bodyfile="mainwindow.cpp" bodystart="748" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7b803f49ef26c122426afcb2052b6b46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::editTicket</definition>
+        <argsstring>()</argsstring>
+        <name>editTicket</name>
+        <qualifiedname>MainWindow::editTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="63" column="10" bodyfile="mainwindow.cpp" bodystart="768" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad4c353e04d7bfefe0d0f2d4f4e1c063e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteTicket</definition>
+        <argsstring>()</argsstring>
+        <name>deleteTicket</name>
+        <qualifiedname>MainWindow::deleteTicket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="64" column="10" bodyfile="mainwindow.cpp" bodystart="798" bodyend="823"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMainWindow_1a3a304253c9e7caeef028f75358bf1fd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>MainWindow::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="67" column="10" bodyfile="mainwindow.cpp" bodystart="93" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a11b598a20d68676638408950d7140e45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setupMenuBar</definition>
+        <argsstring>()</argsstring>
+        <name>setupMenuBar</name>
+        <qualifiedname>MainWindow::setupMenuBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="68" column="10" bodyfile="mainwindow.cpp" bodystart="269" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1adff8efaa9748c0ea2eabba6bbce5a719" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setupToolBar</definition>
+        <argsstring>()</argsstring>
+        <name>setupToolBar</name>
+        <qualifiedname>MainWindow::setupToolBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="69" column="10" bodyfile="mainwindow.cpp" bodystart="300" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a0d883ee938ff46ffba3e2592eda5835e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setupStatusBar</definition>
+        <argsstring>()</argsstring>
+        <name>setupStatusBar</name>
+        <qualifiedname>MainWindow::setupStatusBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="70" column="10" bodyfile="mainwindow.cpp" bodystart="313" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a95dc085bf70bd0c1ad05bd80f897fd1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setupConnections</definition>
+        <argsstring>()</argsstring>
+        <name>setupConnections</name>
+        <qualifiedname>MainWindow::setupConnections</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="71" column="10" bodyfile="mainwindow.cpp" bodystart="322" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a879793955a3dd66ee94aac242fec0795" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createMainTabWidget</definition>
+        <argsstring>()</argsstring>
+        <name>createMainTabWidget</name>
+        <qualifiedname>MainWindow::createMainTabWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1af9675c10ba84b41cf160edb84a1b49c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createReportsTabWidget</definition>
+        <argsstring>()</argsstring>
+        <name>createReportsTabWidget</name>
+        <qualifiedname>MainWindow::createReportsTabWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="73" column="10" bodyfile="mainwindow.cpp" bodystart="194" bodyend="267"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="mainwindow.h" line="28" column="1" bodyfile="mainwindow.h" bodystart="29" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classMainWindow_1a83b8e8d4a440dfce46499f474172b240" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addPassenger</name></member>
+      <member refid="classMainWindow_1a468986a27d051f2995f71b64cd5bad4f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addRoute</name></member>
+      <member refid="classMainWindow_1a59aa2dc4c74f6a723c821058e25d3232" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addSchedule</name></member>
+      <member refid="classMainWindow_1ab4cd94b5e802ae9977e48e5320fbed47" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addTicket</name></member>
+      <member refid="classMainWindow_1ad0f053326ebfc4a341cd563b42cc52ec" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addTrain</name></member>
+      <member refid="classMainWindow_1afc6c0fb650cd27425121dc0b073eba7b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>addWagonType</name></member>
+      <member refid="classMainWindow_1a892d5c2d62a2e35671d8f04b7aa4bb58" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>checkDatabaseConnection</name></member>
+      <member refid="classMainWindow_1a879793955a3dd66ee94aac242fec0795" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createMainTabWidget</name></member>
+      <member refid="classMainWindow_1af9675c10ba84b41cf160edb84a1b49c3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createReportsTabWidget</name></member>
+      <member refid="classMainWindow_1a8767949bb63e01a91f59767d0cb6df93" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deletePassenger</name></member>
+      <member refid="classMainWindow_1a9a1bbede86014a4693e0d1d58e3ebc7b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteRoute</name></member>
+      <member refid="classMainWindow_1a332af8284c83803f8c849bf7ea6fa1e2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteSchedule</name></member>
+      <member refid="classMainWindow_1ad4c353e04d7bfefe0d0f2d4f4e1c063e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteTicket</name></member>
+      <member refid="classMainWindow_1ad2e15009b9e13bd242012df26dd2247a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteTrain</name></member>
+      <member refid="classMainWindow_1a98cdfbb1201582b0fef4bc21025e79c0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteWagonType</name></member>
+      <member refid="classMainWindow_1a783d3eed7a75ef7f927f62370c5ea26f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editPassenger</name></member>
+      <member refid="classMainWindow_1acfc57376bc977bf1b8c8c273c0e4f3ba" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editRoute</name></member>
+      <member refid="classMainWindow_1a5af97e1dd7c6a7e7414a9059fb011879" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editSchedule</name></member>
+      <member refid="classMainWindow_1a7b803f49ef26c122426afcb2052b6b46" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editTicket</name></member>
+      <member refid="classMainWindow_1a6e129cd3ecb8260c7ea6a5504c496937" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editTrain</name></member>
+      <member refid="classMainWindow_1a68d6b42bc2b9db47671cd276c26c4a88" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editWagonType</name></member>
+      <member refid="classMainWindow_1ae428f2866aa699853b9360576e1ab082" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddPassenger</name></member>
+      <member refid="classMainWindow_1a2b48c6bd94ff8bb361df0c27661e61e7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddRoute</name></member>
+      <member refid="classMainWindow_1ac979bdc5a55ed0006a19f51bc1abf38e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddSchedule</name></member>
+      <member refid="classMainWindow_1a62a202ee2bf81818b0a435361e6a555d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddTicket</name></member>
+      <member refid="classMainWindow_1a45d8cf0ba72856226f8fa32032fec24d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddTrain</name></member>
+      <member refid="classMainWindow_1a8daea51d201704fb77df9ff1a24e0d9e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnAddWagonType</name></member>
+      <member refid="classMainWindow_1a2aa83430b2910f86d4bb6fcd802d38b0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeletePassenger</name></member>
+      <member refid="classMainWindow_1a16f8af73f6696be3473261ea5f8ec8e5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeleteRoute</name></member>
+      <member refid="classMainWindow_1aa9ce7ea1f690459d13d7aad292c3313c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeleteSchedule</name></member>
+      <member refid="classMainWindow_1afc378b959818535a04998b2fa2559032" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeleteTicket</name></member>
+      <member refid="classMainWindow_1a3432acb1c16bda6e4fd2483f0cc614b9" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeleteTrain</name></member>
+      <member refid="classMainWindow_1a6ebb9848fbb61ec0bb80e8c4ba608b28" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnDeleteWagonType</name></member>
+      <member refid="classMainWindow_1a4ee97e81c4c6891c774ada7e3ca686ab" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditPassenger</name></member>
+      <member refid="classMainWindow_1a4ae7563d46d1c8eb23840eefb157d77b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditRoute</name></member>
+      <member refid="classMainWindow_1a3b9e32d3a063e1b8a2a7afbe5024c5f2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditSchedule</name></member>
+      <member refid="classMainWindow_1a3f8c36847f565a1afba88472f055e62e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditTicket</name></member>
+      <member refid="classMainWindow_1af7649c80b9c114359aefd79d02d8f1a3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditTrain</name></member>
+      <member refid="classMainWindow_1ac17117bb6762a25da0dbf1479611327f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_btnEditWagonType</name></member>
+      <member refid="classMainWindow_1ad4fcda29170398da4f4c2aba7875dee6" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_database</name></member>
+      <member refid="classMainWindow_1a5560d9b1fad0cdb3e64eba77c4602202" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_mainSplitter</name></member>
+      <member refid="classMainWindow_1a478fa0e7fb8260f41970d93a3f7c8669" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_mainTabWidget</name></member>
+      <member refid="classMainWindow_1a950a4db6bc78e3c548e318766acc5573" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_passengerModel</name></member>
+      <member refid="classMainWindow_1a2fad77c34fb93b9ac269ccd12cfb8dc4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_passengerTable</name></member>
+      <member refid="classMainWindow_1a090faa16ecf10a8c12eaf918ad083632" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_reportsTabWidget</name></member>
+      <member refid="classMainWindow_1abf796c3db82b62c84f37aa65c7c2ab44" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_routeModel</name></member>
+      <member refid="classMainWindow_1a1cf987c1359e5aa67ac04c89f9a8e634" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_routeTable</name></member>
+      <member refid="classMainWindow_1a47be418ab202d488ec5f649023a1eac8" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_scheduleModel</name></member>
+      <member refid="classMainWindow_1a04c34034b5f89719f272da0eedad0e95" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_scheduleTable</name></member>
+      <member refid="classMainWindow_1a876182a1e95b65b4503f9a8e336ab421" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_scheduleViewModel</name></member>
+      <member refid="classMainWindow_1ab9c6492b81f3117ca8fed55c7b97da44" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_statusLabel</name></member>
+      <member refid="classMainWindow_1a6f2a880626cb8aa4d164856f892f2cdc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_ticketModel</name></member>
+      <member refid="classMainWindow_1a966ba86745af3dab285fd14c89001703" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_ticketTable</name></member>
+      <member refid="classMainWindow_1a4cebae02eb65f1bba5d1a16516693f68" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_ticketViewModel</name></member>
+      <member refid="classMainWindow_1a5134454e942b7b58b6230de5c418efbd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_trainModel</name></member>
+      <member refid="classMainWindow_1a9a7cc530005b80456e3ac6eb65060395" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_trainTable</name></member>
+      <member refid="classMainWindow_1a9d55838dfa81c0f072559859b02ddde7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_wagonTypeModel</name></member>
+      <member refid="classMainWindow_1a40d4192b3fdc3aa354e7bbc52e21b5e1" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_wagonTypeTable</name></member>
+      <member refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1a1920e8733835e33561d7700f38afa0ff" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>refreshAllTables</name></member>
+      <member refid="classMainWindow_1a95dc085bf70bd0c1ad05bd80f897fd1d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setupConnections</name></member>
+      <member refid="classMainWindow_1a11b598a20d68676638408950d7140e45" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setupMenuBar</name></member>
+      <member refid="classMainWindow_1a0d883ee938ff46ffba3e2592eda5835e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setupStatusBar</name></member>
+      <member refid="classMainWindow_1adff8efaa9748c0ea2eabba6bbce5a719" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setupToolBar</name></member>
+      <member refid="classMainWindow_1a3a304253c9e7caeef028f75358bf1fd5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>setupUI</name></member>
+      <member refid="classMainWindow_1aa3aa0f3ce42e748b931d6211921ea197" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>showAbout</name></member>
+      <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

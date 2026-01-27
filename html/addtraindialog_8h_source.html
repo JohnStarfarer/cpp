@@ -60,10 +60,10 @@ $(function() { codefold.init(); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Q_OBJECT</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// Конструктор для добавления нового поезда</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// конструктор для добавления нового поезда</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">explicit</span> AddTrainDialog(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Конструктор для редактирования существующего поезда</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// конструктор для редактирования существующего поезда</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    AddTrainDialog(<span class="keywordtype">int</span> trainId, QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    QString getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nameEdit-&gt;text(); }</div>
@@ -77,7 +77,7 @@ $(function() { codefold.init(); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> setupUI();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> loadTrainData(<span class="keywordtype">int</span> trainId);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Виджеты</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// виджеты</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QLineEdit *m_nameEdit;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    QComboBox *m_statusCombo;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QSpinBox *m_seatsSpin;</div>

@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddPassengerDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddPassengerDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddPassengerDialog_1a66913f1f903eff34aa61c8f86f0bddf0" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_lastNameEdit</definition>
+        <argsstring></argsstring>
+        <name>m_lastNameEdit</name>
+        <qualifiedname>AddPassengerDialog::m_lastNameEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="42" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1aa79b12c9ef6dde0d6cccbe8b9a3f8078" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_firstNameEdit</definition>
+        <argsstring></argsstring>
+        <name>m_firstNameEdit</name>
+        <qualifiedname>AddPassengerDialog::m_firstNameEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="43" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a065545034cb2ca603aed63ad48cea34b" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_middleNameEdit</definition>
+        <argsstring></argsstring>
+        <name>m_middleNameEdit</name>
+        <qualifiedname>AddPassengerDialog::m_middleNameEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="44" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a94c4a7c2202cff80d3c38152c87daf33" prot="private" static="no" mutable="no">
+        <type>QDateEdit *</type>
+        <definition>QDateEdit* AddPassengerDialog::m_birthDateEdit</definition>
+        <argsstring></argsstring>
+        <name>m_birthDateEdit</name>
+        <qualifiedname>AddPassengerDialog::m_birthDateEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="45" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a5f668827361dd7a0a7a4aad3a9d1e014" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddPassengerDialog::m_genderCombo</definition>
+        <argsstring></argsstring>
+        <name>m_genderCombo</name>
+        <qualifiedname>AddPassengerDialog::m_genderCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="46" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1ae1b70240197f34ab5acb2fa028dcb944" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddPassengerDialog::m_docTypeCombo</definition>
+        <argsstring></argsstring>
+        <name>m_docTypeCombo</name>
+        <qualifiedname>AddPassengerDialog::m_docTypeCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="47" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1acba70a8a37e50046297eb54e22438b70" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_docNumberEdit</definition>
+        <argsstring></argsstring>
+        <name>m_docNumberEdit</name>
+        <qualifiedname>AddPassengerDialog::m_docNumberEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="48" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a080e11ec0b324e4a3b8e1e8fad16b42c" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_phoneEdit</definition>
+        <argsstring></argsstring>
+        <name>m_phoneEdit</name>
+        <qualifiedname>AddPassengerDialog::m_phoneEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="49" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a2f2e0b20336c5681860e05811bc97d7c" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddPassengerDialog::m_emailEdit</definition>
+        <argsstring></argsstring>
+        <name>m_emailEdit</name>
+        <qualifiedname>AddPassengerDialog::m_emailEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="50" column="15" bodyfile="dialogs/addpassengerdialog.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a960c9a76aa3a47fb73e3e836c0ce113d" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddPassengerDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddPassengerDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="51" column="17" bodyfile="dialogs/addpassengerdialog.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a474776f1b3bb2399c1b2229a7df783ff" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddPassengerDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddPassengerDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="52" column="17" bodyfile="dialogs/addpassengerdialog.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddPassengerDialog_1a1e1714c4287dca928c0faf427215a587" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddPassengerDialog::m_passengerId</definition>
+        <argsstring></argsstring>
+        <name>m_passengerId</name>
+        <qualifiedname>AddPassengerDialog::m_passengerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="54" column="9" bodyfile="dialogs/addpassengerdialog.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddPassengerDialog_1ae906c288e8a0372a3045d3694680f4f9" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddPassengerDialog::AddPassengerDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddPassengerDialog</name>
+        <qualifiedname>AddPassengerDialog::AddPassengerDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="20" column="14" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a01ebebcaa85f77608959c98f3b0ac52b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddPassengerDialog::AddPassengerDialog</definition>
+        <argsstring>(int passengerId, QWidget *parent=nullptr)</argsstring>
+        <name>AddPassengerDialog</name>
+        <qualifiedname>AddPassengerDialog::AddPassengerDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>passengerId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="21" column="5" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a51288b644541e391e1d151a7682f7d13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getLastName</definition>
+        <argsstring>() const</argsstring>
+        <name>getLastName</name>
+        <qualifiedname>AddPassengerDialog::getLastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="23" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a4aa5d958124de8e4608314c80673e486" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getFirstName</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstName</name>
+        <qualifiedname>AddPassengerDialog::getFirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="24" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1ac3855b28c0c4b2aaa14afcd78a0f74b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getMiddleName</definition>
+        <argsstring>() const</argsstring>
+        <name>getMiddleName</name>
+        <qualifiedname>AddPassengerDialog::getMiddleName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="25" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1abbab81d1172ce5a1b48c6c8cce992945" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QDate</type>
+        <definition>QDate AddPassengerDialog::getBirthDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getBirthDate</name>
+        <qualifiedname>AddPassengerDialog::getBirthDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="26" column="11" bodyfile="dialogs/addpassengerdialog.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a2e5e47bf81774f0d0e36f3152b4b8f1d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getGender</definition>
+        <argsstring>() const</argsstring>
+        <name>getGender</name>
+        <qualifiedname>AddPassengerDialog::getGender</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="27" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1ae458a28a2de47ce4851177084108d6fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getDocumentType</definition>
+        <argsstring>() const</argsstring>
+        <name>getDocumentType</name>
+        <qualifiedname>AddPassengerDialog::getDocumentType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="28" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a614faa4d20a8afc8e8d23c017aae9578" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getDocumentNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getDocumentNumber</name>
+        <qualifiedname>AddPassengerDialog::getDocumentNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="29" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1aacc5b681936ca129b1292856f856dd2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getPhone</definition>
+        <argsstring>() const</argsstring>
+        <name>getPhone</name>
+        <qualifiedname>AddPassengerDialog::getPhone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="30" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a6d77cb356ed0a21b0893487dd81f6d82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddPassengerDialog::getEmail</definition>
+        <argsstring>() const</argsstring>
+        <name>getEmail</name>
+        <qualifiedname>AddPassengerDialog::getEmail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="31" column="13" bodyfile="dialogs/addpassengerdialog.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddPassengerDialog_1a4d71b055b756a0be8c9190b8383ed7eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddPassengerDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddPassengerDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="34" column="10" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="149" bodyend="188"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddPassengerDialog_1a7598a2fc0679fa1b7bd6a7300ab33010" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddPassengerDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddPassengerDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="37" column="10" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="24" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a050b3eca0f27909b810e89380bb7a77f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddPassengerDialog::loadPassengerData</definition>
+        <argsstring>(int passengerId)</argsstring>
+        <name>loadPassengerData</name>
+        <qualifiedname>AddPassengerDialog::loadPassengerData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>passengerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="38" column="10" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="116" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a92d7dda4e811d98d0b4b9fbd32b083cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AddPassengerDialog::isValidEmail</definition>
+        <argsstring>(const QString &amp;email)</argsstring>
+        <name>isValidEmail</name>
+        <qualifiedname>AddPassengerDialog::isValidEmail</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="39" column="10" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="190" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddPassengerDialog_1a23a039bc5353f29b61dd054f185f0505" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AddPassengerDialog::isValidPhone</definition>
+        <argsstring>(const QString &amp;phone)</argsstring>
+        <name>isValidPhone</name>
+        <qualifiedname>AddPassengerDialog::isValidPhone</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>phone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addpassengerdialog.h" line="40" column="10" bodyfile="dialogs/addpassengerdialog.cpp" bodystart="196" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddPassengerDialog</label>
+        <link refid="classAddPassengerDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddPassengerDialog</label>
+        <link refid="classAddPassengerDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addpassengerdialog.h" line="15" column="1" bodyfile="dialogs/addpassengerdialog.h" bodystart="16" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classAddPassengerDialog_1ae906c288e8a0372a3045d3694680f4f9" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>AddPassengerDialog</name></member>
+      <member refid="classAddPassengerDialog_1a01ebebcaa85f77608959c98f3b0ac52b" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>AddPassengerDialog</name></member>
+      <member refid="classAddPassengerDialog_1abbab81d1172ce5a1b48c6c8cce992945" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getBirthDate</name></member>
+      <member refid="classAddPassengerDialog_1a614faa4d20a8afc8e8d23c017aae9578" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getDocumentNumber</name></member>
+      <member refid="classAddPassengerDialog_1ae458a28a2de47ce4851177084108d6fa" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getDocumentType</name></member>
+      <member refid="classAddPassengerDialog_1a6d77cb356ed0a21b0893487dd81f6d82" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getEmail</name></member>
+      <member refid="classAddPassengerDialog_1a4aa5d958124de8e4608314c80673e486" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getFirstName</name></member>
+      <member refid="classAddPassengerDialog_1a2e5e47bf81774f0d0e36f3152b4b8f1d" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getGender</name></member>
+      <member refid="classAddPassengerDialog_1a51288b644541e391e1d151a7682f7d13" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getLastName</name></member>
+      <member refid="classAddPassengerDialog_1ac3855b28c0c4b2aaa14afcd78a0f74b0" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getMiddleName</name></member>
+      <member refid="classAddPassengerDialog_1aacc5b681936ca129b1292856f856dd2c" prot="public" virt="non-virtual"><scope>AddPassengerDialog</scope><name>getPhone</name></member>
+      <member refid="classAddPassengerDialog_1a92d7dda4e811d98d0b4b9fbd32b083cd" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>isValidEmail</name></member>
+      <member refid="classAddPassengerDialog_1a23a039bc5353f29b61dd054f185f0505" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>isValidPhone</name></member>
+      <member refid="classAddPassengerDialog_1a050b3eca0f27909b810e89380bb7a77f" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>loadPassengerData</name></member>
+      <member refid="classAddPassengerDialog_1a94c4a7c2202cff80d3c38152c87daf33" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_birthDateEdit</name></member>
+      <member refid="classAddPassengerDialog_1a474776f1b3bb2399c1b2229a7df783ff" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddPassengerDialog_1acba70a8a37e50046297eb54e22438b70" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_docNumberEdit</name></member>
+      <member refid="classAddPassengerDialog_1ae1b70240197f34ab5acb2fa028dcb944" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_docTypeCombo</name></member>
+      <member refid="classAddPassengerDialog_1a2f2e0b20336c5681860e05811bc97d7c" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_emailEdit</name></member>
+      <member refid="classAddPassengerDialog_1aa79b12c9ef6dde0d6cccbe8b9a3f8078" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_firstNameEdit</name></member>
+      <member refid="classAddPassengerDialog_1a5f668827361dd7a0a7a4aad3a9d1e014" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_genderCombo</name></member>
+      <member refid="classAddPassengerDialog_1a66913f1f903eff34aa61c8f86f0bddf0" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_lastNameEdit</name></member>
+      <member refid="classAddPassengerDialog_1a065545034cb2ca603aed63ad48cea34b" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_middleNameEdit</name></member>
+      <member refid="classAddPassengerDialog_1a960c9a76aa3a47fb73e3e836c0ce113d" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddPassengerDialog_1a1e1714c4287dca928c0faf427215a587" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_passengerId</name></member>
+      <member refid="classAddPassengerDialog_1a080e11ec0b324e4a3b8e1e8fad16b42c" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>m_phoneEdit</name></member>
+      <member refid="classAddPassengerDialog_1a7598a2fc0679fa1b7bd6a7300ab33010" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>setupUI</name></member>
+      <member refid="classAddPassengerDialog_1a4d71b055b756a0be8c9190b8383ed7eb" prot="private" virt="non-virtual"><scope>AddPassengerDialog</scope><name>validateAndAccept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

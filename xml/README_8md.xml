@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Репозиторий<sp/>лабороторных<sp/>работ<sp/>по<sp/>дисциплине<sp/>&quot;Язык<sp/>программирования<sp/>C++&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>ИКМ</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Группа:<sp/>ИТ-5-2024</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>ФИО:<sp/>Чугаев<sp/>Евгений<sp/>Игоревич</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Описание<sp/>ИКМ:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Необходимо<sp/>разработать<sp/>приложение<sp/>с<sp/>использованием<sp/>фреймворка<sp/>QT<sp/>и<sp/>базы<sp/>данных,</highlight></codeline>
+<codeline><highlight class="normal">разработанной<sp/>по<sp/>дисциплине<sp/>Базы<sp/>данных<sp/>и<sp/>СУБД.<sp/>Программа<sp/>должна<sp/>иметь<sp/>интуитивно-понятный</highlight></codeline>
+<codeline><highlight class="normal">дружественный<sp/>интерфейс<sp/>и<sp/>проверку<sp/>вводимых<sp/>значений.<sp/>В<sp/>программе<sp/>должны<sp/>присутствовать</highlight></codeline>
+<codeline><highlight class="normal">классы.</highlight></codeline>
+<codeline><highlight class="normal">Необходимо<sp/>реализовать<sp/>функции:</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>просмотр<sp/>данных<sp/>из<sp/>базы;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>редактирование<sp/>данных<sp/>в<sp/>базе;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>удаление<sp/>данных<sp/>из<sp/>базы;</highlight></codeline>
+<codeline><highlight class="normal">•<sp/>добавление<sp/>данных<sp/>в<sp/>базу.</highlight></codeline>
+<codeline><highlight class="normal">Функции<sp/>должны<sp/>быть<sp/>доступны<sp/>для<sp/>каждой<sp/>таблицы.</highlight></codeline>
+<codeline><highlight class="normal">База<sp/>данных<sp/>должна<sp/>содержать<sp/>минимум<sp/>3<sp/>связные<sp/>таблицы.</highlight></codeline>
+<codeline><highlight class="normal">К<sp/>проекту<sp/>должна<sp/>быть<sp/>написана<sp/>xml-документация<sp/>(отсутствие<sp/>документации<sp/>-5<sp/>баллов).</highlight></codeline>
+<codeline><highlight class="normal">К<sp/>данной<sp/>работе<sp/>писать<sp/>отчет<sp/>НЕ<sp/>нужно.<sp/>В<sp/>качестве<sp/>ответа<sp/>прикрепить<sp/>ссылку<sp/>на<sp/>github.</highlight></codeline>
+<codeline><highlight class="normal">Максимально<sp/>за<sp/>лабораторную<sp/>работу<sp/>можно<sp/>получить<sp/>20<sp/>баллов.<sp/>Для<sp/>получения<sp/>минимального</highlight></codeline>
+<codeline><highlight class="normal">количества<sp/>баллов<sp/>(10<sp/>баллов)<sp/>должно<sp/>быть<sp/>реализовано<sp/>2<sp/>функции<sp/>(одна<sp/>из<sp/>которых<sp/>просмотр)<sp/>и</highlight></codeline>
+<codeline><highlight class="normal">база<sp/>данных<sp/>может<sp/>содержать<sp/>2<sp/>таблицы.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Реализация:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![1769490859808](image/README/1769490859808.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Фреймворк:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QT<sp/>Create</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>СУБД:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Postgresql</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Алгоритм<sp/>работы<sp/>программы</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Общая<sp/>архитектура</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Программа<sp/>использует<sp/>паттерн<sp/>Model-View-Controller<sp/>(MVC):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Модели<sp/>(Model)<sp/>-<sp/>классы,<sp/>наследующие<sp/>от<sp/>QSqlTableModel<sp/>и<sp/>QSqlQueryModel</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Представление<sp/>(View)<sp/>-<sp/>QTableView,<sp/>QTabWidget,<sp/>диалоговые<sp/>окна</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Контроллер<sp/>(Controller)<sp/>-<sp/>класс<sp/>MainWindow,<sp/>обрабатывающий<sp/>пользовательские<sp/>действия</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Последовательность<sp/>работы<sp/>программы</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>1.<sp/>Запуск<sp/>приложения<sp/>(main.cpp)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создание<sp/>QApplication</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Установка<sp/>стиля<sp/>Fusion</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Проверка<sp/>подключения<sp/>к<sp/>БД<sp/>(Database::testConnection())</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Если<sp/>подключение<sp/>успешно:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Создание<sp/>MainWindow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Отображение<sp/>главного<sp/>окна</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Запуск<sp/>главного<sp/>цикла<sp/>приложения<sp/>(app.exec())</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>2.<sp/>Инициализация<sp/>главного<sp/>окна<sp/>(MainWindow)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Создание<sp/>объекта<sp/>Database</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Подключение<sp/>к<sp/>БД<sp/>(m_database-&gt;connectToDatabase())</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Создание<sp/>всех<sp/>моделей<sp/>данных:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>TrainModel,<sp/>WagonTypeModel,<sp/>RouteModel</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>PassengerModel,<sp/>ScheduleModel,<sp/>TicketModel</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>ScheduleViewModel,<sp/>TicketViewModel</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Настройка<sp/>UI<sp/>(setupUI())</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Настройка<sp/>меню<sp/>и<sp/>тулбара</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Настройка<sp/>статусбара</highlight></codeline>
+<codeline><highlight class="normal">7.<sp/>Установка<sp/>соединений<sp/>(setupConnections())</highlight></codeline>
+<codeline><highlight class="normal">8.<sp/>Обновление<sp/>всех<sp/>таблиц<sp/>(refreshAllTables())</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>3.<sp/>Структура<sp/>вкладок</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Основные<sp/>операции<sp/>(m_mainTabWidget)**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Поезда</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Типы<sp/>вагонов</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Маршруты</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Отчеты<sp/>(m_reportsTabWidget)**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Пассажиры</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Расписание</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Билеты</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>4.<sp/>Алгоритм<sp/>добавления<sp/>новой<sp/>записи<sp/>(на<sp/>примере<sp/>поезда)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Пользователь<sp/>нажимает<sp/>&quot;Добавить<sp/>поезд&quot;</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Вызывается<sp/>MainWindow::addTrain()</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Создается<sp/>AddTrainDialog</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Пользователь<sp/>заполняет<sp/>поля<sp/>в<sp/>диалоге</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>При<sp/>нажатии<sp/>&quot;Добавить&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Выполняется<sp/>валидация<sp/>данных</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Вызывается<sp/>TrainModel::addTrain()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Метод<sp/>выполняет<sp/>SQL<sp/>INSERT<sp/>запрос</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>При<sp/>успехе:<sp/>модель<sp/>обновляется<sp/>(select())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Таблица<sp/>автоматически<sp/>обновляется</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>5.<sp/>Взаимодействие<sp/>с<sp/>базой<sp/>данных</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MainWindow<sp/>→<sp/>Модель<sp/>→<sp/>Database<sp/>→<sp/>PostgreSQL</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Классы-модели**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>TrainModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>trains</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>WagonTypeModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>wagon_types</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>RouteModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>routes</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>PassengerModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>passengers</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>ScheduleModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>schedule</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>TicketModel<sp/>-<sp/>работа<sp/>с<sp/>таблицей<sp/>tickets</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Специальные<sp/>модели<sp/>для<sp/>представлений**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>ScheduleViewModel<sp/>-<sp/>JOIN<sp/>запросы<sp/>для<sp/>расписания</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>TicketViewModel<sp/>-<sp/>JOIN<sp/>запросы<sp/>для<sp/>билетов</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>6.<sp/>Алгоритм<sp/>редактирования<sp/>записи</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Пользователь<sp/>выбирает<sp/>строку<sp/>в<sp/>таблице</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Нажимает<sp/>&quot;Редактировать&quot;</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Вызывается<sp/>соответствующий<sp/>метод<sp/>(editTrain(),<sp/>editWagonType(),<sp/>и<sp/>т.д.)</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Создается<sp/>диалог<sp/>с<sp/>передачей<sp/>ID<sp/>записи</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Диалог<sp/>загружает<sp/>текущие<sp/>данные</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Пользователь<sp/>изменяет<sp/>данные</highlight></codeline>
+<codeline><highlight class="normal">7.<sp/>При<sp/>сохранении<sp/>вызывается<sp/>метод<sp/>updateXXX()<sp/>модели</highlight></codeline>
+<codeline><highlight class="normal">8.<sp/>Выполняется<sp/>SQL<sp/>UPDATE<sp/>запрос</highlight></codeline>
+<codeline><highlight class="normal">9.<sp/>Таблица<sp/>обновляется</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>7.<sp/>Алгоритм<sp/>удаления<sp/>записи</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Пользователь<sp/>выбирает<sp/>строку</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Нажимает<sp/>&quot;Удалить&quot;</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Показывается<sp/>диалог<sp/>подтверждения</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>При<sp/>подтверждении<sp/>вызывается<sp/>метод<sp/>removeXXX()<sp/>модели</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Выполняется<sp/>SQL<sp/>DELETE<sp/>запрос</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Таблица<sp/>обновляется</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>8.<sp/>Обновление<sp/>данных</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MainWindow::refreshAllTables()<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Для<sp/>каждой<sp/>модели<sp/>вызывается<sp/>select()</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Для<sp/>ViewModel<sp/>вызывается<sp/>refresh()</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Обновляется<sp/>статус<sp/>в<sp/>статусбаре</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>9.<sp/>Диалоговые<sp/>окна</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Каждая<sp/>сущность<sp/>имеет<sp/>свой<sp/>диалог:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>AddTrainDialog<sp/>-<sp/>добавление/редактирование<sp/>поездов</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>AddWagonTypeDialog<sp/>-<sp/>типы<sp/>вагонов</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>AddRouteDialog<sp/>-<sp/>маршруты</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>AddPassengerDialog<sp/>-<sp/>пассажиры</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>AddScheduleDialog<sp/>-<sp/>расписание</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>AddTicketDialog<sp/>-<sp/>билеты</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>10.<sp/>Валидация<sp/>данных</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Каждый<sp/>диалог<sp/>имеет:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Проверку<sp/>обязательных<sp/>полей</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Валидацию<sp/>форматов<sp/>(email,<sp/>телефон,<sp/>даты)</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Проверку<sp/>бизнес-логики<sp/>(например,<sp/>дата<sp/>прибытия<sp/>позже<sp/>отправления)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>11.<sp/>Триггеры<sp/>и<sp/>ограничения<sp/>в<sp/>БД</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">База<sp/>данных<sp/>включает:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Триггер<sp/>для<sp/>генерации<sp/>номеров<sp/>билетов</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Триггер<sp/>для<sp/>обновления<sp/>свободных<sp/>мест</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Ограничения<sp/>целостности<sp/>(FOREIGN<sp/>KEY)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Представления<sp/>для<sp/>сложных<sp/>запросов</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>12.<sp/>Обработка<sp/>ошибок</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Проверка<sp/>подключения<sp/>при<sp/>запуске</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Проверка<sp/>выполнения<sp/>SQL<sp/>запросов</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Валидация<sp/>пользовательского<sp/>ввода</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Отображение<sp/>сообщений<sp/>об<sp/>ошибках<sp/>через<sp/>QMessageBox</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

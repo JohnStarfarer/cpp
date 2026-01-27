@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classTicketViewModel" kind="class" language="C++" prot="public">
+    <compoundname>TicketViewModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlQueryModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTicketViewModel_1ac59a735732eb6be0ef30b8a1bb43dbb2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TicketViewModel::TicketViewModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>TicketViewModel</name>
+        <qualifiedname>TicketViewModel::TicketViewModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketviewmodel.h" line="12" column="14" bodyfile="models/ticketviewmodel.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketViewModel_1a2c4bc71377413414b917b966300bf730" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant TicketViewModel::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</argsstring>
+        <name>data</name>
+        <qualifiedname>TicketViewModel::data</qualifiedname>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketviewmodel.h" line="14" column="14" bodyfile="models/ticketviewmodel.cpp" bodystart="38" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketViewModel_1a2e798723c06e5c7383b61aaa14904733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicketViewModel::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>TicketViewModel::refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketviewmodel.h" line="15" column="10" bodyfile="models/ticketviewmodel.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTicketViewModel_1ae7abfad79e18a9f8816b67502bf40a55" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicketViewModel::setupQuery</definition>
+        <argsstring>()</argsstring>
+        <name>setupQuery</name>
+        <qualifiedname>TicketViewModel::setupQuery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketviewmodel.h" line="18" column="10" bodyfile="models/ticketviewmodel.cpp" bodystart="11" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlQueryModel</label>
+      </node>
+      <node id="1">
+        <label>TicketViewModel</label>
+        <link refid="classTicketViewModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlQueryModel</label>
+      </node>
+      <node id="1">
+        <label>TicketViewModel</label>
+        <link refid="classTicketViewModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/ticketviewmodel.h" line="7" column="1" bodyfile="models/ticketviewmodel.h" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classTicketViewModel_1a2c4bc71377413414b917b966300bf730" prot="public" virt="non-virtual"><scope>TicketViewModel</scope><name>data</name></member>
+      <member refid="classTicketViewModel_1a2e798723c06e5c7383b61aaa14904733" prot="public" virt="non-virtual"><scope>TicketViewModel</scope><name>refresh</name></member>
+      <member refid="classTicketViewModel_1ae7abfad79e18a9f8816b67502bf40a55" prot="private" virt="non-virtual"><scope>TicketViewModel</scope><name>setupQuery</name></member>
+      <member refid="classTicketViewModel_1ac59a735732eb6be0ef30b8a1bb43dbb2" prot="public" virt="non-virtual"><scope>TicketViewModel</scope><name>TicketViewModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

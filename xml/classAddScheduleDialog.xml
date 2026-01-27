@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddScheduleDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddScheduleDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddScheduleDialog_1abaa58f6a7e60fb28b2b2af501d25bb13" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddScheduleDialog::m_routeCombo</definition>
+        <argsstring></argsstring>
+        <name>m_routeCombo</name>
+        <qualifiedname>AddScheduleDialog::m_routeCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="48" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a4cf14b1fcd966c133015eef6f2f05699" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddScheduleDialog::m_trainCombo</definition>
+        <argsstring></argsstring>
+        <name>m_trainCombo</name>
+        <qualifiedname>AddScheduleDialog::m_trainCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="49" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a2f132648f4f04256373fd56d656efde4" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddScheduleDialog::m_wagonTypeCombo</definition>
+        <argsstring></argsstring>
+        <name>m_wagonTypeCombo</name>
+        <qualifiedname>AddScheduleDialog::m_wagonTypeCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="50" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1ad515b3c5514988b51922ffa1fbebc142" prot="private" static="no" mutable="no">
+        <type>QDateEdit *</type>
+        <definition>QDateEdit* AddScheduleDialog::m_departureDateEdit</definition>
+        <argsstring></argsstring>
+        <name>m_departureDateEdit</name>
+        <qualifiedname>AddScheduleDialog::m_departureDateEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="51" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a7a13aee59233307ac8fc600d582bf7bb" prot="private" static="no" mutable="no">
+        <type>QTimeEdit *</type>
+        <definition>QTimeEdit* AddScheduleDialog::m_departureTimeEdit</definition>
+        <argsstring></argsstring>
+        <name>m_departureTimeEdit</name>
+        <qualifiedname>AddScheduleDialog::m_departureTimeEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="52" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1ab7de4cd09e61fc4b03e2449fac92180c" prot="private" static="no" mutable="no">
+        <type>QDateEdit *</type>
+        <definition>QDateEdit* AddScheduleDialog::m_arrivalDateEdit</definition>
+        <argsstring></argsstring>
+        <name>m_arrivalDateEdit</name>
+        <qualifiedname>AddScheduleDialog::m_arrivalDateEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="53" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1af980d1306ed42b433e0ffb5bef08b262" prot="private" static="no" mutable="no">
+        <type>QTimeEdit *</type>
+        <definition>QTimeEdit* AddScheduleDialog::m_arrivalTimeEdit</definition>
+        <argsstring></argsstring>
+        <name>m_arrivalTimeEdit</name>
+        <qualifiedname>AddScheduleDialog::m_arrivalTimeEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="54" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a48588184c5075eac7f1b421138956279" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddScheduleDialog::m_seatsSpin</definition>
+        <argsstring></argsstring>
+        <name>m_seatsSpin</name>
+        <qualifiedname>AddScheduleDialog::m_seatsSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="55" column="14" bodyfile="dialogs/addscheduledialog.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1abe6ca4740216bcb5913a81cff8ffe0ba" prot="private" static="no" mutable="no">
+        <type>QDoubleSpinBox *</type>
+        <definition>QDoubleSpinBox* AddScheduleDialog::m_priceSpin</definition>
+        <argsstring></argsstring>
+        <name>m_priceSpin</name>
+        <qualifiedname>AddScheduleDialog::m_priceSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="56" column="20" bodyfile="dialogs/addscheduledialog.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1aa0ec169a0cf052d36859a9337af1a5fc" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddScheduleDialog::m_statusCombo</definition>
+        <argsstring></argsstring>
+        <name>m_statusCombo</name>
+        <qualifiedname>AddScheduleDialog::m_statusCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="57" column="15" bodyfile="dialogs/addscheduledialog.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1af0e52721a999de642f04098595d4590e" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddScheduleDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddScheduleDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="58" column="17" bodyfile="dialogs/addscheduledialog.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a7bdd59d51572fa21b7077f1c3872d5c9" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddScheduleDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddScheduleDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="59" column="17" bodyfile="dialogs/addscheduledialog.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1a930c682df2f9c27d95aba620a0b9616e" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddScheduleDialog::m_routeInfoLabel</definition>
+        <argsstring></argsstring>
+        <name>m_routeInfoLabel</name>
+        <qualifiedname>AddScheduleDialog::m_routeInfoLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="61" column="12" bodyfile="dialogs/addscheduledialog.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1aa14e5f92dfaac8e3dfcaf36f60821835" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddScheduleDialog::m_trainInfoLabel</definition>
+        <argsstring></argsstring>
+        <name>m_trainInfoLabel</name>
+        <qualifiedname>AddScheduleDialog::m_trainInfoLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="62" column="12" bodyfile="dialogs/addscheduledialog.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1af767461fa8dbcc23a2d8243357de8898" prot="private" static="no" mutable="no">
+        <type>QLabel *</type>
+        <definition>QLabel* AddScheduleDialog::m_wagonTypeInfoLabel</definition>
+        <argsstring></argsstring>
+        <name>m_wagonTypeInfoLabel</name>
+        <qualifiedname>AddScheduleDialog::m_wagonTypeInfoLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="63" column="12" bodyfile="dialogs/addscheduledialog.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddScheduleDialog_1ad8053f61d9e71cff4e249388ed3395ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddScheduleDialog::m_scheduleId</definition>
+        <argsstring></argsstring>
+        <name>m_scheduleId</name>
+        <qualifiedname>AddScheduleDialog::m_scheduleId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="65" column="9" bodyfile="dialogs/addscheduledialog.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddScheduleDialog_1a13c1ebff3135f7c8c4ea2ad517ca83eb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddScheduleDialog::AddScheduleDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddScheduleDialog</name>
+        <qualifiedname>AddScheduleDialog::AddScheduleDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="23" column="14" bodyfile="dialogs/addscheduledialog.cpp" bodystart="6" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1ac7fbc612c08b5c1bde56452361dc8335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddScheduleDialog::AddScheduleDialog</definition>
+        <argsstring>(int scheduleId, QWidget *parent=nullptr)</argsstring>
+        <name>AddScheduleDialog</name>
+        <qualifiedname>AddScheduleDialog::AddScheduleDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="24" column="5" bodyfile="dialogs/addscheduledialog.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1ad7fc4970c18a4476eaf1e2beb6ced8b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddScheduleDialog::getRouteId</definition>
+        <argsstring>() const</argsstring>
+        <name>getRouteId</name>
+        <qualifiedname>AddScheduleDialog::getRouteId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="26" column="9" bodyfile="dialogs/addscheduledialog.cpp" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1aafbe03bec6b223e3bec88e74b3f7aba6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddScheduleDialog::getTrainId</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrainId</name>
+        <qualifiedname>AddScheduleDialog::getTrainId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="27" column="9" bodyfile="dialogs/addscheduledialog.cpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a9e1ae7e0cd6df73adc850dccf140537e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddScheduleDialog::getWagonTypeId</definition>
+        <argsstring>() const</argsstring>
+        <name>getWagonTypeId</name>
+        <qualifiedname>AddScheduleDialog::getWagonTypeId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="28" column="9" bodyfile="dialogs/addscheduledialog.cpp" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a815fee7492aead27b6183f024f9de798" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QDate</type>
+        <definition>QDate AddScheduleDialog::getDepartureDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepartureDate</name>
+        <qualifiedname>AddScheduleDialog::getDepartureDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="29" column="11" bodyfile="dialogs/addscheduledialog.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1ae75cf3179f8cf577606aadea858a9548" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QTime</type>
+        <definition>QTime AddScheduleDialog::getDepartureTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepartureTime</name>
+        <qualifiedname>AddScheduleDialog::getDepartureTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="30" column="11" bodyfile="dialogs/addscheduledialog.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a1527b908a30fe3b14c39f11e02d96a95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QDate</type>
+        <definition>QDate AddScheduleDialog::getArrivalDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getArrivalDate</name>
+        <qualifiedname>AddScheduleDialog::getArrivalDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="31" column="11" bodyfile="dialogs/addscheduledialog.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a0272bcba4507d3fdf5cdbe6725307e81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QTime</type>
+        <definition>QTime AddScheduleDialog::getArrivalTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getArrivalTime</name>
+        <qualifiedname>AddScheduleDialog::getArrivalTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="32" column="11" bodyfile="dialogs/addscheduledialog.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1afece9c05141bff6d1c94ff3b783996d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddScheduleDialog::getAvailableSeats</definition>
+        <argsstring>() const</argsstring>
+        <name>getAvailableSeats</name>
+        <qualifiedname>AddScheduleDialog::getAvailableSeats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="33" column="9" bodyfile="dialogs/addscheduledialog.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a55f32c7d6afedd2dddbfcea238d2c1df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AddScheduleDialog::getPrice</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrice</name>
+        <qualifiedname>AddScheduleDialog::getPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="34" column="12" bodyfile="dialogs/addscheduledialog.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a45cbf7e93ada1becaf577cd5305ccc04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddScheduleDialog::getStatus</definition>
+        <argsstring>() const</argsstring>
+        <name>getStatus</name>
+        <qualifiedname>AddScheduleDialog::getStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="35" column="13" bodyfile="dialogs/addscheduledialog.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddScheduleDialog_1aa03030daa5dd9f99791531f3c9594e14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddScheduleDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="38" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="253" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAddScheduleDialog_1a46dd04128e118294949a2650f611baae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::calculatePrice</definition>
+        <argsstring>()</argsstring>
+        <name>calculatePrice</name>
+        <qualifiedname>AddScheduleDialog::calculatePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="39" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAddScheduleDialog_1ada6c681d24ec41595a3e25eee0504257" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::updateArrivalDate</definition>
+        <argsstring>()</argsstring>
+        <name>updateArrivalDate</name>
+        <qualifiedname>AddScheduleDialog::updateArrivalDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="40" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="287" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddScheduleDialog_1afb7967172a6854aa11cbfeb466475930" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddScheduleDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="43" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="23" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a00e716ca3c2a59f84c15a5a9c3cc1fd7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::loadScheduleData</definition>
+        <argsstring>(int scheduleId)</argsstring>
+        <name>loadScheduleData</name>
+        <qualifiedname>AddScheduleDialog::loadScheduleData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="44" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="190" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1acd0e6c3978a63eb9890023c55add563a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddScheduleDialog::loadComboBoxData</definition>
+        <argsstring>()</argsstring>
+        <name>loadComboBoxData</name>
+        <qualifiedname>AddScheduleDialog::loadComboBoxData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="45" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="169" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddScheduleDialog_1a26640b852d0a7e8bdcaa4c547aceb461" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AddScheduleDialog::validateDates</definition>
+        <argsstring>()</argsstring>
+        <name>validateDates</name>
+        <qualifiedname>AddScheduleDialog::validateDates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addscheduledialog.h" line="46" column="10" bodyfile="dialogs/addscheduledialog.cpp" bodystart="274" bodyend="280"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddScheduleDialog</label>
+        <link refid="classAddScheduleDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddScheduleDialog</label>
+        <link refid="classAddScheduleDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addscheduledialog.h" line="18" column="1" bodyfile="dialogs/addscheduledialog.h" bodystart="19" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classAddScheduleDialog_1a13c1ebff3135f7c8c4ea2ad517ca83eb" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>AddScheduleDialog</name></member>
+      <member refid="classAddScheduleDialog_1ac7fbc612c08b5c1bde56452361dc8335" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>AddScheduleDialog</name></member>
+      <member refid="classAddScheduleDialog_1a46dd04128e118294949a2650f611baae" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>calculatePrice</name></member>
+      <member refid="classAddScheduleDialog_1a1527b908a30fe3b14c39f11e02d96a95" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getArrivalDate</name></member>
+      <member refid="classAddScheduleDialog_1a0272bcba4507d3fdf5cdbe6725307e81" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getArrivalTime</name></member>
+      <member refid="classAddScheduleDialog_1afece9c05141bff6d1c94ff3b783996d6" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getAvailableSeats</name></member>
+      <member refid="classAddScheduleDialog_1a815fee7492aead27b6183f024f9de798" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getDepartureDate</name></member>
+      <member refid="classAddScheduleDialog_1ae75cf3179f8cf577606aadea858a9548" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getDepartureTime</name></member>
+      <member refid="classAddScheduleDialog_1a55f32c7d6afedd2dddbfcea238d2c1df" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getPrice</name></member>
+      <member refid="classAddScheduleDialog_1ad7fc4970c18a4476eaf1e2beb6ced8b5" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getRouteId</name></member>
+      <member refid="classAddScheduleDialog_1a45cbf7e93ada1becaf577cd5305ccc04" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getStatus</name></member>
+      <member refid="classAddScheduleDialog_1aafbe03bec6b223e3bec88e74b3f7aba6" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getTrainId</name></member>
+      <member refid="classAddScheduleDialog_1a9e1ae7e0cd6df73adc850dccf140537e" prot="public" virt="non-virtual"><scope>AddScheduleDialog</scope><name>getWagonTypeId</name></member>
+      <member refid="classAddScheduleDialog_1acd0e6c3978a63eb9890023c55add563a" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>loadComboBoxData</name></member>
+      <member refid="classAddScheduleDialog_1a00e716ca3c2a59f84c15a5a9c3cc1fd7" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>loadScheduleData</name></member>
+      <member refid="classAddScheduleDialog_1ab7de4cd09e61fc4b03e2449fac92180c" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_arrivalDateEdit</name></member>
+      <member refid="classAddScheduleDialog_1af980d1306ed42b433e0ffb5bef08b262" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_arrivalTimeEdit</name></member>
+      <member refid="classAddScheduleDialog_1a7bdd59d51572fa21b7077f1c3872d5c9" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddScheduleDialog_1ad515b3c5514988b51922ffa1fbebc142" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_departureDateEdit</name></member>
+      <member refid="classAddScheduleDialog_1a7a13aee59233307ac8fc600d582bf7bb" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_departureTimeEdit</name></member>
+      <member refid="classAddScheduleDialog_1af0e52721a999de642f04098595d4590e" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddScheduleDialog_1abe6ca4740216bcb5913a81cff8ffe0ba" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_priceSpin</name></member>
+      <member refid="classAddScheduleDialog_1abaa58f6a7e60fb28b2b2af501d25bb13" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_routeCombo</name></member>
+      <member refid="classAddScheduleDialog_1a930c682df2f9c27d95aba620a0b9616e" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_routeInfoLabel</name></member>
+      <member refid="classAddScheduleDialog_1ad8053f61d9e71cff4e249388ed3395ae" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_scheduleId</name></member>
+      <member refid="classAddScheduleDialog_1a48588184c5075eac7f1b421138956279" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_seatsSpin</name></member>
+      <member refid="classAddScheduleDialog_1aa0ec169a0cf052d36859a9337af1a5fc" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_statusCombo</name></member>
+      <member refid="classAddScheduleDialog_1a4cf14b1fcd966c133015eef6f2f05699" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_trainCombo</name></member>
+      <member refid="classAddScheduleDialog_1aa14e5f92dfaac8e3dfcaf36f60821835" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_trainInfoLabel</name></member>
+      <member refid="classAddScheduleDialog_1a2f132648f4f04256373fd56d656efde4" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_wagonTypeCombo</name></member>
+      <member refid="classAddScheduleDialog_1af767461fa8dbcc23a2d8243357de8898" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>m_wagonTypeInfoLabel</name></member>
+      <member refid="classAddScheduleDialog_1afb7967172a6854aa11cbfeb466475930" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>setupUI</name></member>
+      <member refid="classAddScheduleDialog_1ada6c681d24ec41595a3e25eee0504257" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>updateArrivalDate</name></member>
+      <member refid="classAddScheduleDialog_1aa03030daa5dd9f99791531f3c9594e14" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>validateAndAccept</name></member>
+      <member refid="classAddScheduleDialog_1a26640b852d0a7e8bdcaa4c547aceb461" prot="private" virt="non-virtual"><scope>AddScheduleDialog</scope><name>validateDates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="classAddPassengerDialog" kind="class"><name>AddPassengerDialog</name>
+    <member refid="classAddPassengerDialog_1a66913f1f903eff34aa61c8f86f0bddf0" kind="variable"><name>m_lastNameEdit</name></member>
+    <member refid="classAddPassengerDialog_1aa79b12c9ef6dde0d6cccbe8b9a3f8078" kind="variable"><name>m_firstNameEdit</name></member>
+    <member refid="classAddPassengerDialog_1a065545034cb2ca603aed63ad48cea34b" kind="variable"><name>m_middleNameEdit</name></member>
+    <member refid="classAddPassengerDialog_1a94c4a7c2202cff80d3c38152c87daf33" kind="variable"><name>m_birthDateEdit</name></member>
+    <member refid="classAddPassengerDialog_1a5f668827361dd7a0a7a4aad3a9d1e014" kind="variable"><name>m_genderCombo</name></member>
+    <member refid="classAddPassengerDialog_1ae1b70240197f34ab5acb2fa028dcb944" kind="variable"><name>m_docTypeCombo</name></member>
+    <member refid="classAddPassengerDialog_1acba70a8a37e50046297eb54e22438b70" kind="variable"><name>m_docNumberEdit</name></member>
+    <member refid="classAddPassengerDialog_1a080e11ec0b324e4a3b8e1e8fad16b42c" kind="variable"><name>m_phoneEdit</name></member>
+    <member refid="classAddPassengerDialog_1a2f2e0b20336c5681860e05811bc97d7c" kind="variable"><name>m_emailEdit</name></member>
+    <member refid="classAddPassengerDialog_1a960c9a76aa3a47fb73e3e836c0ce113d" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddPassengerDialog_1a474776f1b3bb2399c1b2229a7df783ff" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddPassengerDialog_1a1e1714c4287dca928c0faf427215a587" kind="variable"><name>m_passengerId</name></member>
+    <member refid="classAddPassengerDialog_1ae906c288e8a0372a3045d3694680f4f9" kind="function"><name>AddPassengerDialog</name></member>
+    <member refid="classAddPassengerDialog_1a01ebebcaa85f77608959c98f3b0ac52b" kind="function"><name>AddPassengerDialog</name></member>
+    <member refid="classAddPassengerDialog_1a51288b644541e391e1d151a7682f7d13" kind="function"><name>getLastName</name></member>
+    <member refid="classAddPassengerDialog_1a4aa5d958124de8e4608314c80673e486" kind="function"><name>getFirstName</name></member>
+    <member refid="classAddPassengerDialog_1ac3855b28c0c4b2aaa14afcd78a0f74b0" kind="function"><name>getMiddleName</name></member>
+    <member refid="classAddPassengerDialog_1abbab81d1172ce5a1b48c6c8cce992945" kind="function"><name>getBirthDate</name></member>
+    <member refid="classAddPassengerDialog_1a2e5e47bf81774f0d0e36f3152b4b8f1d" kind="function"><name>getGender</name></member>
+    <member refid="classAddPassengerDialog_1ae458a28a2de47ce4851177084108d6fa" kind="function"><name>getDocumentType</name></member>
+    <member refid="classAddPassengerDialog_1a614faa4d20a8afc8e8d23c017aae9578" kind="function"><name>getDocumentNumber</name></member>
+    <member refid="classAddPassengerDialog_1aacc5b681936ca129b1292856f856dd2c" kind="function"><name>getPhone</name></member>
+    <member refid="classAddPassengerDialog_1a6d77cb356ed0a21b0893487dd81f6d82" kind="function"><name>getEmail</name></member>
+    <member refid="classAddPassengerDialog_1a4d71b055b756a0be8c9190b8383ed7eb" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddPassengerDialog_1a7598a2fc0679fa1b7bd6a7300ab33010" kind="function"><name>setupUI</name></member>
+    <member refid="classAddPassengerDialog_1a050b3eca0f27909b810e89380bb7a77f" kind="function"><name>loadPassengerData</name></member>
+    <member refid="classAddPassengerDialog_1a92d7dda4e811d98d0b4b9fbd32b083cd" kind="function"><name>isValidEmail</name></member>
+    <member refid="classAddPassengerDialog_1a23a039bc5353f29b61dd054f185f0505" kind="function"><name>isValidPhone</name></member>
+  </compound>
+  <compound refid="classAddRouteDialog" kind="class"><name>AddRouteDialog</name>
+    <member refid="classAddRouteDialog_1ae00b26333c6bfc0fe541eb4a7b10216b" kind="variable"><name>m_departureEdit</name></member>
+    <member refid="classAddRouteDialog_1a444a31fe6d67c53f19d7afd9303bf580" kind="variable"><name>m_arrivalEdit</name></member>
+    <member refid="classAddRouteDialog_1a5247388b739820b36074b10b89c3d3cf" kind="variable"><name>m_distanceSpin</name></member>
+    <member refid="classAddRouteDialog_1a429814740ed0e8f63347e5c52ae2a422" kind="variable"><name>m_priceSpin</name></member>
+    <member refid="classAddRouteDialog_1a3c4be6d9d5faf5d861243367923fdd5d" kind="variable"><name>m_statusCombo</name></member>
+    <member refid="classAddRouteDialog_1aeed2a8264ec7ee653b4f3db71255edb3" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddRouteDialog_1ae2165cc6960e39b57a0b32e5c3e7fab7" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddRouteDialog_1a63079fe13efb2094e5a434fa083f3733" kind="variable"><name>m_routeId</name></member>
+    <member refid="classAddRouteDialog_1a7d82c7740fa14b92c1d8d91486d0ebf5" kind="function"><name>AddRouteDialog</name></member>
+    <member refid="classAddRouteDialog_1a93c895050ead890b59b4ca3e8f7ebc85" kind="function"><name>AddRouteDialog</name></member>
+    <member refid="classAddRouteDialog_1ac3e2c2519e8d5dfc91671b782a730389" kind="function"><name>getDeparture</name></member>
+    <member refid="classAddRouteDialog_1aa961fe8d947688e3cb65b94df817a134" kind="function"><name>getArrival</name></member>
+    <member refid="classAddRouteDialog_1a79954be0fc006236122f11688bd8557a" kind="function"><name>getBasePrice</name></member>
+    <member refid="classAddRouteDialog_1ad38afa85a4f4fe67e708fb12e0339825" kind="function"><name>getStatus</name></member>
+    <member refid="classAddRouteDialog_1aba071c3ca67a95d7b1b9b7c3ddddeeb9" kind="function"><name>getDistance</name></member>
+    <member refid="classAddRouteDialog_1a584e2fb8713bad237ca3ef7b514e970e" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddRouteDialog_1a2b6cb418f164592369b1a3782dc665d2" kind="function"><name>setupUI</name></member>
+    <member refid="classAddRouteDialog_1a2807cb73f49245da63f79cf944f0f426" kind="function"><name>loadRouteData</name></member>
+  </compound>
+  <compound refid="classAddScheduleDialog" kind="class"><name>AddScheduleDialog</name>
+    <member refid="classAddScheduleDialog_1abaa58f6a7e60fb28b2b2af501d25bb13" kind="variable"><name>m_routeCombo</name></member>
+    <member refid="classAddScheduleDialog_1a4cf14b1fcd966c133015eef6f2f05699" kind="variable"><name>m_trainCombo</name></member>
+    <member refid="classAddScheduleDialog_1a2f132648f4f04256373fd56d656efde4" kind="variable"><name>m_wagonTypeCombo</name></member>
+    <member refid="classAddScheduleDialog_1ad515b3c5514988b51922ffa1fbebc142" kind="variable"><name>m_departureDateEdit</name></member>
+    <member refid="classAddScheduleDialog_1a7a13aee59233307ac8fc600d582bf7bb" kind="variable"><name>m_departureTimeEdit</name></member>
+    <member refid="classAddScheduleDialog_1ab7de4cd09e61fc4b03e2449fac92180c" kind="variable"><name>m_arrivalDateEdit</name></member>
+    <member refid="classAddScheduleDialog_1af980d1306ed42b433e0ffb5bef08b262" kind="variable"><name>m_arrivalTimeEdit</name></member>
+    <member refid="classAddScheduleDialog_1a48588184c5075eac7f1b421138956279" kind="variable"><name>m_seatsSpin</name></member>
+    <member refid="classAddScheduleDialog_1abe6ca4740216bcb5913a81cff8ffe0ba" kind="variable"><name>m_priceSpin</name></member>
+    <member refid="classAddScheduleDialog_1aa0ec169a0cf052d36859a9337af1a5fc" kind="variable"><name>m_statusCombo</name></member>
+    <member refid="classAddScheduleDialog_1af0e52721a999de642f04098595d4590e" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddScheduleDialog_1a7bdd59d51572fa21b7077f1c3872d5c9" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddScheduleDialog_1a930c682df2f9c27d95aba620a0b9616e" kind="variable"><name>m_routeInfoLabel</name></member>
+    <member refid="classAddScheduleDialog_1aa14e5f92dfaac8e3dfcaf36f60821835" kind="variable"><name>m_trainInfoLabel</name></member>
+    <member refid="classAddScheduleDialog_1af767461fa8dbcc23a2d8243357de8898" kind="variable"><name>m_wagonTypeInfoLabel</name></member>
+    <member refid="classAddScheduleDialog_1ad8053f61d9e71cff4e249388ed3395ae" kind="variable"><name>m_scheduleId</name></member>
+    <member refid="classAddScheduleDialog_1a13c1ebff3135f7c8c4ea2ad517ca83eb" kind="function"><name>AddScheduleDialog</name></member>
+    <member refid="classAddScheduleDialog_1ac7fbc612c08b5c1bde56452361dc8335" kind="function"><name>AddScheduleDialog</name></member>
+    <member refid="classAddScheduleDialog_1ad7fc4970c18a4476eaf1e2beb6ced8b5" kind="function"><name>getRouteId</name></member>
+    <member refid="classAddScheduleDialog_1aafbe03bec6b223e3bec88e74b3f7aba6" kind="function"><name>getTrainId</name></member>
+    <member refid="classAddScheduleDialog_1a9e1ae7e0cd6df73adc850dccf140537e" kind="function"><name>getWagonTypeId</name></member>
+    <member refid="classAddScheduleDialog_1a815fee7492aead27b6183f024f9de798" kind="function"><name>getDepartureDate</name></member>
+    <member refid="classAddScheduleDialog_1ae75cf3179f8cf577606aadea858a9548" kind="function"><name>getDepartureTime</name></member>
+    <member refid="classAddScheduleDialog_1a1527b908a30fe3b14c39f11e02d96a95" kind="function"><name>getArrivalDate</name></member>
+    <member refid="classAddScheduleDialog_1a0272bcba4507d3fdf5cdbe6725307e81" kind="function"><name>getArrivalTime</name></member>
+    <member refid="classAddScheduleDialog_1afece9c05141bff6d1c94ff3b783996d6" kind="function"><name>getAvailableSeats</name></member>
+    <member refid="classAddScheduleDialog_1a55f32c7d6afedd2dddbfcea238d2c1df" kind="function"><name>getPrice</name></member>
+    <member refid="classAddScheduleDialog_1a45cbf7e93ada1becaf577cd5305ccc04" kind="function"><name>getStatus</name></member>
+    <member refid="classAddScheduleDialog_1aa03030daa5dd9f99791531f3c9594e14" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddScheduleDialog_1a46dd04128e118294949a2650f611baae" kind="slot"><name>calculatePrice</name></member>
+    <member refid="classAddScheduleDialog_1ada6c681d24ec41595a3e25eee0504257" kind="slot"><name>updateArrivalDate</name></member>
+    <member refid="classAddScheduleDialog_1afb7967172a6854aa11cbfeb466475930" kind="function"><name>setupUI</name></member>
+    <member refid="classAddScheduleDialog_1a00e716ca3c2a59f84c15a5a9c3cc1fd7" kind="function"><name>loadScheduleData</name></member>
+    <member refid="classAddScheduleDialog_1acd0e6c3978a63eb9890023c55add563a" kind="function"><name>loadComboBoxData</name></member>
+    <member refid="classAddScheduleDialog_1a26640b852d0a7e8bdcaa4c547aceb461" kind="function"><name>validateDates</name></member>
+  </compound>
+  <compound refid="classAddTicketDialog" kind="class"><name>AddTicketDialog</name>
+    <member refid="classAddTicketDialog_1a0454875276d3b97c5ff6057c559888ab" kind="variable"><name>m_scheduleCombo</name></member>
+    <member refid="classAddTicketDialog_1a11d8c26a949347fb7bffc391c81a7ce6" kind="variable"><name>m_passengerCombo</name></member>
+    <member refid="classAddTicketDialog_1a46fb944f7712a8490d2bbe0e392083e6" kind="variable"><name>m_wagonSpin</name></member>
+    <member refid="classAddTicketDialog_1ab923ac68575f75d151a7913195b6f4dd" kind="variable"><name>m_seatSpin</name></member>
+    <member refid="classAddTicketDialog_1a2e0fdef4d32918505bdd849aca1d4441" kind="variable"><name>m_priceSpin</name></member>
+    <member refid="classAddTicketDialog_1a0b53b93da0aa07e61f32e845c124d8e7" kind="variable"><name>m_statusCombo</name></member>
+    <member refid="classAddTicketDialog_1ab6a5ec21953c334a21e2b55391e95d4f" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddTicketDialog_1a9f93044438a1d908a8b9a01b2aababe2" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddTicketDialog_1a6cc654b1a993fedf605fe5682c42ae45" kind="variable"><name>m_checkSeatButton</name></member>
+    <member refid="classAddTicketDialog_1a17869eeeeda38512f4bcea6bdd12c469" kind="variable"><name>m_scheduleInfoLabel</name></member>
+    <member refid="classAddTicketDialog_1a27ffe3fc8b46ac162e009f2eef7ce0d3" kind="variable"><name>m_passengerInfoLabel</name></member>
+    <member refid="classAddTicketDialog_1a47f678173fabd659bb2e5e8316660dbc" kind="variable"><name>m_seatStatusLabel</name></member>
+    <member refid="classAddTicketDialog_1a2f44a4bc8ff97797abe744c919dd4660" kind="variable"><name>m_availableSeatsLabel</name></member>
+    <member refid="classAddTicketDialog_1acdd74bc2cfa55614ad48627e704df01b" kind="variable"><name>m_autoPriceCheck</name></member>
+    <member refid="classAddTicketDialog_1aed1ed99e44c0ff44108e8c284629c687" kind="variable"><name>m_ticketId</name></member>
+    <member refid="classAddTicketDialog_1af7174a6459bc3f5b9c75c7d46cb5924f" kind="function"><name>AddTicketDialog</name></member>
+    <member refid="classAddTicketDialog_1a47dc1160b6a3caff3af8101b54a93b69" kind="function"><name>AddTicketDialog</name></member>
+    <member refid="classAddTicketDialog_1a2bcbc372b467d6b5adec8ab971a79b39" kind="function"><name>getScheduleId</name></member>
+    <member refid="classAddTicketDialog_1a7da9aafc4fb85280c63b4867522569ec" kind="function"><name>getPassengerId</name></member>
+    <member refid="classAddTicketDialog_1ab6f486542ad05c996f10ef7fbf4e615e" kind="function"><name>getWagonNumber</name></member>
+    <member refid="classAddTicketDialog_1a9b9e61ba35cf3229b4d9a7013cce351e" kind="function"><name>getSeatNumber</name></member>
+    <member refid="classAddTicketDialog_1aa2d69bcac93984fb5119ff9efa1a76f0" kind="function"><name>getPrice</name></member>
+    <member refid="classAddTicketDialog_1a4ae4c74d73013d68dceecb9f21367f8a" kind="function"><name>getStatus</name></member>
+    <member refid="classAddTicketDialog_1aa6cf28395b20f480f5c6f13de2863a8b" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddTicketDialog_1a3d2df35af3cbd6a02532a610de16a5af" kind="slot"><name>checkSeatAvailability</name></member>
+    <member refid="classAddTicketDialog_1ab385c7ebd19765bb0892e7c05bfd2b93" kind="slot"><name>onScheduleChanged</name></member>
+    <member refid="classAddTicketDialog_1a0d5c38ae0160aa59f56d4e5161561be4" kind="slot"><name>onPassengerChanged</name></member>
+    <member refid="classAddTicketDialog_1a80bceb1693f669b0b747772bd6cc00f6" kind="function"><name>setupUI</name></member>
+    <member refid="classAddTicketDialog_1a264b86c0b47d3de454e06025e8ad9bb1" kind="function"><name>loadTicketData</name></member>
+    <member refid="classAddTicketDialog_1af86018b693ffd213c7f9b32f39198d9e" kind="function"><name>loadComboBoxData</name></member>
+    <member refid="classAddTicketDialog_1a2a0b67bf800dd02496120bf2df23cdd0" kind="function"><name>updatePrice</name></member>
+    <member refid="classAddTicketDialog_1a954efb5f3c3ed5717cfe048ff93b66a5" kind="function"><name>updateAvailableSeats</name></member>
+  </compound>
+  <compound refid="classAddTrainDialog" kind="class"><name>AddTrainDialog</name>
+    <member refid="classAddTrainDialog_1ad91094ac58532a73cb4cb24b5c0b3fcc" kind="variable"><name>m_nameEdit</name></member>
+    <member refid="classAddTrainDialog_1abe776e0cdc12375622b2563d2dfab0bd" kind="variable"><name>m_statusCombo</name></member>
+    <member refid="classAddTrainDialog_1ac3c726ef84daa5b1fcc5a68c03a9682a" kind="variable"><name>m_seatsSpin</name></member>
+    <member refid="classAddTrainDialog_1a2f8005bc852e3b2fd88d25bc25425bd6" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddTrainDialog_1a471d93ffd5b07bd12db902908e673c4b" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddTrainDialog_1af1c8d3e7bc8c303cc99c23208d46e128" kind="variable"><name>m_trainId</name></member>
+    <member refid="classAddTrainDialog_1a6662b321a192ab7d7c3e66d9f7bcf478" kind="function"><name>AddTrainDialog</name></member>
+    <member refid="classAddTrainDialog_1a75522888577f415e67a5265e9b7499bb" kind="function"><name>AddTrainDialog</name></member>
+    <member refid="classAddTrainDialog_1a1409aa6de47bf2cf651e156ff338663c" kind="function"><name>getName</name></member>
+    <member refid="classAddTrainDialog_1ad79cbd47c506acbc364d27332968cea9" kind="function"><name>getStatus</name></member>
+    <member refid="classAddTrainDialog_1ac30eaa482e368ba2522e07fba74bf82c" kind="function"><name>getTotalSeats</name></member>
+    <member refid="classAddTrainDialog_1a888ed0ef4038ada9a105d98c09f28344" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddTrainDialog_1a3259171200f8014e153303dd51726df3" kind="function"><name>setupUI</name></member>
+    <member refid="classAddTrainDialog_1a63d32f7a7397463fec10bb598dea257d" kind="function"><name>loadTrainData</name></member>
+  </compound>
+  <compound refid="classAddWagonTypeDialog" kind="class"><name>AddWagonTypeDialog</name>
+    <member refid="classAddWagonTypeDialog_1acfc266a1e98d6c8f027d7f6202717c97" kind="variable"><name>m_nameEdit</name></member>
+    <member refid="classAddWagonTypeDialog_1a349542e64a8554782679b40d79fa4dac" kind="variable"><name>m_capacitySpin</name></member>
+    <member refid="classAddWagonTypeDialog_1a65fd35f8497bce0ef8dd15eb93cae23a" kind="variable"><name>m_descEdit</name></member>
+    <member refid="classAddWagonTypeDialog_1aa77a0c1b6eb6b96a167a708ec7da5d86" kind="variable"><name>m_okButton</name></member>
+    <member refid="classAddWagonTypeDialog_1ae28e17231bcafd199685791f62bfa515" kind="variable"><name>m_cancelButton</name></member>
+    <member refid="classAddWagonTypeDialog_1a7ffb8a5f9286239766fd9197ef042de6" kind="variable"><name>m_wagonTypeId</name></member>
+    <member refid="classAddWagonTypeDialog_1a07acef17a74044d2ffdfcaba2de17a40" kind="function"><name>AddWagonTypeDialog</name></member>
+    <member refid="classAddWagonTypeDialog_1a80827eb1527c04cb1a46374840d4f1cd" kind="function"><name>AddWagonTypeDialog</name></member>
+    <member refid="classAddWagonTypeDialog_1a2879f2149085de2bd1781e7d279a1562" kind="function"><name>getName</name></member>
+    <member refid="classAddWagonTypeDialog_1a08c7a940a2b4e918264664965ef4db10" kind="function"><name>getCapacity</name></member>
+    <member refid="classAddWagonTypeDialog_1ac684c0913e6b8435cda4cc08e4ef5284" kind="function"><name>getDescription</name></member>
+    <member refid="classAddWagonTypeDialog_1a783c678474a7fe3b7d461ac5a086fb38" kind="slot"><name>validateAndAccept</name></member>
+    <member refid="classAddWagonTypeDialog_1afb7c6bb2f16fe694769e2e0236343d00" kind="function"><name>setupUI</name></member>
+    <member refid="classAddWagonTypeDialog_1ad321a1a4e79f35f5f88b05bc1acb3ba8" kind="function"><name>loadWagonTypeData</name></member>
+  </compound>
+  <compound refid="classDatabase" kind="class"><name>Database</name>
+    <member refid="classDatabase_1a7357cbeca05937556f66e2fe2288bdb5" kind="variable"><name>m_db</name></member>
+    <member refid="classDatabase_1a25acd0ba8ce00ebc6b331568d81e4230" kind="function"><name>Database</name></member>
+    <member refid="classDatabase_1a84d399a2ad58d69daab9b05330e1316d" kind="function"><name>~Database</name></member>
+    <member refid="classDatabase_1a0f2d4b0483f58e11d2f80ecbfe6d08db" kind="function"><name>connectToDatabase</name></member>
+    <member refid="classDatabase_1ae559e33ee2ced189256cded3ba36fd7f" kind="function"><name>isConnected</name></member>
+    <member refid="classDatabase_1a38a050efab45bd80464b106993f2c3ec" kind="function"><name>getDatabase</name></member>
+    <member refid="classDatabase_1aae159f2a1170caabf5a4c40bfe2f1e3d" kind="function"><name>executeQuery</name></member>
+    <member refid="classDatabase_1a78c301a86cacef439c2db870117166b7" kind="function"><name>executeSelectQuery</name></member>
+    <member refid="classDatabase_1a16e3a424915bed9bd3abd862882a103e" kind="function"><name>testConnection</name></member>
+    <member refid="classDatabase_1a0c284ca36f641066e6a78675041bcd0f" kind="function"><name>initializeDatabase</name></member>
+  </compound>
+  <compound refid="classMainWindow" kind="class"><name>MainWindow</name>
+    <member refid="classMainWindow_1ad4fcda29170398da4f4c2aba7875dee6" kind="variable"><name>m_database</name></member>
+    <member refid="classMainWindow_1a5560d9b1fad0cdb3e64eba77c4602202" kind="variable"><name>m_mainSplitter</name></member>
+    <member refid="classMainWindow_1a478fa0e7fb8260f41970d93a3f7c8669" kind="variable"><name>m_mainTabWidget</name></member>
+    <member refid="classMainWindow_1a090faa16ecf10a8c12eaf918ad083632" kind="variable"><name>m_reportsTabWidget</name></member>
+    <member refid="classMainWindow_1a9a7cc530005b80456e3ac6eb65060395" kind="variable"><name>m_trainTable</name></member>
+    <member refid="classMainWindow_1a40d4192b3fdc3aa354e7bbc52e21b5e1" kind="variable"><name>m_wagonTypeTable</name></member>
+    <member refid="classMainWindow_1a1cf987c1359e5aa67ac04c89f9a8e634" kind="variable"><name>m_routeTable</name></member>
+    <member refid="classMainWindow_1a2fad77c34fb93b9ac269ccd12cfb8dc4" kind="variable"><name>m_passengerTable</name></member>
+    <member refid="classMainWindow_1a04c34034b5f89719f272da0eedad0e95" kind="variable"><name>m_scheduleTable</name></member>
+    <member refid="classMainWindow_1a966ba86745af3dab285fd14c89001703" kind="variable"><name>m_ticketTable</name></member>
+    <member refid="classMainWindow_1a5134454e942b7b58b6230de5c418efbd" kind="variable"><name>m_trainModel</name></member>
+    <member refid="classMainWindow_1a9d55838dfa81c0f072559859b02ddde7" kind="variable"><name>m_wagonTypeModel</name></member>
+    <member refid="classMainWindow_1abf796c3db82b62c84f37aa65c7c2ab44" kind="variable"><name>m_routeModel</name></member>
+    <member refid="classMainWindow_1a950a4db6bc78e3c548e318766acc5573" kind="variable"><name>m_passengerModel</name></member>
+    <member refid="classMainWindow_1a47be418ab202d488ec5f649023a1eac8" kind="variable"><name>m_scheduleModel</name></member>
+    <member refid="classMainWindow_1a6f2a880626cb8aa4d164856f892f2cdc" kind="variable"><name>m_ticketModel</name></member>
+    <member refid="classMainWindow_1a876182a1e95b65b4503f9a8e336ab421" kind="variable"><name>m_scheduleViewModel</name></member>
+    <member refid="classMainWindow_1a4cebae02eb65f1bba5d1a16516693f68" kind="variable"><name>m_ticketViewModel</name></member>
+    <member refid="classMainWindow_1a45d8cf0ba72856226f8fa32032fec24d" kind="variable"><name>m_btnAddTrain</name></member>
+    <member refid="classMainWindow_1af7649c80b9c114359aefd79d02d8f1a3" kind="variable"><name>m_btnEditTrain</name></member>
+    <member refid="classMainWindow_1a3432acb1c16bda6e4fd2483f0cc614b9" kind="variable"><name>m_btnDeleteTrain</name></member>
+    <member refid="classMainWindow_1a8daea51d201704fb77df9ff1a24e0d9e" kind="variable"><name>m_btnAddWagonType</name></member>
+    <member refid="classMainWindow_1ac17117bb6762a25da0dbf1479611327f" kind="variable"><name>m_btnEditWagonType</name></member>
+    <member refid="classMainWindow_1a6ebb9848fbb61ec0bb80e8c4ba608b28" kind="variable"><name>m_btnDeleteWagonType</name></member>
+    <member refid="classMainWindow_1a2b48c6bd94ff8bb361df0c27661e61e7" kind="variable"><name>m_btnAddRoute</name></member>
+    <member refid="classMainWindow_1a4ae7563d46d1c8eb23840eefb157d77b" kind="variable"><name>m_btnEditRoute</name></member>
+    <member refid="classMainWindow_1a16f8af73f6696be3473261ea5f8ec8e5" kind="variable"><name>m_btnDeleteRoute</name></member>
+    <member refid="classMainWindow_1ae428f2866aa699853b9360576e1ab082" kind="variable"><name>m_btnAddPassenger</name></member>
+    <member refid="classMainWindow_1a4ee97e81c4c6891c774ada7e3ca686ab" kind="variable"><name>m_btnEditPassenger</name></member>
+    <member refid="classMainWindow_1a2aa83430b2910f86d4bb6fcd802d38b0" kind="variable"><name>m_btnDeletePassenger</name></member>
+    <member refid="classMainWindow_1ac979bdc5a55ed0006a19f51bc1abf38e" kind="variable"><name>m_btnAddSchedule</name></member>
+    <member refid="classMainWindow_1a3b9e32d3a063e1b8a2a7afbe5024c5f2" kind="variable"><name>m_btnEditSchedule</name></member>
+    <member refid="classMainWindow_1aa9ce7ea1f690459d13d7aad292c3313c" kind="variable"><name>m_btnDeleteSchedule</name></member>
+    <member refid="classMainWindow_1a62a202ee2bf81818b0a435361e6a555d" kind="variable"><name>m_btnAddTicket</name></member>
+    <member refid="classMainWindow_1a3f8c36847f565a1afba88472f055e62e" kind="variable"><name>m_btnEditTicket</name></member>
+    <member refid="classMainWindow_1afc378b959818535a04998b2fa2559032" kind="variable"><name>m_btnDeleteTicket</name></member>
+    <member refid="classMainWindow_1ab9c6492b81f3117ca8fed55c7b97da44" kind="variable"><name>m_statusLabel</name></member>
+    <member refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" kind="function"><name>MainWindow</name></member>
+    <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="classMainWindow_1a1920e8733835e33561d7700f38afa0ff" kind="slot"><name>refreshAllTables</name></member>
+    <member refid="classMainWindow_1aa3aa0f3ce42e748b931d6211921ea197" kind="slot"><name>showAbout</name></member>
+    <member refid="classMainWindow_1a892d5c2d62a2e35671d8f04b7aa4bb58" kind="slot"><name>checkDatabaseConnection</name></member>
+    <member refid="classMainWindow_1ad0f053326ebfc4a341cd563b42cc52ec" kind="slot"><name>addTrain</name></member>
+    <member refid="classMainWindow_1a6e129cd3ecb8260c7ea6a5504c496937" kind="slot"><name>editTrain</name></member>
+    <member refid="classMainWindow_1ad2e15009b9e13bd242012df26dd2247a" kind="slot"><name>deleteTrain</name></member>
+    <member refid="classMainWindow_1afc6c0fb650cd27425121dc0b073eba7b" kind="slot"><name>addWagonType</name></member>
+    <member refid="classMainWindow_1a68d6b42bc2b9db47671cd276c26c4a88" kind="slot"><name>editWagonType</name></member>
+    <member refid="classMainWindow_1a98cdfbb1201582b0fef4bc21025e79c0" kind="slot"><name>deleteWagonType</name></member>
+    <member refid="classMainWindow_1a468986a27d051f2995f71b64cd5bad4f" kind="slot"><name>addRoute</name></member>
+    <member refid="classMainWindow_1acfc57376bc977bf1b8c8c273c0e4f3ba" kind="slot"><name>editRoute</name></member>
+    <member refid="classMainWindow_1a9a1bbede86014a4693e0d1d58e3ebc7b" kind="slot"><name>deleteRoute</name></member>
+    <member refid="classMainWindow_1a83b8e8d4a440dfce46499f474172b240" kind="slot"><name>addPassenger</name></member>
+    <member refid="classMainWindow_1a783d3eed7a75ef7f927f62370c5ea26f" kind="slot"><name>editPassenger</name></member>
+    <member refid="classMainWindow_1a8767949bb63e01a91f59767d0cb6df93" kind="slot"><name>deletePassenger</name></member>
+    <member refid="classMainWindow_1a59aa2dc4c74f6a723c821058e25d3232" kind="slot"><name>addSchedule</name></member>
+    <member refid="classMainWindow_1a5af97e1dd7c6a7e7414a9059fb011879" kind="slot"><name>editSchedule</name></member>
+    <member refid="classMainWindow_1a332af8284c83803f8c849bf7ea6fa1e2" kind="slot"><name>deleteSchedule</name></member>
+    <member refid="classMainWindow_1ab4cd94b5e802ae9977e48e5320fbed47" kind="slot"><name>addTicket</name></member>
+    <member refid="classMainWindow_1a7b803f49ef26c122426afcb2052b6b46" kind="slot"><name>editTicket</name></member>
+    <member refid="classMainWindow_1ad4c353e04d7bfefe0d0f2d4f4e1c063e" kind="slot"><name>deleteTicket</name></member>
+    <member refid="classMainWindow_1a3a304253c9e7caeef028f75358bf1fd5" kind="function"><name>setupUI</name></member>
+    <member refid="classMainWindow_1a11b598a20d68676638408950d7140e45" kind="function"><name>setupMenuBar</name></member>
+    <member refid="classMainWindow_1adff8efaa9748c0ea2eabba6bbce5a719" kind="function"><name>setupToolBar</name></member>
+    <member refid="classMainWindow_1a0d883ee938ff46ffba3e2592eda5835e" kind="function"><name>setupStatusBar</name></member>
+    <member refid="classMainWindow_1a95dc085bf70bd0c1ad05bd80f897fd1d" kind="function"><name>setupConnections</name></member>
+    <member refid="classMainWindow_1a879793955a3dd66ee94aac242fec0795" kind="function"><name>createMainTabWidget</name></member>
+    <member refid="classMainWindow_1af9675c10ba84b41cf160edb84a1b49c3" kind="function"><name>createReportsTabWidget</name></member>
+  </compound>
+  <compound refid="classPassengerModel" kind="class"><name>PassengerModel</name>
+    <member refid="classPassengerModel_1a192f13a0c6621c9f3b82ada29168f415" kind="function"><name>PassengerModel</name></member>
+    <member refid="classPassengerModel_1adf2c1c075abf2b61a03de1c44a096300" kind="function"><name>addPassenger</name></member>
+    <member refid="classPassengerModel_1ac42cf541266cafca576e80c2f56b3245" kind="function"><name>updatePassenger</name></member>
+    <member refid="classPassengerModel_1a3daddb3f80d1f83653deae67ebef28be" kind="function"><name>removePassenger</name></member>
+    <member refid="classPassengerModel_1ad9d3a3766147e439b66fe6ac981326b4" kind="function"><name>getPassengersMap</name></member>
+    <member refid="classPassengerModel_1aaaa954bf16acd6304513456037249865" kind="function"><name>passengerExists</name></member>
+    <member refid="classPassengerModel_1a22cacca23fe31e1a8636421db50a7810" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="classRouteModel" kind="class"><name>RouteModel</name>
+    <member refid="classRouteModel_1a2b945e74837a706013f95b1dbc921e41" kind="function"><name>RouteModel</name></member>
+    <member refid="classRouteModel_1a8f3b70eabe960313103dc25e42160c10" kind="function"><name>addRoute</name></member>
+    <member refid="classRouteModel_1a541a10c6883862828652ad6e71807ecd" kind="function"><name>updateRoute</name></member>
+    <member refid="classRouteModel_1af72bad9f213fbb690cc060e3b6cdf8e4" kind="function"><name>removeRoute</name></member>
+    <member refid="classRouteModel_1a073b1cc9a2150b73e1722eee73e20919" kind="function"><name>getRoutesMap</name></member>
+    <member refid="classRouteModel_1ac893b236dd7601b58a9c5e3ef072a6ca" kind="function"><name>routeExists</name></member>
+    <member refid="classRouteModel_1aa0e66dc99e50ea09b0e4e581f2f706f7" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="classScheduleModel" kind="class"><name>ScheduleModel</name>
+    <member refid="classScheduleModel_1ac388ec5d05d75b7279b36d2854115378" kind="function"><name>ScheduleModel</name></member>
+    <member refid="classScheduleModel_1a6a39665c4af631eb079815dd900b7903" kind="function"><name>addSchedule</name></member>
+    <member refid="classScheduleModel_1a7df0cc45739dc6b79563198738b426b4" kind="function"><name>updateSchedule</name></member>
+    <member refid="classScheduleModel_1ae15754cf99db71963fc9ba9216c3c296" kind="function"><name>removeSchedule</name></member>
+    <member refid="classScheduleModel_1a14b132a5eb395d4522556cbf47956295" kind="function"><name>getFullSchedule</name></member>
+    <member refid="classScheduleModel_1a216479867318c7b50ccd636402582b21" kind="function"><name>updateAvailableSeats</name></member>
+    <member refid="classScheduleModel_1a4a706eb642442459523c447bb8fc935f" kind="function"><name>getScheduleMap</name></member>
+    <member refid="classScheduleModel_1aa0e72daa45d79cec9d8bde6c8f746eac" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="classScheduleViewModel" kind="class"><name>ScheduleViewModel</name>
+    <member refid="classScheduleViewModel_1afbc8fe107b998b76021c92fb28e2a7ea" kind="function"><name>ScheduleViewModel</name></member>
+    <member refid="classScheduleViewModel_1a647bac2ba4ec7e606de7d7b12f743e45" kind="function"><name>data</name></member>
+    <member refid="classScheduleViewModel_1ac45b0f7df2a2a3db4ea03bb5a7b81283" kind="function"><name>refresh</name></member>
+    <member refid="classScheduleViewModel_1ac9624977144f2b9363b7b4295bec373f" kind="function"><name>setupQuery</name></member>
+  </compound>
+  <compound refid="classTicketModel" kind="class"><name>TicketModel</name>
+    <member refid="classTicketModel_1ad2c0c2f033c745369d6ca16060c543ab" kind="function"><name>TicketModel</name></member>
+    <member refid="classTicketModel_1a07aa23acd0c8d032a2d1bc3c81b2e27e" kind="function"><name>addTicket</name></member>
+    <member refid="classTicketModel_1a9236c9a5f46905fef62689a12eb4681b" kind="function"><name>updateTicket</name></member>
+    <member refid="classTicketModel_1abe24d6e8ba2a3e8e65fa919ef846fba7" kind="function"><name>removeTicket</name></member>
+    <member refid="classTicketModel_1abdb324f7d8b1f3df483fd12e452c84d5" kind="function"><name>sellTicket</name></member>
+    <member refid="classTicketModel_1a42e2ffb1d9bb0c23416bb8a25d934bbb" kind="function"><name>cancelTicket</name></member>
+    <member refid="classTicketModel_1a8117aeab422fef405368216b2550c949" kind="function"><name>getTicketDetails</name></member>
+    <member refid="classTicketModel_1a09b0c8e2c13e5c512570faf2cfd5ac0b" kind="function"><name>getSalesStatistics</name></member>
+    <member refid="classTicketModel_1a2347b413b71baca380940f9b9ce619f6" kind="function"><name>isSeatAvailable</name></member>
+    <member refid="classTicketModel_1a56dae1798a277800af657c299ff56251" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="classTicketViewModel" kind="class"><name>TicketViewModel</name>
+    <member refid="classTicketViewModel_1ac59a735732eb6be0ef30b8a1bb43dbb2" kind="function"><name>TicketViewModel</name></member>
+    <member refid="classTicketViewModel_1a2c4bc71377413414b917b966300bf730" kind="function"><name>data</name></member>
+    <member refid="classTicketViewModel_1a2e798723c06e5c7383b61aaa14904733" kind="function"><name>refresh</name></member>
+    <member refid="classTicketViewModel_1ae7abfad79e18a9f8816b67502bf40a55" kind="function"><name>setupQuery</name></member>
+  </compound>
+  <compound refid="classTrainModel" kind="class"><name>TrainModel</name>
+    <member refid="classTrainModel_1a92837b060a877556b2b640d0c67693dd" kind="function"><name>TrainModel</name></member>
+    <member refid="classTrainModel_1a8e61003c6efe2f53648876bae6bd7fb1" kind="function"><name>addTrain</name></member>
+    <member refid="classTrainModel_1a4025377ee406c9791d747c1b9d47b81c" kind="function"><name>updateTrain</name></member>
+    <member refid="classTrainModel_1a54af20ec008fe1dd214a43d2410868e3" kind="function"><name>removeTrain</name></member>
+    <member refid="classTrainModel_1a7a28dc3afbfc8bc411ab1f12d3724a63" kind="function"><name>getTrainData</name></member>
+    <member refid="classTrainModel_1a847d575d52a7e5b56723bf079f7cce46" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="classWagonTypeModel" kind="class"><name>WagonTypeModel</name>
+    <member refid="classWagonTypeModel_1a5fa37e213a24b5031481b518420afd46" kind="function"><name>WagonTypeModel</name></member>
+    <member refid="classWagonTypeModel_1a87b70d8a7a112f7ee92c7c6d35239833" kind="function"><name>addWagonType</name></member>
+    <member refid="classWagonTypeModel_1a0242d3158f3f296c69f33cfafeeb8ff8" kind="function"><name>updateWagonType</name></member>
+    <member refid="classWagonTypeModel_1a8dd2270ce60074b9ede655ee4dadcecf" kind="function"><name>removeWagonType</name></member>
+    <member refid="classWagonTypeModel_1a8e9c1ed9fd9ee287a82f3f6bc69caf3c" kind="function"><name>getWagonTypesMap</name></member>
+    <member refid="classWagonTypeModel_1a4d5fa919b742708c6bb3f65d36173422" kind="function"><name>setupModel</name></member>
+  </compound>
+  <compound refid="database_8cpp" kind="file"><name>database.cpp</name>
+  </compound>
+  <compound refid="database_8h" kind="file"><name>database.h</name>
+  </compound>
+  <compound refid="addpassengerdialog_8cpp" kind="file"><name>addpassengerdialog.cpp</name>
+  </compound>
+  <compound refid="addpassengerdialog_8h" kind="file"><name>addpassengerdialog.h</name>
+  </compound>
+  <compound refid="addroutedialog_8cpp" kind="file"><name>addroutedialog.cpp</name>
+  </compound>
+  <compound refid="addroutedialog_8h" kind="file"><name>addroutedialog.h</name>
+  </compound>
+  <compound refid="addscheduledialog_8cpp" kind="file"><name>addscheduledialog.cpp</name>
+  </compound>
+  <compound refid="addscheduledialog_8h" kind="file"><name>addscheduledialog.h</name>
+  </compound>
+  <compound refid="addticketdialog_8cpp" kind="file"><name>addticketdialog.cpp</name>
+  </compound>
+  <compound refid="addticketdialog_8h" kind="file"><name>addticketdialog.h</name>
+  </compound>
+  <compound refid="addtraindialog_8cpp" kind="file"><name>addtraindialog.cpp</name>
+  </compound>
+  <compound refid="addtraindialog_8h" kind="file"><name>addtraindialog.h</name>
+  </compound>
+  <compound refid="addwagontypedialog_8cpp" kind="file"><name>addwagontypedialog.cpp</name>
+  </compound>
+  <compound refid="addwagontypedialog_8h" kind="file"><name>addwagontypedialog.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="passengermodel_8cpp" kind="file"><name>passengermodel.cpp</name>
+  </compound>
+  <compound refid="passengermodel_8h" kind="file"><name>passengermodel.h</name>
+  </compound>
+  <compound refid="routemodel_8cpp" kind="file"><name>routemodel.cpp</name>
+  </compound>
+  <compound refid="routemodel_8h" kind="file"><name>routemodel.h</name>
+  </compound>
+  <compound refid="schedulemodel_8cpp" kind="file"><name>schedulemodel.cpp</name>
+  </compound>
+  <compound refid="schedulemodel_8h" kind="file"><name>schedulemodel.h</name>
+  </compound>
+  <compound refid="scheduleviewmodel_8cpp" kind="file"><name>scheduleviewmodel.cpp</name>
+  </compound>
+  <compound refid="scheduleviewmodel_8h" kind="file"><name>scheduleviewmodel.h</name>
+  </compound>
+  <compound refid="ticketmodel_8cpp" kind="file"><name>ticketmodel.cpp</name>
+  </compound>
+  <compound refid="ticketmodel_8h" kind="file"><name>ticketmodel.h</name>
+  </compound>
+  <compound refid="ticketviewmodel_8cpp" kind="file"><name>ticketviewmodel.cpp</name>
+  </compound>
+  <compound refid="ticketviewmodel_8h" kind="file"><name>ticketviewmodel.h</name>
+  </compound>
+  <compound refid="trainmodel_8cpp" kind="file"><name>trainmodel.cpp</name>
+  </compound>
+  <compound refid="trainmodel_8h" kind="file"><name>trainmodel.h</name>
+  </compound>
+  <compound refid="wagontypemodel_8cpp" kind="file"><name>wagontypemodel.cpp</name>
+  </compound>
+  <compound refid="wagontypemodel_8h" kind="file"><name>wagontypemodel.h</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_56b9387f66bbb1dccc82a920d3dbd989" kind="dir"><name>dialogs</name>
+  </compound>
+  <compound refid="dir_1ae4179d5e953611aae20c997279e02c" kind="dir"><name>models</name>
+  </compound>
+</doxygenindex>

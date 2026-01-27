@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classTrainModel" kind="class" language="C++" prot="public">
+    <compoundname>TrainModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTrainModel_1a92837b060a877556b2b640d0c67693dd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrainModel::TrainModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>TrainModel</name>
+        <qualifiedname>TrainModel::TrainModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="14" column="14" bodyfile="models/trainmodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainModel_1a8e61003c6efe2f53648876bae6bd7fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TrainModel::addTrain</definition>
+        <argsstring>(const QString &amp;name, const QString &amp;status, int totalSeats)</argsstring>
+        <name>addTrain</name>
+        <qualifiedname>TrainModel::addTrain</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalSeats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="17" column="10" bodyfile="models/trainmodel.cpp" bodystart="23" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainModel_1a4025377ee406c9791d747c1b9d47b81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TrainModel::updateTrain</definition>
+        <argsstring>(int id, const QString &amp;name, const QString &amp;status, int totalSeats)</argsstring>
+        <name>updateTrain</name>
+        <qualifiedname>TrainModel::updateTrain</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalSeats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="18" column="10" bodyfile="models/trainmodel.cpp" bodystart="40" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainModel_1a54af20ec008fe1dd214a43d2410868e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TrainModel::removeTrain</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removeTrain</name>
+        <qualifiedname>TrainModel::removeTrain</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="19" column="10" bodyfile="models/trainmodel.cpp" bodystart="58" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrainModel_1a7a28dc3afbfc8bc411ab1f12d3724a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant TrainModel::getTrainData</definition>
+        <argsstring>(int id, const QString &amp;field)</argsstring>
+        <name>getTrainData</name>
+        <qualifiedname>TrainModel::getTrainData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="22" column="14" bodyfile="models/trainmodel.cpp" bodystart="73" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTrainModel_1a847d575d52a7e5b56723bf079f7cce46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TrainModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>TrainModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/trainmodel.h" line="25" column="10" bodyfile="models/trainmodel.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>TrainModel</label>
+        <link refid="classTrainModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>TrainModel</label>
+        <link refid="classTrainModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/trainmodel.h" line="9" column="1" bodyfile="models/trainmodel.h" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classTrainModel_1a8e61003c6efe2f53648876bae6bd7fb1" prot="public" virt="non-virtual"><scope>TrainModel</scope><name>addTrain</name></member>
+      <member refid="classTrainModel_1a7a28dc3afbfc8bc411ab1f12d3724a63" prot="public" virt="non-virtual"><scope>TrainModel</scope><name>getTrainData</name></member>
+      <member refid="classTrainModel_1a54af20ec008fe1dd214a43d2410868e3" prot="public" virt="non-virtual"><scope>TrainModel</scope><name>removeTrain</name></member>
+      <member refid="classTrainModel_1a847d575d52a7e5b56723bf079f7cce46" prot="private" virt="non-virtual"><scope>TrainModel</scope><name>setupModel</name></member>
+      <member refid="classTrainModel_1a92837b060a877556b2b640d0c67693dd" prot="public" virt="non-virtual"><scope>TrainModel</scope><name>TrainModel</name></member>
+      <member refid="classTrainModel_1a4025377ee406c9791d747c1b9d47b81c" prot="public" virt="non-virtual"><scope>TrainModel</scope><name>updateTrain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

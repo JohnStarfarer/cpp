@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddRouteDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddRouteDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddRouteDialog_1ae00b26333c6bfc0fe541eb4a7b10216b" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddRouteDialog::m_departureEdit</definition>
+        <argsstring></argsstring>
+        <name>m_departureEdit</name>
+        <qualifiedname>AddRouteDialog::m_departureEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="37" column="15" bodyfile="dialogs/addroutedialog.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1a444a31fe6d67c53f19d7afd9303bf580" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddRouteDialog::m_arrivalEdit</definition>
+        <argsstring></argsstring>
+        <name>m_arrivalEdit</name>
+        <qualifiedname>AddRouteDialog::m_arrivalEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="38" column="15" bodyfile="dialogs/addroutedialog.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1a5247388b739820b36074b10b89c3d3cf" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddRouteDialog::m_distanceSpin</definition>
+        <argsstring></argsstring>
+        <name>m_distanceSpin</name>
+        <qualifiedname>AddRouteDialog::m_distanceSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="39" column="14" bodyfile="dialogs/addroutedialog.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1a429814740ed0e8f63347e5c52ae2a422" prot="private" static="no" mutable="no">
+        <type>QDoubleSpinBox *</type>
+        <definition>QDoubleSpinBox* AddRouteDialog::m_priceSpin</definition>
+        <argsstring></argsstring>
+        <name>m_priceSpin</name>
+        <qualifiedname>AddRouteDialog::m_priceSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="40" column="20" bodyfile="dialogs/addroutedialog.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1a3c4be6d9d5faf5d861243367923fdd5d" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddRouteDialog::m_statusCombo</definition>
+        <argsstring></argsstring>
+        <name>m_statusCombo</name>
+        <qualifiedname>AddRouteDialog::m_statusCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="41" column="15" bodyfile="dialogs/addroutedialog.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1aeed2a8264ec7ee653b4f3db71255edb3" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddRouteDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddRouteDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="42" column="17" bodyfile="dialogs/addroutedialog.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1ae2165cc6960e39b57a0b32e5c3e7fab7" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddRouteDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddRouteDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="43" column="17" bodyfile="dialogs/addroutedialog.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddRouteDialog_1a63079fe13efb2094e5a434fa083f3733" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddRouteDialog::m_routeId</definition>
+        <argsstring></argsstring>
+        <name>m_routeId</name>
+        <qualifiedname>AddRouteDialog::m_routeId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="45" column="9" bodyfile="dialogs/addroutedialog.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddRouteDialog_1a7d82c7740fa14b92c1d8d91486d0ebf5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddRouteDialog::AddRouteDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddRouteDialog</name>
+        <qualifiedname>AddRouteDialog::AddRouteDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="21" column="14" bodyfile="dialogs/addroutedialog.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1a93c895050ead890b59b4ca3e8f7ebc85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddRouteDialog::AddRouteDialog</definition>
+        <argsstring>(int routeId, QWidget *parent=nullptr)</argsstring>
+        <name>AddRouteDialog</name>
+        <qualifiedname>AddRouteDialog::AddRouteDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>routeId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="22" column="5" bodyfile="dialogs/addroutedialog.cpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1ac3e2c2519e8d5dfc91671b782a730389" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddRouteDialog::getDeparture</definition>
+        <argsstring>() const</argsstring>
+        <name>getDeparture</name>
+        <qualifiedname>AddRouteDialog::getDeparture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="24" column="13" bodyfile="dialogs/addroutedialog.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1aa961fe8d947688e3cb65b94df817a134" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddRouteDialog::getArrival</definition>
+        <argsstring>() const</argsstring>
+        <name>getArrival</name>
+        <qualifiedname>AddRouteDialog::getArrival</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="25" column="13" bodyfile="dialogs/addroutedialog.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1a79954be0fc006236122f11688bd8557a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double AddRouteDialog::getBasePrice</definition>
+        <argsstring>() const</argsstring>
+        <name>getBasePrice</name>
+        <qualifiedname>AddRouteDialog::getBasePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="26" column="12" bodyfile="dialogs/addroutedialog.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1ad38afa85a4f4fe67e708fb12e0339825" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddRouteDialog::getStatus</definition>
+        <argsstring>() const</argsstring>
+        <name>getStatus</name>
+        <qualifiedname>AddRouteDialog::getStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="27" column="13" bodyfile="dialogs/addroutedialog.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1aba071c3ca67a95d7b1b9b7c3ddddeeb9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddRouteDialog::getDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>getDistance</name>
+        <qualifiedname>AddRouteDialog::getDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="28" column="9" bodyfile="dialogs/addroutedialog.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddRouteDialog_1a584e2fb8713bad237ca3ef7b514e970e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddRouteDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddRouteDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="31" column="10" bodyfile="dialogs/addroutedialog.cpp" bodystart="111" bodyend="129"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddRouteDialog_1a2b6cb418f164592369b1a3782dc665d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddRouteDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddRouteDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="34" column="10" bodyfile="dialogs/addroutedialog.cpp" bodystart="22" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddRouteDialog_1a2807cb73f49245da63f79cf944f0f426" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddRouteDialog::loadRouteData</definition>
+        <argsstring>(int routeId)</argsstring>
+        <name>loadRouteData</name>
+        <qualifiedname>AddRouteDialog::loadRouteData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>routeId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addroutedialog.h" line="35" column="10" bodyfile="dialogs/addroutedialog.cpp" bodystart="89" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddRouteDialog</label>
+        <link refid="classAddRouteDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddRouteDialog</label>
+        <link refid="classAddRouteDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addroutedialog.h" line="16" column="1" bodyfile="dialogs/addroutedialog.h" bodystart="17" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classAddRouteDialog_1a7d82c7740fa14b92c1d8d91486d0ebf5" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>AddRouteDialog</name></member>
+      <member refid="classAddRouteDialog_1a93c895050ead890b59b4ca3e8f7ebc85" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>AddRouteDialog</name></member>
+      <member refid="classAddRouteDialog_1aa961fe8d947688e3cb65b94df817a134" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>getArrival</name></member>
+      <member refid="classAddRouteDialog_1a79954be0fc006236122f11688bd8557a" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>getBasePrice</name></member>
+      <member refid="classAddRouteDialog_1ac3e2c2519e8d5dfc91671b782a730389" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>getDeparture</name></member>
+      <member refid="classAddRouteDialog_1aba071c3ca67a95d7b1b9b7c3ddddeeb9" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>getDistance</name></member>
+      <member refid="classAddRouteDialog_1ad38afa85a4f4fe67e708fb12e0339825" prot="public" virt="non-virtual"><scope>AddRouteDialog</scope><name>getStatus</name></member>
+      <member refid="classAddRouteDialog_1a2807cb73f49245da63f79cf944f0f426" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>loadRouteData</name></member>
+      <member refid="classAddRouteDialog_1a444a31fe6d67c53f19d7afd9303bf580" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_arrivalEdit</name></member>
+      <member refid="classAddRouteDialog_1ae2165cc6960e39b57a0b32e5c3e7fab7" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddRouteDialog_1ae00b26333c6bfc0fe541eb4a7b10216b" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_departureEdit</name></member>
+      <member refid="classAddRouteDialog_1a5247388b739820b36074b10b89c3d3cf" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_distanceSpin</name></member>
+      <member refid="classAddRouteDialog_1aeed2a8264ec7ee653b4f3db71255edb3" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddRouteDialog_1a429814740ed0e8f63347e5c52ae2a422" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_priceSpin</name></member>
+      <member refid="classAddRouteDialog_1a63079fe13efb2094e5a434fa083f3733" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_routeId</name></member>
+      <member refid="classAddRouteDialog_1a3c4be6d9d5faf5d861243367923fdd5d" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>m_statusCombo</name></member>
+      <member refid="classAddRouteDialog_1a2b6cb418f164592369b1a3782dc665d2" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>setupUI</name></member>
+      <member refid="classAddRouteDialog_1a584e2fb8713bad237ca3ef7b514e970e" prot="private" virt="non-virtual"><scope>AddRouteDialog</scope><name>validateAndAccept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

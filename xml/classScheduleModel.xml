@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classScheduleModel" kind="class" language="C++" prot="public">
+    <compoundname>ScheduleModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classScheduleModel_1ac388ec5d05d75b7279b36d2854115378" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScheduleModel::ScheduleModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ScheduleModel</name>
+        <qualifiedname>ScheduleModel::ScheduleModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="16" column="14" bodyfile="models/schedulemodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1a6a39665c4af631eb079815dd900b7903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScheduleModel::addSchedule</definition>
+        <argsstring>(int routeId, int trainId, int wagonTypeId, const QDate &amp;departureDate, const QTime &amp;departureTime, const QDate &amp;arrivalDate, const QTime &amp;arrivalTime, int availableSeats, double price, const QString &amp;status=&quot;scheduled&quot;)</argsstring>
+        <name>addSchedule</name>
+        <qualifiedname>ScheduleModel::addSchedule</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>routeId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>trainId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonTypeId</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>departureDate</declname>
+        </param>
+        <param>
+          <type>const QTime &amp;</type>
+          <declname>departureTime</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>arrivalDate</declname>
+        </param>
+        <param>
+          <type>const QTime &amp;</type>
+          <declname>arrivalTime</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>availableSeats</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;scheduled&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="19" column="10" bodyfile="models/schedulemodel.cpp" bodystart="29" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1a7df0cc45739dc6b79563198738b426b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScheduleModel::updateSchedule</definition>
+        <argsstring>(int id, int routeId, int trainId, int wagonTypeId, const QDate &amp;departureDate, const QTime &amp;departureTime, const QDate &amp;arrivalDate, const QTime &amp;arrivalTime, int availableSeats, double price, const QString &amp;status=&quot;scheduled&quot;)</argsstring>
+        <name>updateSchedule</name>
+        <qualifiedname>ScheduleModel::updateSchedule</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>routeId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>trainId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonTypeId</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>departureDate</declname>
+        </param>
+        <param>
+          <type>const QTime &amp;</type>
+          <declname>departureTime</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>arrivalDate</declname>
+        </param>
+        <param>
+          <type>const QTime &amp;</type>
+          <declname>arrivalTime</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>availableSeats</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;scheduled&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="24" column="10" bodyfile="models/schedulemodel.cpp" bodystart="60" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1ae15754cf99db71963fc9ba9216c3c296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScheduleModel::removeSchedule</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removeSchedule</name>
+        <qualifiedname>ScheduleModel::removeSchedule</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="29" column="10" bodyfile="models/schedulemodel.cpp" bodystart="91" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1a14b132a5eb395d4522556cbf47956295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QSqlQuery</type>
+        <definition>QSqlQuery ScheduleModel::getFullSchedule</definition>
+        <argsstring>()</argsstring>
+        <name>getFullSchedule</name>
+        <qualifiedname>ScheduleModel::getFullSchedule</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="32" column="15" bodyfile="models/schedulemodel.cpp" bodystart="106" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1a216479867318c7b50ccd636402582b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScheduleModel::updateAvailableSeats</definition>
+        <argsstring>(int scheduleId, int change)</argsstring>
+        <name>updateAvailableSeats</name>
+        <qualifiedname>ScheduleModel::updateAvailableSeats</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>change</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="35" column="10" bodyfile="models/schedulemodel.cpp" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classScheduleModel_1a4a706eb642442459523c447bb8fc935f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMap&lt; int, QString &gt;</type>
+        <definition>QMap&lt; int, QString &gt; ScheduleModel::getScheduleMap</definition>
+        <argsstring>()</argsstring>
+        <name>getScheduleMap</name>
+        <qualifiedname>ScheduleModel::getScheduleMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="38" column="10" bodyfile="models/schedulemodel.cpp" bodystart="132" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classScheduleModel_1aa0e72daa45d79cec9d8bde6c8f746eac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScheduleModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>ScheduleModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/schedulemodel.h" line="41" column="10" bodyfile="models/schedulemodel.cpp" bodystart="9" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>ScheduleModel</label>
+        <link refid="classScheduleModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>ScheduleModel</label>
+        <link refid="classScheduleModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/schedulemodel.h" line="11" column="1" bodyfile="models/schedulemodel.h" bodystart="12" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classScheduleModel_1a6a39665c4af631eb079815dd900b7903" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>addSchedule</name></member>
+      <member refid="classScheduleModel_1a14b132a5eb395d4522556cbf47956295" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>getFullSchedule</name></member>
+      <member refid="classScheduleModel_1a4a706eb642442459523c447bb8fc935f" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>getScheduleMap</name></member>
+      <member refid="classScheduleModel_1ae15754cf99db71963fc9ba9216c3c296" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>removeSchedule</name></member>
+      <member refid="classScheduleModel_1ac388ec5d05d75b7279b36d2854115378" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>ScheduleModel</name></member>
+      <member refid="classScheduleModel_1aa0e72daa45d79cec9d8bde6c8f746eac" prot="private" virt="non-virtual"><scope>ScheduleModel</scope><name>setupModel</name></member>
+      <member refid="classScheduleModel_1a216479867318c7b50ccd636402582b21" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>updateAvailableSeats</name></member>
+      <member refid="classScheduleModel_1a7df0cc45739dc6b79563198738b426b4" prot="public" virt="non-virtual"><scope>ScheduleModel</scope><name>updateSchedule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

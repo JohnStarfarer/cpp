@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classTicketModel" kind="class" language="C++" prot="public">
+    <compoundname>TicketModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTicketModel_1ad2c0c2f033c745369d6ca16060c543ab" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TicketModel::TicketModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>TicketModel</name>
+        <qualifiedname>TicketModel::TicketModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="15" column="14" bodyfile="models/ticketmodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a07aa23acd0c8d032a2d1bc3c81b2e27e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::addTicket</definition>
+        <argsstring>(int scheduleId, int passengerId, int wagonNumber, int seatNumber, double price, const QString &amp;status=&quot;active&quot;)</argsstring>
+        <name>addTicket</name>
+        <qualifiedname>TicketModel::addTicket</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>passengerId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seatNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;active&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="18" column="10" bodyfile="models/ticketmodel.cpp" bodystart="27" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a9236c9a5f46905fef62689a12eb4681b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::updateTicket</definition>
+        <argsstring>(int id, int scheduleId, int passengerId, int wagonNumber, int seatNumber, double price, const QString &amp;status=&quot;active&quot;)</argsstring>
+        <name>updateTicket</name>
+        <qualifiedname>TicketModel::updateTicket</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>passengerId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seatNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+          <defval>&quot;active&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="21" column="10" bodyfile="models/ticketmodel.cpp" bodystart="50" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1abe24d6e8ba2a3e8e65fa919ef846fba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::removeTicket</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removeTicket</name>
+        <qualifiedname>TicketModel::removeTicket</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="24" column="10" bodyfile="models/ticketmodel.cpp" bodystart="81" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1abdb324f7d8b1f3df483fd12e452c84d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::sellTicket</definition>
+        <argsstring>(int scheduleId, int passengerId, int wagonNumber, int seatNumber, double price)</argsstring>
+        <name>sellTicket</name>
+        <qualifiedname>TicketModel::sellTicket</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>passengerId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seatNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="27" column="10" bodyfile="models/ticketmodel.cpp" bodystart="96" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a42e2ffb1d9bb0c23416bb8a25d934bbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::cancelTicket</definition>
+        <argsstring>(int ticketId)</argsstring>
+        <name>cancelTicket</name>
+        <qualifiedname>TicketModel::cancelTicket</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ticketId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="31" column="10" bodyfile="models/ticketmodel.cpp" bodystart="134" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a8117aeab422fef405368216b2550c949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QSqlQuery</type>
+        <definition>QSqlQuery TicketModel::getTicketDetails</definition>
+        <argsstring>()</argsstring>
+        <name>getTicketDetails</name>
+        <qualifiedname>TicketModel::getTicketDetails</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="34" column="15" bodyfile="models/ticketmodel.cpp" bodystart="170" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a09b0c8e2c13e5c512570faf2cfd5ac0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMap&lt; QString, double &gt;</type>
+        <definition>QMap&lt; QString, double &gt; TicketModel::getSalesStatistics</definition>
+        <argsstring>(const QDate &amp;from, const QDate &amp;to)</argsstring>
+        <name>getSalesStatistics</name>
+        <qualifiedname>TicketModel::getSalesStatistics</qualifiedname>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="37" column="10" bodyfile="models/ticketmodel.cpp" bodystart="189" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classTicketModel_1a2347b413b71baca380940f9b9ce619f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TicketModel::isSeatAvailable</definition>
+        <argsstring>(int scheduleId, int wagonNumber, int seatNumber)</argsstring>
+        <name>isSeatAvailable</name>
+        <qualifiedname>TicketModel::isSeatAvailable</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scheduleId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wagonNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seatNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="40" column="10" bodyfile="models/ticketmodel.cpp" bodystart="212" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTicketModel_1a56dae1798a277800af657c299ff56251" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicketModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>TicketModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/ticketmodel.h" line="43" column="10" bodyfile="models/ticketmodel.cpp" bodystart="9" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>TicketModel</label>
+        <link refid="classTicketModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>TicketModel</label>
+        <link refid="classTicketModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/ticketmodel.h" line="10" column="1" bodyfile="models/ticketmodel.h" bodystart="11" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classTicketModel_1a07aa23acd0c8d032a2d1bc3c81b2e27e" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>addTicket</name></member>
+      <member refid="classTicketModel_1a42e2ffb1d9bb0c23416bb8a25d934bbb" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>cancelTicket</name></member>
+      <member refid="classTicketModel_1a09b0c8e2c13e5c512570faf2cfd5ac0b" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>getSalesStatistics</name></member>
+      <member refid="classTicketModel_1a8117aeab422fef405368216b2550c949" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>getTicketDetails</name></member>
+      <member refid="classTicketModel_1a2347b413b71baca380940f9b9ce619f6" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>isSeatAvailable</name></member>
+      <member refid="classTicketModel_1abe24d6e8ba2a3e8e65fa919ef846fba7" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>removeTicket</name></member>
+      <member refid="classTicketModel_1abdb324f7d8b1f3df483fd12e452c84d5" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>sellTicket</name></member>
+      <member refid="classTicketModel_1a56dae1798a277800af657c299ff56251" prot="private" virt="non-virtual"><scope>TicketModel</scope><name>setupModel</name></member>
+      <member refid="classTicketModel_1ad2c0c2f033c745369d6ca16060c543ab" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>TicketModel</name></member>
+      <member refid="classTicketModel_1a9236c9a5f46905fef62689a12eb4681b" prot="public" virt="non-virtual"><scope>TicketModel</scope><name>updateTicket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

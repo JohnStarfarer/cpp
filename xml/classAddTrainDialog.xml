@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classAddTrainDialog" kind="class" language="C++" prot="public">
+    <compoundname>AddTrainDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAddTrainDialog_1ad91094ac58532a73cb4cb24b5c0b3fcc" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* AddTrainDialog::m_nameEdit</definition>
+        <argsstring></argsstring>
+        <name>m_nameEdit</name>
+        <qualifiedname>AddTrainDialog::m_nameEdit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="38" column="15" bodyfile="dialogs/addtraindialog.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTrainDialog_1abe776e0cdc12375622b2563d2dfab0bd" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* AddTrainDialog::m_statusCombo</definition>
+        <argsstring></argsstring>
+        <name>m_statusCombo</name>
+        <qualifiedname>AddTrainDialog::m_statusCombo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="39" column="15" bodyfile="dialogs/addtraindialog.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTrainDialog_1ac3c726ef84daa5b1fcc5a68c03a9682a" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* AddTrainDialog::m_seatsSpin</definition>
+        <argsstring></argsstring>
+        <name>m_seatsSpin</name>
+        <qualifiedname>AddTrainDialog::m_seatsSpin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="40" column="14" bodyfile="dialogs/addtraindialog.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTrainDialog_1a2f8005bc852e3b2fd88d25bc25425bd6" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddTrainDialog::m_okButton</definition>
+        <argsstring></argsstring>
+        <name>m_okButton</name>
+        <qualifiedname>AddTrainDialog::m_okButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="41" column="17" bodyfile="dialogs/addtraindialog.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTrainDialog_1a471d93ffd5b07bd12db902908e673c4b" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* AddTrainDialog::m_cancelButton</definition>
+        <argsstring></argsstring>
+        <name>m_cancelButton</name>
+        <qualifiedname>AddTrainDialog::m_cancelButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="42" column="17" bodyfile="dialogs/addtraindialog.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAddTrainDialog_1af1c8d3e7bc8c303cc99c23208d46e128" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AddTrainDialog::m_trainId</definition>
+        <argsstring></argsstring>
+        <name>m_trainId</name>
+        <qualifiedname>AddTrainDialog::m_trainId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="44" column="9" bodyfile="dialogs/addtraindialog.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAddTrainDialog_1a6662b321a192ab7d7c3e66d9f7bcf478" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddTrainDialog::AddTrainDialog</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>AddTrainDialog</name>
+        <qualifiedname>AddTrainDialog::AddTrainDialog</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="21" column="14" bodyfile="dialogs/addtraindialog.cpp" bodystart="6" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTrainDialog_1a75522888577f415e67a5265e9b7499bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AddTrainDialog::AddTrainDialog</definition>
+        <argsstring>(int trainId, QWidget *parent=nullptr)</argsstring>
+        <name>AddTrainDialog</name>
+        <qualifiedname>AddTrainDialog::AddTrainDialog</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>trainId</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="24" column="5" bodyfile="dialogs/addtraindialog.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTrainDialog_1a1409aa6de47bf2cf651e156ff338663c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddTrainDialog::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>AddTrainDialog::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="26" column="13" bodyfile="dialogs/addtraindialog.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTrainDialog_1ad79cbd47c506acbc364d27332968cea9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString AddTrainDialog::getStatus</definition>
+        <argsstring>() const</argsstring>
+        <name>getStatus</name>
+        <qualifiedname>AddTrainDialog::getStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="27" column="13" bodyfile="dialogs/addtraindialog.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTrainDialog_1ac30eaa482e368ba2522e07fba74bf82c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AddTrainDialog::getTotalSeats</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalSeats</name>
+        <qualifiedname>AddTrainDialog::getTotalSeats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="28" column="9" bodyfile="dialogs/addtraindialog.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAddTrainDialog_1a888ed0ef4038ada9a105d98c09f28344" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTrainDialog::validateAndAccept</definition>
+        <argsstring>()</argsstring>
+        <name>validateAndAccept</name>
+        <qualifiedname>AddTrainDialog::validateAndAccept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="31" column="10" bodyfile="dialogs/addtraindialog.cpp" bodystart="94" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAddTrainDialog_1a3259171200f8014e153303dd51726df3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTrainDialog::setupUI</definition>
+        <argsstring>()</argsstring>
+        <name>setupUI</name>
+        <qualifiedname>AddTrainDialog::setupUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="34" column="10" bodyfile="dialogs/addtraindialog.cpp" bodystart="23" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classAddTrainDialog_1a63d32f7a7397463fec10bb598dea257d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddTrainDialog::loadTrainData</definition>
+        <argsstring>(int trainId)</argsstring>
+        <name>loadTrainData</name>
+        <qualifiedname>AddTrainDialog::loadTrainData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>trainId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dialogs/addtraindialog.h" line="35" column="10" bodyfile="dialogs/addtraindialog.cpp" bodystart="74" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddTrainDialog</label>
+        <link refid="classAddTrainDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddTrainDialog</label>
+        <link refid="classAddTrainDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="dialogs/addtraindialog.h" line="15" column="1" bodyfile="dialogs/addtraindialog.h" bodystart="16" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classAddTrainDialog_1a6662b321a192ab7d7c3e66d9f7bcf478" prot="public" virt="non-virtual"><scope>AddTrainDialog</scope><name>AddTrainDialog</name></member>
+      <member refid="classAddTrainDialog_1a75522888577f415e67a5265e9b7499bb" prot="public" virt="non-virtual"><scope>AddTrainDialog</scope><name>AddTrainDialog</name></member>
+      <member refid="classAddTrainDialog_1a1409aa6de47bf2cf651e156ff338663c" prot="public" virt="non-virtual"><scope>AddTrainDialog</scope><name>getName</name></member>
+      <member refid="classAddTrainDialog_1ad79cbd47c506acbc364d27332968cea9" prot="public" virt="non-virtual"><scope>AddTrainDialog</scope><name>getStatus</name></member>
+      <member refid="classAddTrainDialog_1ac30eaa482e368ba2522e07fba74bf82c" prot="public" virt="non-virtual"><scope>AddTrainDialog</scope><name>getTotalSeats</name></member>
+      <member refid="classAddTrainDialog_1a63d32f7a7397463fec10bb598dea257d" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>loadTrainData</name></member>
+      <member refid="classAddTrainDialog_1a471d93ffd5b07bd12db902908e673c4b" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_cancelButton</name></member>
+      <member refid="classAddTrainDialog_1ad91094ac58532a73cb4cb24b5c0b3fcc" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_nameEdit</name></member>
+      <member refid="classAddTrainDialog_1a2f8005bc852e3b2fd88d25bc25425bd6" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_okButton</name></member>
+      <member refid="classAddTrainDialog_1ac3c726ef84daa5b1fcc5a68c03a9682a" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_seatsSpin</name></member>
+      <member refid="classAddTrainDialog_1abe776e0cdc12375622b2563d2dfab0bd" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_statusCombo</name></member>
+      <member refid="classAddTrainDialog_1af1c8d3e7bc8c303cc99c23208d46e128" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>m_trainId</name></member>
+      <member refid="classAddTrainDialog_1a3259171200f8014e153303dd51726df3" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>setupUI</name></member>
+      <member refid="classAddTrainDialog_1a888ed0ef4038ada9a105d98c09f28344" prot="private" virt="non-virtual"><scope>AddTrainDialog</scope><name>validateAndAccept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

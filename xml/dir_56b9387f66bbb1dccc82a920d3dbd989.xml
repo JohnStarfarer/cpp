@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_56b9387f66bbb1dccc82a920d3dbd989" kind="dir">
+    <compoundname>dialogs</compoundname>
+    <innerfile refid="addpassengerdialog_8cpp">addpassengerdialog.cpp</innerfile>
+    <innerfile refid="addpassengerdialog_8h">addpassengerdialog.h</innerfile>
+    <innerfile refid="addroutedialog_8cpp">addroutedialog.cpp</innerfile>
+    <innerfile refid="addroutedialog_8h">addroutedialog.h</innerfile>
+    <innerfile refid="addscheduledialog_8cpp">addscheduledialog.cpp</innerfile>
+    <innerfile refid="addscheduledialog_8h">addscheduledialog.h</innerfile>
+    <innerfile refid="addticketdialog_8cpp">addticketdialog.cpp</innerfile>
+    <innerfile refid="addticketdialog_8h">addticketdialog.h</innerfile>
+    <innerfile refid="addtraindialog_8cpp">addtraindialog.cpp</innerfile>
+    <innerfile refid="addtraindialog_8h">addtraindialog.h</innerfile>
+    <innerfile refid="addwagontypedialog_8cpp">addwagontypedialog.cpp</innerfile>
+    <innerfile refid="addwagontypedialog_8h">addwagontypedialog.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dialogs/"/>
+  </compounddef>
+</doxygen>

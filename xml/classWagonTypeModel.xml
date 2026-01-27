@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classWagonTypeModel" kind="class" language="C++" prot="public">
+    <compoundname>WagonTypeModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWagonTypeModel_1a5fa37e213a24b5031481b518420afd46" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WagonTypeModel::WagonTypeModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>WagonTypeModel</name>
+        <qualifiedname>WagonTypeModel::WagonTypeModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="14" column="14" bodyfile="models/wagontypemodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classWagonTypeModel_1a87b70d8a7a112f7ee92c7c6d35239833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WagonTypeModel::addWagonType</definition>
+        <argsstring>(const QString &amp;name, int capacity, const QString &amp;description=&quot;&quot;)</argsstring>
+        <name>addWagonType</name>
+        <qualifiedname>WagonTypeModel::addWagonType</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="17" column="10" bodyfile="models/wagontypemodel.cpp" bodystart="22" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classWagonTypeModel_1a0242d3158f3f296c69f33cfafeeb8ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WagonTypeModel::updateWagonType</definition>
+        <argsstring>(int id, const QString &amp;name, int capacity, const QString &amp;description=&quot;&quot;)</argsstring>
+        <name>updateWagonType</name>
+        <qualifiedname>WagonTypeModel::updateWagonType</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="18" column="10" bodyfile="models/wagontypemodel.cpp" bodystart="39" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classWagonTypeModel_1a8dd2270ce60074b9ede655ee4dadcecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WagonTypeModel::removeWagonType</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removeWagonType</name>
+        <qualifiedname>WagonTypeModel::removeWagonType</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="19" column="10" bodyfile="models/wagontypemodel.cpp" bodystart="57" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classWagonTypeModel_1a8e9c1ed9fd9ee287a82f3f6bc69caf3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMap&lt; int, QString &gt;</type>
+        <definition>QMap&lt; int, QString &gt; WagonTypeModel::getWagonTypesMap</definition>
+        <argsstring>()</argsstring>
+        <name>getWagonTypesMap</name>
+        <qualifiedname>WagonTypeModel::getWagonTypesMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="22" column="10" bodyfile="models/wagontypemodel.cpp" bodystart="72" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classWagonTypeModel_1a4d5fa919b742708c6bb3f65d36173422" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WagonTypeModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>WagonTypeModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/wagontypemodel.h" line="25" column="10" bodyfile="models/wagontypemodel.cpp" bodystart="9" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>WagonTypeModel</label>
+        <link refid="classWagonTypeModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+      <node id="1">
+        <label>WagonTypeModel</label>
+        <link refid="classWagonTypeModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="models/wagontypemodel.h" line="9" column="1" bodyfile="models/wagontypemodel.h" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classWagonTypeModel_1a87b70d8a7a112f7ee92c7c6d35239833" prot="public" virt="non-virtual"><scope>WagonTypeModel</scope><name>addWagonType</name></member>
+      <member refid="classWagonTypeModel_1a8e9c1ed9fd9ee287a82f3f6bc69caf3c" prot="public" virt="non-virtual"><scope>WagonTypeModel</scope><name>getWagonTypesMap</name></member>
+      <member refid="classWagonTypeModel_1a8dd2270ce60074b9ede655ee4dadcecf" prot="public" virt="non-virtual"><scope>WagonTypeModel</scope><name>removeWagonType</name></member>
+      <member refid="classWagonTypeModel_1a4d5fa919b742708c6bb3f65d36173422" prot="private" virt="non-virtual"><scope>WagonTypeModel</scope><name>setupModel</name></member>
+      <member refid="classWagonTypeModel_1a0242d3158f3f296c69f33cfafeeb8ff8" prot="public" virt="non-virtual"><scope>WagonTypeModel</scope><name>updateWagonType</name></member>
+      <member refid="classWagonTypeModel_1a5fa37e213a24b5031481b518420afd46" prot="public" virt="non-virtual"><scope>WagonTypeModel</scope><name>WagonTypeModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

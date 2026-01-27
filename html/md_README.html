@@ -49,8 +49,168 @@ $(function() { codefold.init(); });
 <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 Реализация:</h1>
 <p><img src="image/README/1769490859808.png" alt="1769490859808" class="inline"/></p>
-<p>Фреймворк: QT Create</p>
-<p>СУБД: Postgresql </p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Фреймворк:</h2>
+<p>QT Create</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+СУБД:</h2>
+<p>Postgresql</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+Алгоритм работы программы</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Общая архитектура</h2>
+<p>Программа использует паттерн Model-View-Controller (MVC):</p>
+<ol type="1">
+<li>Модели (Model) - классы, наследующие от QSqlTableModel и QSqlQueryModel</li>
+<li>Представление (View) - QTableView, QTabWidget, диалоговые окна</li>
+<li>Контроллер (Controller) - класс <a class="el" href="classMainWindow.html">MainWindow</a>, обрабатывающий пользовательские действия</li>
+</ol>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Последовательность работы программы</h2>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+1. Запуск приложения (main.cpp)</h3>
+<ol type="1">
+<li>Создание QApplication</li>
+<li>Установка стиля Fusion</li>
+<li>Проверка подключения к БД (Database::testConnection())</li>
+<li>Если подключение успешно:<ul>
+<li>Создание <a class="el" href="classMainWindow.html">MainWindow</a></li>
+<li>Отображение главного окна</li>
+</ul>
+</li>
+<li>Запуск главного цикла приложения (app.exec())</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+2. Инициализация главного окна (MainWindow)</h3>
+<ol type="1">
+<li>Создание объекта <a class="el" href="classDatabase.html">Database</a></li>
+<li>Подключение к БД (m_database-&gt;connectToDatabase())</li>
+<li>Создание всех моделей данных:<ul>
+<li><a class="el" href="classTrainModel.html">TrainModel</a>, <a class="el" href="classWagonTypeModel.html">WagonTypeModel</a>, <a class="el" href="classRouteModel.html">RouteModel</a></li>
+<li><a class="el" href="classPassengerModel.html">PassengerModel</a>, <a class="el" href="classScheduleModel.html">ScheduleModel</a>, <a class="el" href="classTicketModel.html">TicketModel</a></li>
+<li><a class="el" href="classScheduleViewModel.html">ScheduleViewModel</a>, <a class="el" href="classTicketViewModel.html">TicketViewModel</a></li>
+</ul>
+</li>
+<li>Настройка UI (setupUI())</li>
+<li>Настройка меню и тулбара</li>
+<li>Настройка статусбара</li>
+<li>Установка соединений (setupConnections())</li>
+<li>Обновление всех таблиц (refreshAllTables())</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+3. Структура вкладок</h3>
+<p><b>Основные операции (m_mainTabWidget)</b>:</p>
+<ul>
+<li>Поезда</li>
+<li>Типы вагонов</li>
+<li>Маршруты</li>
+</ul>
+<p><b>Отчеты (m_reportsTabWidget)</b>:</p>
+<ul>
+<li>Пассажиры</li>
+<li>Расписание</li>
+<li>Билеты</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+4. Алгоритм добавления новой записи (на примере поезда)</h3>
+<ol type="1">
+<li>Пользователь нажимает "Добавить поезд"</li>
+<li>Вызывается MainWindow::addTrain()</li>
+<li>Создается <a class="el" href="classAddTrainDialog.html">AddTrainDialog</a></li>
+<li>Пользователь заполняет поля в диалоге</li>
+<li>При нажатии "Добавить":<ul>
+<li>Выполняется валидация данных</li>
+<li>Вызывается TrainModel::addTrain()</li>
+<li>Метод выполняет SQL INSERT запрос</li>
+<li>При успехе: модель обновляется (select())</li>
+<li>Таблица автоматически обновляется</li>
+</ul>
+</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+5. Взаимодействие с базой данных</h3>
+<p><a class="el" href="classMainWindow.html">MainWindow</a> → Модель → <a class="el" href="classDatabase.html">Database</a> → PostgreSQL</p>
+<p><b>Классы-модели</b>:</p>
+<ul>
+<li><a class="el" href="classTrainModel.html">TrainModel</a> - работа с таблицей trains</li>
+<li><a class="el" href="classWagonTypeModel.html">WagonTypeModel</a> - работа с таблицей wagon_types</li>
+<li><a class="el" href="classRouteModel.html">RouteModel</a> - работа с таблицей routes</li>
+<li><a class="el" href="classPassengerModel.html">PassengerModel</a> - работа с таблицей passengers</li>
+<li><a class="el" href="classScheduleModel.html">ScheduleModel</a> - работа с таблицей schedule</li>
+<li><a class="el" href="classTicketModel.html">TicketModel</a> - работа с таблицей tickets</li>
+</ul>
+<p><b>Специальные модели для представлений</b>:</p>
+<ul>
+<li><a class="el" href="classScheduleViewModel.html">ScheduleViewModel</a> - JOIN запросы для расписания</li>
+<li><a class="el" href="classTicketViewModel.html">TicketViewModel</a> - JOIN запросы для билетов</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+6. Алгоритм редактирования записи</h3>
+<ol type="1">
+<li>Пользователь выбирает строку в таблице</li>
+<li>Нажимает "Редактировать"</li>
+<li>Вызывается соответствующий метод (editTrain(), editWagonType(), и т.д.)</li>
+<li>Создается диалог с передачей ID записи</li>
+<li>Диалог загружает текущие данные</li>
+<li>Пользователь изменяет данные</li>
+<li>При сохранении вызывается метод updateXXX() модели</li>
+<li>Выполняется SQL UPDATE запрос</li>
+<li>Таблица обновляется</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+7. Алгоритм удаления записи</h3>
+<ol type="1">
+<li>Пользователь выбирает строку</li>
+<li>Нажимает "Удалить"</li>
+<li>Показывается диалог подтверждения</li>
+<li>При подтверждении вызывается метод removeXXX() модели</li>
+<li>Выполняется SQL DELETE запрос</li>
+<li>Таблица обновляется</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+8. Обновление данных</h3>
+<p>MainWindow::refreshAllTables() {</p>
+<ol type="1">
+<li>Для каждой модели вызывается select()</li>
+<li>Для ViewModel вызывается refresh()</li>
+<li>Обновляется статус в статусбаре }</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+9. Диалоговые окна</h3>
+<p>Каждая сущность имеет свой диалог:</p>
+<ul>
+<li><a class="el" href="classAddTrainDialog.html">AddTrainDialog</a> - добавление/редактирование поездов</li>
+<li><a class="el" href="classAddWagonTypeDialog.html">AddWagonTypeDialog</a> - типы вагонов</li>
+<li><a class="el" href="classAddRouteDialog.html">AddRouteDialog</a> - маршруты</li>
+<li><a class="el" href="classAddPassengerDialog.html">AddPassengerDialog</a> - пассажиры</li>
+<li><a class="el" href="classAddScheduleDialog.html">AddScheduleDialog</a> - расписание</li>
+<li><a class="el" href="classAddTicketDialog.html">AddTicketDialog</a> - билеты</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+10. Валидация данных</h3>
+<p>Каждый диалог имеет:</p>
+<ol type="1">
+<li>Проверку обязательных полей</li>
+<li>Валидацию форматов (email, телефон, даты)</li>
+<li>Проверку бизнес-логики (например, дата прибытия позже отправления)</li>
+</ol>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+11. Триггеры и ограничения в БД</h3>
+<p>База данных включает:</p>
+<ul>
+<li>Триггер для генерации номеров билетов</li>
+<li>Триггер для обновления свободных мест</li>
+<li>Ограничения целостности (FOREIGN KEY)</li>
+<li>Представления для сложных запросов</li>
+</ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+12. Обработка ошибок</h3>
+<ol type="1">
+<li>Проверка подключения при запуске</li>
+<li>Проверка выполнения SQL запросов</li>
+<li>Валидация пользовательского ввода</li>
+<li>Отображение сообщений об ошибках через QMessageBox </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

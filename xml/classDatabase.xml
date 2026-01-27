@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classDatabase" kind="class" language="C++" prot="public">
+    <compoundname>Database</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDatabase_1a7357cbeca05937556f66e2fe2288bdb5" prot="private" static="no" mutable="no">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase Database::m_db</definition>
+        <argsstring></argsstring>
+        <name>m_db</name>
+        <qualifiedname>Database::m_db</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="30" column="18" bodyfile="database.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDatabase_1a25acd0ba8ce00ebc6b331568d81e4230" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Database::Database</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>Database</name>
+        <qualifiedname>Database::Database</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="14" column="14" bodyfile="database.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1a84d399a2ad58d69daab9b05330e1316d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Database::~Database</definition>
+        <argsstring>()</argsstring>
+        <name>~Database</name>
+        <qualifiedname>Database::~Database</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="15" column="5" bodyfile="database.cpp" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1a0f2d4b0483f58e11d2f80ecbfe6d08db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Database::connectToDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>connectToDatabase</name>
+        <qualifiedname>Database::connectToDatabase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="17" column="10" bodyfile="database.cpp" bodystart="18" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1ae559e33ee2ced189256cded3ba36fd7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Database::isConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>isConnected</name>
+        <qualifiedname>Database::isConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="18" column="10" bodyfile="database.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1a38a050efab45bd80464b106993f2c3ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase Database::getDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>getDatabase</name>
+        <qualifiedname>Database::getDatabase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="20" column="18" bodyfile="database.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1aae159f2a1170caabf5a4c40bfe2f1e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Database::executeQuery</definition>
+        <argsstring>(const QString &amp;query)</argsstring>
+        <name>executeQuery</name>
+        <qualifiedname>Database::executeQuery</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="23" column="10" bodyfile="database.cpp" bodystart="50" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatabase_1a78c301a86cacef439c2db870117166b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QSqlQuery</type>
+        <definition>QSqlQuery Database::executeSelectQuery</definition>
+        <argsstring>(const QString &amp;query)</argsstring>
+        <name>executeSelectQuery</name>
+        <qualifiedname>Database::executeSelectQuery</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="24" column="15" bodyfile="database.cpp" bodystart="63" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDatabase_1a16e3a424915bed9bd3abd862882a103e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Database::testConnection</definition>
+        <argsstring>()</argsstring>
+        <name>testConnection</name>
+        <qualifiedname>Database::testConnection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="27" column="17" bodyfile="database.cpp" bodystart="70" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDatabase_1a0c284ca36f641066e6a78675041bcd0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Database::initializeDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>initializeDatabase</name>
+        <qualifiedname>Database::initializeDatabase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="database.h" line="31" column="10" bodyfile="database.cpp" bodystart="36" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Database</label>
+        <link refid="classDatabase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Database</label>
+        <link refid="classDatabase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="database.h" line="10" column="1" bodyfile="database.h" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classDatabase_1a0f2d4b0483f58e11d2f80ecbfe6d08db" prot="public" virt="non-virtual"><scope>Database</scope><name>connectToDatabase</name></member>
+      <member refid="classDatabase_1a25acd0ba8ce00ebc6b331568d81e4230" prot="public" virt="non-virtual"><scope>Database</scope><name>Database</name></member>
+      <member refid="classDatabase_1aae159f2a1170caabf5a4c40bfe2f1e3d" prot="public" virt="non-virtual"><scope>Database</scope><name>executeQuery</name></member>
+      <member refid="classDatabase_1a78c301a86cacef439c2db870117166b7" prot="public" virt="non-virtual"><scope>Database</scope><name>executeSelectQuery</name></member>
+      <member refid="classDatabase_1a38a050efab45bd80464b106993f2c3ec" prot="public" virt="non-virtual"><scope>Database</scope><name>getDatabase</name></member>
+      <member refid="classDatabase_1a0c284ca36f641066e6a78675041bcd0f" prot="private" virt="non-virtual"><scope>Database</scope><name>initializeDatabase</name></member>
+      <member refid="classDatabase_1ae559e33ee2ced189256cded3ba36fd7f" prot="public" virt="non-virtual"><scope>Database</scope><name>isConnected</name></member>
+      <member refid="classDatabase_1a7357cbeca05937556f66e2fe2288bdb5" prot="private" virt="non-virtual"><scope>Database</scope><name>m_db</name></member>
+      <member refid="classDatabase_1a16e3a424915bed9bd3abd862882a103e" prot="public" virt="non-virtual"><scope>Database</scope><name>testConnection</name></member>
+      <member refid="classDatabase_1a84d399a2ad58d69daab9b05330e1316d" prot="public" virt="non-virtual"><scope>Database</scope><name>~Database</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

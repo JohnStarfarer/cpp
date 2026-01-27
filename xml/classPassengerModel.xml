@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classPassengerModel" kind="class" language="C++" prot="public">
+    <compoundname>PassengerModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSqlTableModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPassengerModel_1a192f13a0c6621c9f3b82ada29168f415" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PassengerModel::PassengerModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>PassengerModel</name>
+        <qualifiedname>PassengerModel::PassengerModel</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="15" column="14" bodyfile="models/passengermodel.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classPassengerModel_1adf2c1c075abf2b61a03de1c44a096300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PassengerModel::addPassenger</definition>
+        <argsstring>(const QString &amp;lastName, const QString &amp;firstName, const QString &amp;middleName, const QDate &amp;birthDate, const QString &amp;gender, const QString &amp;documentType, const QString &amp;documentNumber, const QString &amp;phone=&quot;&quot;, const QString &amp;email=&quot;&quot;)</argsstring>
+        <name>addPassenger</name>
+        <qualifiedname>PassengerModel::addPassenger</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>middleName</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>birthDate</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>gender</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>documentType</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>documentNumber</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>phone</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>email</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="18" column="10" bodyfile="models/passengermodel.cpp" bodystart="29" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classPassengerModel_1ac42cf541266cafca576e80c2f56b3245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PassengerModel::updatePassenger</definition>
+        <argsstring>(int id, const QString &amp;lastName, const QString &amp;firstName, const QString &amp;middleName, const QDate &amp;birthDate, const QString &amp;gender, const QString &amp;documentType, const QString &amp;documentNumber, const QString &amp;phone=&quot;&quot;, const QString &amp;email=&quot;&quot;)</argsstring>
+        <name>updatePassenger</name>
+        <qualifiedname>PassengerModel::updatePassenger</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>middleName</declname>
+        </param>
+        <param>
+          <type>const QDate &amp;</type>
+          <declname>birthDate</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>gender</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>documentType</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>documentNumber</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>phone</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>email</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="23" column="10" bodyfile="models/passengermodel.cpp" bodystart="59" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classPassengerModel_1a3daddb3f80d1f83653deae67ebef28be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PassengerModel::removePassenger</definition>
+        <argsstring>(int id)</argsstring>
+        <name>removePassenger</name>
+        <qualifiedname>PassengerModel::removePassenger</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="29" column="10" bodyfile="models/passengermodel.cpp" bodystart="90" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classPassengerModel_1ad9d3a3766147e439b66fe6ac981326b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMap&lt; int, QString &gt;</type>
+        <definition>QMap&lt; int, QString &gt; PassengerModel::getPassengersMap</definition>
+        <argsstring>()</argsstring>
+        <name>getPassengersMap</name>
+        <qualifiedname>PassengerModel::getPassengersMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="32" column="10" bodyfile="models/passengermodel.cpp" bodystart="105" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classPassengerModel_1aaaa954bf16acd6304513456037249865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PassengerModel::passengerExists</definition>
+        <argsstring>(const QString &amp;documentNumber)</argsstring>
+        <name>passengerExists</name>
+        <qualifiedname>PassengerModel::passengerExists</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>documentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="35" column="10" bodyfile="models/passengermodel.cpp" bodystart="118" bodyend="129"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPassengerModel_1a22cacca23fe31e1a8636421db50a7810" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PassengerModel::setupModel</definition>
+        <argsstring>()</argsstring>
+        <name>setupModel</name>
+        <qualifiedname>PassengerModel::setupModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models/passengermodel.h" line="38" column="10" bodyfile="models/passengermodel.cpp" bodystart="9" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PassengerModel</label>
+        <link refid="classPassengerModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PassengerModel</label>
+        <link refid="classPassengerModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSqlTableModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="models/passengermodel.h" line="10" column="1" bodyfile="models/passengermodel.h" bodystart="11" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classPassengerModel_1adf2c1c075abf2b61a03de1c44a096300" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>addPassenger</name></member>
+      <member refid="classPassengerModel_1ad9d3a3766147e439b66fe6ac981326b4" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>getPassengersMap</name></member>
+      <member refid="classPassengerModel_1aaaa954bf16acd6304513456037249865" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>passengerExists</name></member>
+      <member refid="classPassengerModel_1a192f13a0c6621c9f3b82ada29168f415" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>PassengerModel</name></member>
+      <member refid="classPassengerModel_1a3daddb3f80d1f83653deae67ebef28be" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>removePassenger</name></member>
+      <member refid="classPassengerModel_1a22cacca23fe31e1a8636421db50a7810" prot="private" virt="non-virtual"><scope>PassengerModel</scope><name>setupModel</name></member>
+      <member refid="classPassengerModel_1ac42cf541266cafca576e80c2f56b3245" prot="public" virt="non-virtual"><scope>PassengerModel</scope><name>updatePassenger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
