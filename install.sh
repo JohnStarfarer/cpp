@@ -6,7 +6,7 @@ echo "=============================================="
 
 # Проверка PostgreSQL
 if ! command -v psql &> /dev/null; then
-    echo "❌ PostgreSQL не установлен!"
+    echo "PostgreSQL не установлен!"
     echo "Установите: sudo apt install postgresql"
     exit 1
 fi
@@ -20,7 +20,7 @@ sudo -u postgres psql -c "DROP DATABASE IF EXISTS $DB_NAME;" 2>/dev/null
 sudo -u postgres psql -c "CREATE DATABASE $DB_NAME;" 2>/dev/null
 
 if [ $? -ne 0 ]; then
-    echo "❌ Ошибка создания базы данных!"
+    echo "Ошибка создания базы данных!"
     exit 1
 fi
 
@@ -54,7 +54,7 @@ sudo -u postgres psql -d $DB_NAME -c "
 
 echo "6. Проверка подключения..."
 PGPASSWORD=$DB_PASSWORD psql -U $DB_USER -d $DB_NAME -c "
-    SELECT '✅ База успешно создана!' as message;
+    SELECT 'База успешно создана!' as message;
     SELECT 'Таблицы:' as table_list;
     SELECT table_name FROM information_schema.tables 
     WHERE table_schema = 'public' ORDER BY table_name;

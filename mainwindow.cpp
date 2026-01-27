@@ -29,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent)
         return;
     }
 
-    // Существующие модели для операций
+    // модели для операций
     m_trainModel = new TrainModel(this);
     m_wagonTypeModel = new WagonTypeModel(this);
     m_routeModel = new RouteModel(this);
@@ -40,7 +40,6 @@ MainWindow::MainWindow(QWidget *parent)
     m_scheduleViewModel = new ScheduleViewModel(this);
     m_ticketViewModel = new TicketViewModel(this);
 
-    // Инициализируем m_mainTabWidget вместо m_tabWidget
     m_mainTabWidget = new QTabWidget(this);
 
     setupUI();
@@ -96,10 +95,10 @@ void MainWindow::setupUI()
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
 
-    // Создаем разделитель
+    // разделитель
     m_mainSplitter = new QSplitter(Qt::Horizontal, this);
 
-    // Создаем основной табвиджет
+    // основной табвиджет
     m_mainTabWidget = new QTabWidget(this);
 
     // вкладка "Поезда"

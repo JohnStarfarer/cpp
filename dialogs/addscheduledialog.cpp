@@ -281,14 +281,12 @@ bool AddScheduleDialog::validateDates()
 
 void AddScheduleDialog::calculatePrice()
 {
-    // Можно реализовать автоматический расчет цены на основе базовой цены маршрута
-    // и коэффициента типа вагона
+    // в будующем
 }
 
 void AddScheduleDialog::updateArrivalDate()
 {
-    // Автоматически устанавливаем дату прибытия такую же как отправления
-    // если она меньше
+    // в будующем
     if (m_arrivalDateEdit->date() < m_departureDateEdit->date()) {
         m_arrivalDateEdit->setDate(m_departureDateEdit->date());
     }

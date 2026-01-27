@@ -58,11 +58,3 @@ target_link_libraries(RZD_Control
     Qt6::Widgets
     Qt6::Sql
 )
-
-# Устанавливаем иконку приложения (опционально)
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/icons/app.ico")
-    set_target_properties(RZD_Control PROPERTIES
-        WIN32_EXECUTABLE TRUE
-        MACOSX_BUNDLE_ICON_FILE app.ico
-    )
-endif()

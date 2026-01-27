@@ -1,6 +1,4 @@
--- ========================================================
 -- Заполнение тестовыми данными
--- ========================================================
 
 -- Типы вагонов
 INSERT INTO wagon_types (name, capacity, description) VALUES
@@ -44,19 +42,3 @@ INSERT INTO tickets (schedule_id, passenger_id, wagon_number, seat_number, price
 (1, 2, 1, 11, 2800.00, 'active'),
 (2, 3, 2, 5, 3800.00, 'active'),
 (3, 4, 1, 20, 1800.00, 'cancelled');
-
--- ========================================================
--- Вывод информации о созданных данных
--- ========================================================
-
-SELECT 'Типы вагонов: ' || COUNT(*) FROM wagon_types
-UNION ALL
-SELECT 'Поезда: ' || COUNT(*) FROM trains
-UNION ALL
-SELECT 'Маршруты: ' || COUNT(*) FROM routes
-UNION ALL
-SELECT 'Пассажиры: ' || COUNT(*) FROM passengers
-UNION ALL
-SELECT 'Рейсы в расписании: ' || COUNT(*) FROM schedule
-UNION ALL
-SELECT 'Билеты: ' || COUNT(*) FROM tickets

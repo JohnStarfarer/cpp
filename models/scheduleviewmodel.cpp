@@ -10,7 +10,6 @@ ScheduleViewModel::ScheduleViewModel(QObject *parent)
 
 void ScheduleViewModel::setupQuery()
 {
-    // Делаем JOIN запрос, чтобы получить названия вместо ID
     QString queryStr = 
         "SELECT "
         "    s.id, "

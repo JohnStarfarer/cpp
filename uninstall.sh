@@ -18,4 +18,4 @@ sudo -u postgres psql -c "DROP DATABASE IF EXISTS $DB_NAME;" 2>/dev/null
 echo "2. Удаление пользователя '$DB_USER'..."
 sudo -u postgres psql -c "DROP USER IF EXISTS $DB_USER;" 2>/dev/null
 
-echo "✅ База данных удалена!"
+echo "База данных удалена!"

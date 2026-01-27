@@ -17,10 +17,10 @@ class AddTrainDialog : public QDialog
     Q_OBJECT
     
 public:
-    // Конструктор для добавления нового поезда
+    // конструктор для добавления нового поезда
     explicit AddTrainDialog(QWidget *parent = nullptr);
     
-    // Конструктор для редактирования существующего поезда
+    // конструктор для редактирования существующего поезда
     AddTrainDialog(int trainId, QWidget *parent = nullptr);
     
     QString getName() const { return m_nameEdit->text(); }
@@ -34,7 +34,7 @@ private:
     void setupUI();
     void loadTrainData(int trainId);
     
-    // Виджеты
+    // виджеты
     QLineEdit *m_nameEdit;
     QComboBox *m_statusCombo;
     QSpinBox *m_seatsSpin;

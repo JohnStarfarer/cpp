@@ -10,7 +10,6 @@ TicketViewModel::TicketViewModel(QObject *parent)
 
 void TicketViewModel::setupQuery()
 {
-    // Делаем JOIN запрос, чтобы получить названия вместо ID
     QString queryStr = 
         "SELECT "
         "    t.id, "

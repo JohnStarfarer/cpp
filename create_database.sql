@@ -1,7 +1,3 @@
--- ========================================================
--- Создание базы данных РЖД-Путь (управление)
--- ========================================================
-
 -- Таблица поездов
 CREATE TABLE IF NOT EXISTS trains (
     id SERIAL PRIMARY KEY,
@@ -74,9 +70,7 @@ CREATE TABLE IF NOT EXISTS tickets (
     UNIQUE(schedule_id, wagon_number, seat_number)
 );
 
--- ========================================================
 -- Индексы для ускорения запросов
--- ========================================================
 
 CREATE INDEX idx_schedule_dates ON schedule(departure_date, arrival_date);
 CREATE INDEX idx_tickets_schedule ON tickets(schedule_id);
@@ -85,9 +79,7 @@ CREATE INDEX idx_passengers_document ON passengers(document_number);
 CREATE INDEX idx_tickets_number ON tickets(ticket_number);
 CREATE INDEX idx_schedule_route_train ON schedule(route_id, train_id);
 
--- ========================================================
 -- Функция для генерации номера билета
--- ========================================================
 
 CREATE OR REPLACE FUNCTION generate_ticket_number()
 RETURNS TRIGGER AS $$
@@ -106,9 +98,7 @@ BEFORE INSERT ON tickets
 FOR EACH ROW
 EXECUTE FUNCTION generate_ticket_number();
 
--- ========================================================
 -- Функция для обновления доступных мест
--- ========================================================
 
 CREATE OR REPLACE FUNCTION update_available_seats()
 RETURNS TRIGGER AS $$
@@ -139,9 +129,7 @@ AFTER INSERT OR UPDATE ON tickets
 FOR EACH ROW
 EXECUTE FUNCTION update_available_seats();
 
--- ========================================================
 -- Представления для удобства
--- ========================================================
 
 -- Представление для полного расписания
 CREATE OR REPLACE VIEW v_full_schedule AS
@@ -192,15 +180,3 @@ JOIN schedule s ON tk.schedule_id = s.id
 JOIN routes r ON s.route_id = r.id
 WHERE tk.status = 'active'
 GROUP BY r.departure_city, r.arrival_city;
-
--- ========================================================
--- Создание пользователя для приложения
--- ========================================================
-
--- Выполнить от имени суперпользователя PostgreSQL:
--- CREATE USER rzd_admin WITH PASSWORD 'admin123';
--- GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO rzd_admin;
--- GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO rzd_admin;
--- GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO rzd_admin;
-
-COMMENT ON DATABASE postgres IS 'База данных для управления РЖД-Путь';
