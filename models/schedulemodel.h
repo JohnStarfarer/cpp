@@ -14,8 +14,7 @@ class ScheduleModel : public QSqlTableModel
     
 public:
     explicit ScheduleModel(QObject *parent = nullptr);
-    
-    // Методы для работы с данными
+
     bool addSchedule(int routeId, int trainId, int wagonTypeId,
                     const QDate &departureDate, const QTime &departureTime,
                     const QDate &arrivalDate, const QTime &arrivalTime,
@@ -28,13 +27,13 @@ public:
     
     bool removeSchedule(int id);
     
-    // Получение расписания с деталями (для view)
+    // получение расписания с деталями
     QSqlQuery getFullSchedule();
     
-    // Обновление доступных мест
+    // обновление доступных мест
     bool updateAvailableSeats(int scheduleId, int change);
     
-    // Получение расписания для комбобокса
+    // получение расписания для комбобокса
     QMap<int, QString> getScheduleMap();
     
 private:

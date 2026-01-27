@@ -12,13 +12,12 @@ class TrainModel : public QSqlTableModel
     
 public:
     explicit TrainModel(QObject *parent = nullptr);
-    
-    // Методы для работы с данными
+
     bool addTrain(const QString &name, const QString &status, int totalSeats);
     bool updateTrain(int id, const QString &name, const QString &status, int totalSeats);
     bool removeTrain(int id);
     
-    // Получение данных по ID
+    // получение данных по ID
     QVariant getTrainData(int id, const QString &field);
     
 private:

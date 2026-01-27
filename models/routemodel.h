@@ -12,8 +12,7 @@ class RouteModel : public QSqlTableModel
     
 public:
     explicit RouteModel(QObject *parent = nullptr);
-    
-    // Методы для работы с данными
+
     bool addRoute(const QString &departure, const QString &arrival, 
                   double basePrice, const QString &status = "active", 
                   int distance = 0);
@@ -22,10 +21,10 @@ public:
                      int distance = 0);
     bool removeRoute(int id);
     
-    // Получение маршрутов для комбобокса
+    // получение маршрутов для комбобокса
     QMap<int, QString> getRoutesMap();
     
-    // Проверка существования маршрута
+    // проверка существования маршрута
     bool routeExists(const QString &departure, const QString &arrival);
     
 private:

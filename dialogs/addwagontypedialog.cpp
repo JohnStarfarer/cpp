@@ -54,7 +54,7 @@ void AddWagonTypeDialog::setupUI()
     
     mainLayout->addLayout(buttonLayout);
     
-    // Подключаем сигналы
+    // сигналы
     connect(m_okButton, &QPushButton::clicked, this, &AddWagonTypeDialog::validateAndAccept);
     connect(m_cancelButton, &QPushButton::clicked, this, &QDialog::reject);
     

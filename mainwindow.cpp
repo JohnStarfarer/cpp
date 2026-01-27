@@ -123,6 +123,8 @@ void MainWindow::setupUI()
     m_trainTable->setSelectionMode(QAbstractItemView::SingleSelection);
     m_trainTable->horizontalHeader()->setStretchLastSection(true);
 
+    m_trainTable->hideColumn(4);
+
     trainLayout->addLayout(trainButtonLayout);
     trainLayout->addWidget(m_trainTable);
 
@@ -695,10 +697,28 @@ void MainWindow::addSchedule()
 {
     AddScheduleDialog dialog(this);
     if (dialog.exec() == QDialog::Accepted) {
-        m_scheduleModel->select();
-        m_statusLabel->setText("Рейс добавлен");
+        if (m_scheduleModel->addSchedule(
+                dialog.getRouteId(),
+                dialog.getTrainId(),
+                dialog.getWagonTypeId(),
+                dialog.getDepartureDate(),
+                dialog.getDepartureTime(),
+                dialog.getArrivalDate(),
+                dialog.getArrivalTime(),
+                dialog.getAvailableSeats(),
+                dialog.getPrice(),
+                dialog.getStatus()))
+        {
+            m_scheduleModel->select();
+            m_scheduleViewModel->refresh();
+            m_statusLabel->setText("Рейс добавлен");
+        } else {
+            QMessageBox::critical(this, "Ошибка", "Не удалось добавить рейс");
+        }
     }
 }
+
+
 
 void MainWindow::editSchedule()
 {
@@ -709,12 +729,30 @@ void MainWindow::editSchedule()
     }
 
     int row = selected.first().row();
-    int id = m_scheduleModel->data(m_scheduleModel->index(row, 0)).toInt();
+    // Получаем ID из модели отображения (первый скрытый столбец)
+    int id = m_scheduleViewModel->data(m_scheduleViewModel->index(row, 0)).toInt();
 
     AddScheduleDialog dialog(id, this);
     if (dialog.exec() == QDialog::Accepted) {
-        m_scheduleModel->select();
-        m_statusLabel->setText("Рейс обновлен");
+        if (m_scheduleModel->updateSchedule(
+                id,
+                dialog.getRouteId(),
+                dialog.getTrainId(),
+                dialog.getWagonTypeId(),
+                dialog.getDepartureDate(),
+                dialog.getDepartureTime(),
+                dialog.getArrivalDate(),
+                dialog.getArrivalTime(),
+                dialog.getAvailableSeats(),
+                dialog.getPrice(),
+                dialog.getStatus()))
+        {
+            m_scheduleModel->select();
+            m_scheduleViewModel->refresh();
+            m_statusLabel->setText("Рейс обновлен");
+        } else {
+            QMessageBox::critical(this, "Ошибка", "Не удалось обновить рейс");
+        }
     }
 }
 
@@ -727,7 +765,7 @@ void MainWindow::deleteSchedule()
     }
 
     int row = selected.first().row();
-    int id = m_scheduleModel->data(m_scheduleModel->index(row, 0)).toInt();
+    int id = m_scheduleViewModel->data(m_scheduleViewModel->index(row, 0)).toInt();
 
     QMessageBox::StandardButton reply;
     reply = QMessageBox::question(this, "Подтверждение удаления",
@@ -737,6 +775,7 @@ void MainWindow::deleteSchedule()
     if (reply == QMessageBox::Yes) {
         if (m_scheduleModel->removeSchedule(id)) {
             m_scheduleModel->select();
+            m_scheduleViewModel->refresh();
             m_statusLabel->setText("Рейс удален");
         } else {
             QMessageBox::critical(this, "Ошибка", "Не удалось удалить рейс.");
@@ -758,12 +797,14 @@ void MainWindow::addTicket()
                 dialog.getStatus()))
         {
             m_ticketModel->select();
+            m_ticketViewModel->refresh();
             m_statusLabel->setText("Билет добавлен");
         } else {
             QMessageBox::critical(this, "Ошибка", "Не удалось добавить билет");
         }
     }
 }
+
 
 void MainWindow::editTicket()
 {
@@ -774,7 +815,7 @@ void MainWindow::editTicket()
     }
 
     int row = selected.first().row();
-    int id = m_ticketModel->data(m_ticketModel->index(row, 0)).toInt();
+    int id = m_ticketViewModel->data(m_ticketViewModel->index(row, 0)).toInt();
 
     AddTicketDialog dialog(id, this);
     if (dialog.exec() == QDialog::Accepted) {
@@ -788,12 +829,14 @@ void MainWindow::editTicket()
                 dialog.getStatus()))
         {
             m_ticketModel->select();
+            m_ticketViewModel->refresh();
             m_statusLabel->setText("Билет обновлен");
         } else {
             QMessageBox::critical(this, "Ошибка", "Не удалось обновить билет");
         }
     }
 }
+
 
 void MainWindow::deleteTicket()
 {
@@ -804,8 +847,8 @@ void MainWindow::deleteTicket()
     }
 
     int row = selected.first().row();
-    int id = m_ticketModel->data(m_ticketModel->index(row, 0)).toInt();
-    QString ticketNumber = m_ticketModel->data(m_ticketModel->index(row, 1)).toString();
+    int id = m_ticketViewModel->data(m_ticketViewModel->index(row, 0)).toInt();
+    QString ticketNumber = m_ticketViewModel->data(m_ticketViewModel->index(row, 1)).toString();
 
     QMessageBox::StandardButton reply;
     reply = QMessageBox::question(this, "Подтверждение удаления",
@@ -815,6 +858,7 @@ void MainWindow::deleteTicket()
     if (reply == QMessageBox::Yes) {
         if (m_ticketModel->removeTicket(id)) {
             m_ticketModel->select();
+            m_ticketViewModel->refresh();
             m_statusLabel->setText("Билет удален");
         } else {
             QMessageBox::critical(this, "Ошибка", "Не удалось удалить билет.");

@@ -13,12 +13,12 @@ class WagonTypeModel : public QSqlTableModel
 public:
     explicit WagonTypeModel(QObject *parent = nullptr);
     
-    // Методы для работы с данными
+    // методы для работы с данными
     bool addWagonType(const QString &name, int capacity, const QString &description = "");
     bool updateWagonType(int id, const QString &name, int capacity, const QString &description = "");
     bool removeWagonType(int id);
     
-    // Получение списка типов вагонов для комбобокса
+    // получение списка типов вагонов для комбобокса
     QMap<int, QString> getWagonTypesMap();
     
 private:

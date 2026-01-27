@@ -14,7 +14,6 @@ class PassengerModel : public QSqlTableModel
 public:
     explicit PassengerModel(QObject *parent = nullptr);
     
-    // Методы для работы с данными
     bool addPassenger(const QString &lastName, const QString &firstName, const QString &middleName,
                      const QDate &birthDate, const QString &gender, const QString &documentType,
                      const QString &documentNumber, const QString &phone = "", 
@@ -28,10 +27,10 @@ public:
     
     bool removePassenger(int id);
     
-    // Получение пассажиров для комбобокса
+    // получение пассажиров для комбобокса
     QMap<int, QString> getPassengersMap();
     
-    // Проверка существования пассажира по номеру документа
+    // проверка существования пассажира по номеру документа
     bool passengerExists(const QString &documentNumber);
     
 private:

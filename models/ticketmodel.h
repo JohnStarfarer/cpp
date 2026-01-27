@@ -13,8 +13,7 @@ class TicketModel : public QSqlTableModel
     
 public:
     explicit TicketModel(QObject *parent = nullptr);
-    
-    // Методы для работы с данными
+
     bool addTicket(int scheduleId, int passengerId, int wagonNumber, 
                   int seatNumber, double price, const QString &status = "active");
     
@@ -23,20 +22,20 @@ public:
     
     bool removeTicket(int id);
     
-    // Продажа билета (с проверками)
+    // продажа билета
     bool sellTicket(int scheduleId, int passengerId, int wagonNumber, 
                    int seatNumber, double price);
     
-    // Отмена билета
+    // отмена билета
     bool cancelTicket(int ticketId);
     
-    // Получение детальной информации о билетах
+    // получение детальной информации о билетах
     QSqlQuery getTicketDetails();
     
-    // Получение статистики продаж
+    // получение статистики продаж
     QMap<QString, double> getSalesStatistics(const QDate &from, const QDate &to);
     
-    // Проверка доступности места
+    // проверка доступности места
     bool isSeatAvailable(int scheduleId, int wagonNumber, int seatNumber);
     
 private:

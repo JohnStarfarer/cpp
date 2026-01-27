@@ -24,7 +24,7 @@ void AddTicketDialog::setupUI()
 {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     
-    // Группа "Основные данные"
+    // "Основные данные"
     QGroupBox *mainGroup = new QGroupBox("Основные данные", this);
     QFormLayout *formLayout = new QFormLayout(mainGroup);
     

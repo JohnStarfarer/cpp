@@ -38,7 +38,7 @@ private slots:
     void showAbout();
     void checkDatabaseConnection();
     
-    // Слоты для кнопок
+    // кнопоки
     void addTrain();
     void editTrain();
     void deleteTrain();
@@ -72,15 +72,16 @@ private:
     void createMainTabWidget();
     void createReportsTabWidget();
     
-    // База данных
+    // БД
     Database *m_database;
     
     // Основной виджет для разделения
     QSplitter *m_mainSplitter;
 
-    // Два табвиджета вместо одного
-    QTabWidget *m_mainTabWidget;      // Основные операции
-    QTabWidget *m_reportsTabWidget;   // Отчеты
+    // Основные операции
+    QTabWidget *m_mainTabWidget;
+    // Отчеты
+    QTabWidget *m_reportsTabWidget;
     
     // Таблицы
     QTableView *m_trainTable;

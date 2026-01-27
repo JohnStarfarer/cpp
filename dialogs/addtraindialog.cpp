@@ -22,7 +22,7 @@ AddTrainDialog::AddTrainDialog(int trainId, QWidget *parent)
 
 void AddTrainDialog::setupUI()
 {
-    // Основной layout
+    // layout
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     
     // Форма с полями
